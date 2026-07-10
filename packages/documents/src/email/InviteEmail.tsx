@@ -36,7 +36,7 @@ export const InviteEmail = ({
   ip = "38.38.38.38",
   location = "Tombstone, AZ"
 }: Props) => {
-  const preview = <Preview>{`Join ${companyName} on Carbon`}</Preview>;
+  const preview = <Preview>{`Join ${companyName} on AGA OneForge`}</Preview>;
   const themeClasses = getEmailThemeClasses();
   const lightStyles = getEmailInlineStyles("light");
 
@@ -59,7 +59,7 @@ export const InviteEmail = ({
             className={`mx-0 my-[30px] p-0 text-[24px] font-normal ${themeClasses.text} text-center`}
             style={{ color: lightStyles.text.color }}
           >
-            Join <strong>{companyName}</strong> on <strong>Carbon</strong>
+            Join <strong>{companyName}</strong> on <strong>AGA OneForge</strong>
           </Heading>
 
           <Text
@@ -82,7 +82,7 @@ export const InviteEmail = ({
               {invitedByEmail}
             </Link>
             ) has invited you to join <strong>{companyName}</strong> on{" "}
-            <strong>Carbon</strong>.
+            <strong>AGA OneForge</strong>.
           </Text>
           <Section className="mb-[42px] mt-[32px] text-center">
             <Button href={inviteLink}>Accept Invite</Button>

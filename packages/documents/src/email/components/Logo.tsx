@@ -1,23 +1,21 @@
-import { Img, Section } from "@react-email/components";
+import { Section, Text } from "@react-email/components";
 
 export function Logo() {
   return (
     <Section className="mt-[32px]">
-      <Img
-        src="https://app.carbon.ms/carbon-word-light.png"
-        width="auto"
-        height="45"
-        alt="Carbon"
-        className="mb-4 mx-auto block dark-mode-hide"
-      />
-      <Img
-        src="https://app.carbon.ms/carbon-word-dark.png"
-        width="auto"
-        height="45"
-        alt="Carbon"
-        className="mb-4 mx-auto block dark-mode-show"
-        style={{ display: "none" }}
-      />
+      <Text
+        className="email-text mb-4 mx-auto text-center"
+        style={{
+          color: "#0e0e0e",
+          fontSize: 28,
+          fontWeight: 500,
+          letterSpacing: "-0.5px",
+          lineHeight: "36px",
+          margin: "0 auto 16px"
+        }}
+      >
+        AGA OneForge
+      </Text>
     </Section>
   );
 }

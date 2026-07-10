@@ -292,8 +292,8 @@ export const NotificationEmail = ({
             className={`text-[12px] leading-[18px] m-0 nf-fallback ${themeClasses.mutedText}`}
           >
             You're receiving this email because you have email notifications
-            enabled on your Carbon account. You can manage your preferences from
-            your account settings.
+            enabled on your AGA OneForge account. You can manage your preferences
+            from your account settings.
           </Text> */}
         </Container>
       </Body>
