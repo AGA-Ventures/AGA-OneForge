@@ -256,7 +256,7 @@ export function Configurator() {
                 )}
               </div>
               <p className="m-0 mt-[7px] text-ed-12 leading-normal text-ed-ink/55">
-                Stored in this browser only and dropped into the samples. Never sent to Carbon.{" "}
+                Stored in this browser only and dropped into the samples. Never sent to AGA OneForge.{" "}
                 <a
                   href="https://app.carbon.ms/x/settings/api-keys"
                   target="_blank"

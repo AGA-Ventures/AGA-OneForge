@@ -82,7 +82,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
   if (!page) notFound();
 
   return pageSeo({
-    title: `${page.data.title} — Carbon`,
+    title: `${page.data.title} — AGA OneForge`,
     ogTitle: page.data.title,
     description: page.data.description,
     path: page.url,

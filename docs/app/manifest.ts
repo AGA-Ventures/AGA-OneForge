@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Carbon Docs",
-    short_name: "Carbon",
+    name: "AGA OneForge Docs",
+    short_name: "AGA OneForge",
     description:
-      "Technical documentation for Carbon — a manufacturing system for the office (ERP) and the floor (MES).",
+      "Technical documentation for AGA OneForge — a manufacturing system for the office (ERP) and the floor (MES).",
     start_url: "/",
     display: "standalone",
     background_color: "#F5F5F2",

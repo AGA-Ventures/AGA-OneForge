@@ -1,9 +1,9 @@
 ---
 title: Architecture
-description: "How Carbon is built: the apps, packages, database, event system, background jobs, and auth behind a deployment."
+description: "How AGA OneForge is built: the apps, packages, database, event system, background jobs, and auth behind a deployment."
 ---
 
-Carbon is a TypeScript monorepo: a handful of apps over a shared set of packages, backed by a single
+AGA OneForge is a TypeScript monorepo: a handful of apps over a shared set of packages, backed by a single
 Postgres database.
 
 ## Apps
@@ -29,12 +29,12 @@ Shared libraries live in `packages/`, including `database` (Supabase schema + ge
 
 ## Database
 
-Carbon runs on **Supabase / PostgreSQL**. Multi-tenancy is enforced in the database: every row is scoped
+AGA OneForge runs on **Supabase / PostgreSQL**. Multi-tenancy is enforced in the database: every row is scoped
 to a company, and **Row Level Security** policies gate access. Types are generated from the schema. Local
 development runs Supabase in Docker.
 
 <Callout type="note">
-Carbon is multi-company. One deployment can host many companies; isolation is enforced by RLS, not by
+AGA OneForge is multi-company. One deployment can host many companies; isolation is enforced by RLS, not by
 application code.
 </Callout>
 
@@ -54,7 +54,7 @@ run on **Inngest**; edge functions run on **Supabase / Deno**.
 
 ## Authentication
 
-Carbon uses **Supabase Auth** with HTTP-only cookie sessions and Redis-cached permissions (role- and
+AGA OneForge uses **Supabase Auth** with HTTP-only cookie sessions and Redis-cached permissions (role- and
 attribute-based). Sign-in is by magic link, Google, or Outlook. Programmatic access uses **API keys** (a `carbon-key`
 header), and a full **OAuth 2.0 server** backs the Claude remote connector.
 

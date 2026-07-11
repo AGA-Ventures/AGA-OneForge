@@ -15,7 +15,7 @@ import { highlight } from "@/lib/highlight";
 import { pageSeo, SEO } from "@/lib/seo";
 
 export const metadata = pageSeo({
-  title: `${SEO.mcp.intro.title} — Carbon`,
+  title: `${SEO.mcp.intro.title} — AGA OneForge`,
   ogTitle: SEO.mcp.intro.title,
   description: SEO.mcp.intro.description,
   path: "/mcp",
@@ -55,7 +55,7 @@ const FAQ: FaqEntry[] = [
     a: "Not for connector clients — Claude.ai, Claude Desktop, and ChatGPT add the URL and authorize in your browser. Keys are for command and config clients (Claude Code, Cursor, VS Code, Codex) and any headless or CI use."
   },
   {
-    q: "Does it respect my Carbon permissions?",
+    q: "Does it respect my AGA OneForge permissions?",
     a: "Yes — there's no way around them. A connector inherits the role and company of whoever authorized it; a key carries its own scopes. The assistant can never do what that identity can't."
   },
   {
@@ -64,7 +64,7 @@ const FAQ: FaqEntry[] = [
   },
   {
     q: "Where does my data go?",
-    a: "Carbon doesn't send it anywhere new — your MCP client does, to whatever model provider it runs on, under that provider's terms. Scope keys tightly and prefer a read-only key when you only need to read."
+    a: "AGA OneForge doesn't send it anywhere new — your MCP client does, to whatever model provider it runs on, under that provider's terms. Scope keys tightly and prefer a read-only key when you only need to read."
   },
   {
     q: "Is MCP available on my plan?",
@@ -99,7 +99,7 @@ export default async function McpPage() {
       <DocEyebrow>MCP</DocEyebrow>
       <DocTitle>Model Context Protocol</DocTitle>
       <Lead>
-        Carbon runs an MCP server, so AI clients — Claude Code, Claude Desktop,
+        AGA OneForge runs an MCP server, so AI clients — Claude Code, Claude Desktop,
         Cursor, ChatGPT — can read and write your manufacturing data in plain
         language.
       </Lead>

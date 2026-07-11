@@ -5,21 +5,21 @@ label: "(IV)"
 index: 3
 ---
 
-Time to build. You release the first <Term id="job">production job</Term>, the first 30 robots, to the shop floor, along with the <Term>subassembly</Term> jobs for the parts that feed it. This is the handoff most shops fumble; in Carbon it's a single, traceable step.
+Time to build. You release the first <Term id="job">production job</Term>, the first 30 robots, to the shop floor, along with the <Term>subassembly</Term> jobs for the parts that feed it. This is the handoff most shops fumble; in AGA OneForge it's a single, traceable step.
 
 <Figure illustration="shopfloor-loop" caption="On the floor, every operation reports back: material consumed, labor logged, parts scanned." />
 
 ## The schedule
 
-The released work lands on the schedule, a board you arrange, not a Gantt chart you fight. Carbon gives you two views of it:
+The released work lands on the schedule, a board you arrange, not a Gantt chart you fight. AGA OneForge gives you two views of it:
 
 - By <Term>work center</Term>: <Term id="operation">operations</Term> sit in columns, one per work center. Drag an operation to a different center, or reorder it within a column to set its priority. The only constraint is that the center can actually run that process.
-- By date: jobs sit in columns by week or month. Drag a job to a different week and Carbon reschedules it in the background.
+- By date: jobs sit in columns by week or month. Drag a job to a different week and AGA OneForge reschedules it in the background.
 
 <Figure illustration="schedule-board" caption="Two views of one schedule: operations by work center, jobs by week. Drag to rebalance either." />
 
 <Callout tone="neutral" badge="YOU HOLD THE BALANCE" title="The board shows the work; you decide the sequence.">
-Carbon lays every released operation where it belongs and lets you rebalance by hand, dragging the week-one robots and their subassemblies into an order the floor can actually run.
+AGA OneForge lays every released operation where it belongs and lets you rebalance by hand, dragging the week-one robots and their subassemblies into an order the floor can actually run.
 </Callout>
 
 <Screenshot label="Production schedule board" caption="The first 30-robot job and its subassemblies arranged across work centers." ratio="wide" />
@@ -28,7 +28,7 @@ Carbon lays every released operation where it belongs and lets you rebalance by 
 
 Open a job and its <Term>routing</Term> is an ordered list of operations. Each operation names a process (Mill, Deburr, Anodize, Assemble) and the work center that runs it, with separate setup, labor, and machine time so estimates and costs are honest about where the hours go.
 
-Most operations run on your floor. But some don't, and Carbon plans for that explicitly:
+Most operations run on your floor. But some don't, and AGA OneForge plans for that explicitly:
 
 - Inside operation: runs at one of your work centers, by your people.
 - <Term>Outside operation</Term>: performed by a supplier. Anodizing the arm part, say: the step leaves your floor, goes out, and comes back to finish its routing.
@@ -66,7 +66,7 @@ Logged hours multiply by the work center's labor and machine rates; issued mater
 
 ## Backflush & issue
 
-Material leaves inventory two ways in Carbon, and the BoM decides which one applies to each component, so stock stays accurate without busywork:
+Material leaves inventory two ways in AGA OneForge, and the BoM decides which one applies to each component, so stock stays accurate without busywork:
 
 - Issued: tracked material, like the serialized or batch-tracked motors, is issued to the operation (or picked to the line) so every unit is accounted for by its lot.
 - <Term id="backflush">Backflushed</Term>: non-tracked material is pulled from stock automatically the moment the operation or job reports complete. No transactions, no keystrokes.
@@ -80,7 +80,7 @@ Flag a material to backflush and you never reconcile it by hand. The moment an o
 For parts that demand a paper trail, operators scan as they build. Under the hood, every physical thing (a serial, a batch, a lot) is a <Term>tracked entity</Term>. Scanning a child into the unit you're building records a [tracked activity](/docs/reference/traceability): the child is marked consumed, the unit is marked produced, and the link between them is permanent.
 
 <Callout tone="blue" badge="SERIAL vs BATCH" title="Two tracking modes, one genealogy.">
-<Term id="serial">Serialize</Term> what you track one-by-one: the finished robot, its arm, its leg. <Term id="batch">Batch-track</Term> what moves in lots: motors, fasteners, raw stock. Scan a serial into a batch and Carbon records the link, so the robot's record knows exactly which motor lot it carries.
+<Term id="serial">Serialize</Term> what you track one-by-one: the finished robot, its arm, its leg. <Term id="batch">Batch-track</Term> what moves in lots: motors, fasteners, raw stock. Scan a serial into a batch and AGA OneForge records the link, so the robot's record knows exactly which motor lot it carries.
 </Callout>
 
 <Screenshot label="Shop-floor scan" caption="An operator scanning a motor lot into robot serial #0001 at the assembly station." ratio="wide" />

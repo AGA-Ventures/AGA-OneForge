@@ -12,7 +12,7 @@ import {
 import { pageSeo, SEO } from "@/lib/seo";
 
 export const metadata = pageSeo({
-  title: `${SEO.mcp.tools.title} — Carbon`,
+  title: `${SEO.mcp.tools.title} — AGA OneForge`,
   ogTitle: SEO.mcp.tools.title,
   description: SEO.mcp.tools.description,
   path: "/mcp/tools",
@@ -43,7 +43,7 @@ export default function McpToolsPage() {
       <DocEyebrow>MCP</DocEyebrow>
       <DocTitle>Tools</DocTitle>
       <Lead>
-        Carbon's MCP server exposes more than 1,200 tools across 15 modules —
+        AGA OneForge's MCP server exposes more than 1,200 tools across 15 modules —
         without flooding the assistant's context with all of them at once.
       </Lead>
 

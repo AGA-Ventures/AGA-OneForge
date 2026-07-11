@@ -39,7 +39,7 @@ function FlowOverview() {
   const pitch = 150;
   const y = 30;
   return (
-    <svg viewBox="0 0 912 92" className="w-full h-auto" role="img" aria-label="Carbon flow overview">
+    <svg viewBox="0 0 912 92" className="w-full h-auto" role="img" aria-label="AGA OneForge flow overview">
       {steps.map((s, i) => {
         const x = 6 + i * pitch;
         return (

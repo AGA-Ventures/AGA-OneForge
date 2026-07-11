@@ -10,15 +10,15 @@ flowIndex: 1
 
 The make-to-order tour started at a confirmed sales order. This flow rewinds to where that order comes from: a customer asking for a price, a quote that answers it, an acceptance that turns it into work. Quote to cash is the commercial spine that runs alongside the build — pricing on one end, a settled invoice on the other.
 
-We'll follow one inquiry from a blank quote all the way to an order Carbon is ready to ship.
+We'll follow one inquiry from a blank quote all the way to an order AGA OneForge is ready to ship.
 
 ## One opportunity, many documents
 
-In Carbon, a <Term id="rfq">request for quote</Term>, a <Term>quote</Term>, and a <Term>sales order</Term> aren't a rigid chain. They're three documents that hang off a single **<Term>opportunity</Term>**. The opportunity holds a slot for each (`salesRfqId`, `quoteId`, `salesOrderId`), and any of them can be empty.
+In AGA OneForge, a <Term id="rfq">request for quote</Term>, a <Term>quote</Term>, and a <Term>sales order</Term> aren't a rigid chain. They're three documents that hang off a single **<Term>opportunity</Term>**. The opportunity holds a slot for each (`salesRfqId`, `quoteId`, `salesOrderId`), and any of them can be empty.
 
 <Figure illustration="opportunity-thread" caption="Three documents (RFQ, quote, order) hang off one opportunity, and any slot can be empty." />
 
-That design has a practical consequence: none of the steps are mandatory. You can raise a sales order cold, quote without a formal RFQ, or carry one opportunity through all three. Carbon tracks the relationship through the opportunity, not through a foreign key that forces the sequence.
+That design has a practical consequence: none of the steps are mandatory. You can raise a sales order cold, quote without a formal RFQ, or carry one opportunity through all three. AGA OneForge tracks the relationship through the opportunity, not through a foreign key that forces the sequence.
 
 <Callout tone="neutral" badge="NO RIGID CHAIN" title="Quotes are optional. The opportunity is the thread.">
 A sales order does not require a quote, and a quote does not require an RFQ. Each document links back to the same opportunity, so you can enter the flow at whatever point a deal actually starts.
@@ -36,9 +36,9 @@ When the numbers are ready, finalizing the quote moves it to **"Sent"** and mark
 
 ## Send it to the customer
 
-Carbon can hand the customer the quote directly. With digital quotes enabled, a **"Sent"** quote exposes a private share link: an unguessable id, no login required. Internal notes are stripped before anything reaches the customer.
+AGA OneForge can hand the customer the quote directly. With digital quotes enabled, a **"Sent"** quote exposes a private share link: an unguessable id, no login required. Internal notes are stripped before anything reaches the customer.
 
-From that link the customer does one of two things. They **accept**, optionally attaching their PO as a PDF, and the quote converts straight into a sales order. Or they **reject**, and the quote moves to **"Lost"**. Either way the outcome lands back in Carbon without a single email thread.
+From that link the customer does one of two things. They **accept**, optionally attaching their PO as a PDF, and the quote converts straight into a sales order. Or they **reject**, and the quote moves to **"Lost"**. Either way the outcome lands back in AGA OneForge without a single email thread.
 
 <Callout tone="blue" badge="DIGITAL QUOTE" title="Acceptance is a first-class action, not an inbox.">
 The customer-facing share link turns an accept into a real conversion and a reject into a recorded outcome. A companion customer portal then shows them live order and job status as the work proceeds.
@@ -48,7 +48,7 @@ The customer-facing share link turns an accept into a real conversion and a reje
 
 ## When a quote doesn't land
 
-Not every quote converts, and Carbon keeps a distinct status for each ending. A quote whose validity date passes turns **"Expired"**; one the customer rejects becomes **"Lost"**; one you withdraw yourself is **"Cancelled"**. Each is a real outcome on the record, not a quote left hanging.
+Not every quote converts, and AGA OneForge keeps a distinct status for each ending. A quote whose validity date passes turns **"Expired"**; one the customer rejects becomes **"Lost"**; one you withdraw yourself is **"Cancelled"**. Each is a real outcome on the record, not a quote left hanging.
 
 None of them ends the conversation. A quote carries a **revision** number, so when a price needs reworking you re-quote rather than start over: the revision bumps, the customer sees the current terms, and the history of what changed stays intact.
 
@@ -58,7 +58,7 @@ A lost or expired quote isn't wasted work. Raise a new revision off it and the p
 
 ## Into a sales order
 
-Whether you convert internally or the customer accepts, the same thing happens: Carbon builds a sales order from the quote. The order lines carry the negotiated net unit price, the new order reuses the quote's opportunity, and the quote flips to **"Ordered"**, or **"Partial"** if only some lines converted. The order itself opens at **"To Ship and Invoice"**.
+Whether you convert internally or the customer accepts, the same thing happens: AGA OneForge builds a sales order from the quote. The order lines carry the negotiated net unit price, the new order reuses the quote's opportunity, and the quote flips to **"Ordered"**, or **"Partial"** if only some lines converted. The order itself opens at **"To Ship and Invoice"**.
 
 That status is the handoff. Everything from here (production, shipment, invoice) keys off the sales order, exactly where the make-to-order tour began.
 

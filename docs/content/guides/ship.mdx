@@ -9,7 +9,7 @@ Building the robot is most of the work, but it isn't the whole job. You still ha
 
 ## Raise an issue
 
-Say an operator flags a defect on an arm. You open an Issue, Carbon's name for a <Term id="nonconformance">non-conformance</Term>. It moves through a clear lifecycle, from Registered to In Progress to Closed, and it links to the part itself, so the arm now carries that open issue everywhere it appears in the system.
+Say an operator flags a defect on an arm. You open an Issue, AGA OneForge's name for a <Term id="nonconformance">non-conformance</Term>. It moves through a clear lifecycle, from Registered to In Progress to Closed, and it links to the part itself, so the arm now carries that open issue everywhere it appears in the system.
 
 <Figure illustration="eight-d" caption="An issue moves through its workflow (contain, correct, verify) until the fix is proven." />
 
@@ -43,7 +43,7 @@ New jobs pick up the latest published version; in-flight jobs never shift mid-bu
 
 ## Traceability
 
-Because everything was captured at build time, the <Term>genealogy</Term> of a finished robot is complete. Carbon stores it as a graph of <Term id="tracked-entity">tracked entities</Term> and the activities that link them, so from one serial you can walk backward to every ancestor (which arm, which motor lot, which raw material) or forward to every place a lot was used.
+Because everything was captured at build time, the <Term>genealogy</Term> of a finished robot is complete. AGA OneForge stores it as a graph of <Term id="tracked-entity">tracked entities</Term> and the activities that link them, so from one serial you can walk backward to every ancestor (which arm, which motor lot, which raw material) or forward to every place a lot was used.
 
 <Figure illustration="traceability-graph" caption="The genealogy of one finished robot, from serial number down to material lots." />
 
@@ -55,7 +55,7 @@ One click, or one scan of the robot's QR label, answers the question every audit
 
 Week one's 30 robots are done. You create a [shipment](/guides/order-to-cash) against the <Term id="sales-order">sales order</Term>. It drafts its lines from what's outstanding, you pick and post it, then <Term id="invoice">invoice</Term> that same 30. Because the order line stays open at "To Ship and Invoice," it simply carries the remaining 60 forward; the completed count rolls up as each batch ships.
 
-Carbon ties the invoice straight into your accounting system, so the build that started at the [sales desk](/guides/quote-to-cash) closes on the books — partial quantity and all.
+AGA OneForge ties the invoice straight into your accounting system, so the build that started at the [sales desk](/guides/quote-to-cash) closes on the books — partial quantity and all.
 
 <Screenshot label="Shipment & invoice" caption="Shipping the first 30 units and invoicing the partial quantity." ratio="wide" />
 

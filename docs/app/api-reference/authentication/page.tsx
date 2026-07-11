@@ -16,7 +16,7 @@ import { highlight } from "@/lib/highlight";
 import { pageSeo, SEO } from "@/lib/seo";
 
 export const metadata = pageSeo({
-  title: `${SEO.api.auth.title} — Carbon`,
+  title: `${SEO.api.auth.title} — AGA OneForge`,
   ogTitle: SEO.api.auth.title,
   description: SEO.api.auth.description,
   path: "/api-reference/authentication",
@@ -69,7 +69,7 @@ export default async function AuthenticationPage() {
       <DocEyebrow>REST API</DocEyebrow>
       <DocTitle>Authentication</DocTitle>
       <Lead>
-        Carbon authenticates public API requests with a scoped, optionally
+        AGA OneForge authenticates public API requests with a scoped, optionally
         expiring API key.
       </Lead>
       <P>
@@ -118,7 +118,7 @@ export default async function AuthenticationPage() {
         />
       </Table>
       <Warn title="The key is shown only once">
-        Copy the <Code>crbn_…</Code> token when it is generated — Carbon stores
+        Copy the <Code>crbn_…</Code> token when it is generated — AGA OneForge stores
         only a hash and cannot show it again. Keep it server-side; it carries
         every permission you grant. Lost a key? Delete it and create a new one.
       </Warn>

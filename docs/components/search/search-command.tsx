@@ -167,7 +167,7 @@ export function SearchCommand() {
           }}
           className="fixed left-1/2 top-[11vh] z-[101] flex max-h-[72vh] w-[calc(100vw-32px)] max-w-150 -translate-x-1/2 flex-col overflow-hidden rounded-[14px] border border-ed-warm-300 bg-ed-paper shadow-[0_24px_60px_-12px_rgba(38,35,35,0.28)] data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95"
         >
-          <Dialog.Title className="sr-only">Search Carbon docs</Dialog.Title>
+          <Dialog.Title className="sr-only">Search AGA OneForge docs</Dialog.Title>
           <Dialog.Description className="sr-only">
             Search the guide, reference, API resources, and MCP tools.
           </Dialog.Description>

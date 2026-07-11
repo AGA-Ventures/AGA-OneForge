@@ -8,7 +8,7 @@ flowName: Manufacturing accounting
 flowIndex: 3
 ---
 
-Eventually an asset leaves the books. There are two ways out, and Carbon treats them as genuinely different actions, handled by different teams, with different effects. You **sell** an asset to a buyer, or you **<Term id="disposal">dispose</Term>** of it when it's done. Both start from an asset that's **"Active"** or **"Fully Depreciated"**.
+Eventually an asset leaves the books. There are two ways out, and AGA OneForge treats them as genuinely different actions, handled by different teams, with different effects. You **sell** an asset to a buyer, or you **<Term id="disposal">dispose</Term>** of it when it's done. Both start from an asset that's **"Active"** or **"Fully Depreciated"**.
 
 The number that anchors both is **<Term>net book value</Term>**, what the asset is still worth on the books: its acquisition cost minus the <Term id="depreciation">depreciation</Term> accumulated against it.
 
@@ -26,7 +26,7 @@ The Sell action doesn't invent a separate sale mechanism. It creates a normal sa
 
 ## Dispose it
 
-When an asset is retired rather than sold, you **dispose** of it, an accounting action. Carbon posts the disposal as a write-off: it clears the accumulated depreciation, removes the asset at its full acquisition cost, and books the remaining **net book value** as a loss. The asset moves to **"Disposed"**.
+When an asset is retired rather than sold, you **dispose** of it, an accounting action. AGA OneForge posts the disposal as a write-off: it clears the accumulated depreciation, removes the asset at its full acquisition cost, and books the remaining **net book value** as a loss. The asset moves to **"Disposed"**.
 
 <Callout tone="amber" badge="DISPOSAL IS A WRITE-OFF" title="Disposing scraps the asset and books its remaining value as a loss.">
 The disposal entry reverses the asset off the books (debit accumulated depreciation, debit the write-off account for whatever book value remains, credit the asset account for its cost) and records that remaining value as a loss. It's a retirement, not a sale: no proceeds are collected on this path.

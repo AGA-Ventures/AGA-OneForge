@@ -19,7 +19,7 @@ import { highlight } from "@/lib/highlight";
 import { pageSeo, SEO } from "@/lib/seo";
 
 export const metadata = pageSeo({
-  title: `${SEO.api.intro.title} — Carbon`,
+  title: `${SEO.api.intro.title} — AGA OneForge`,
   ogTitle: SEO.api.intro.title,
   description: SEO.api.intro.description,
   path: "/api-reference",
@@ -48,7 +48,7 @@ export default async function ApiIntroPage() {
       <DocEyebrow>REST API</DocEyebrow>
       <DocTitle>Overview</DocTitle>
       <Lead>
-        The Carbon API is a REST interface over your manufacturing data — every
+        The AGA OneForge API is a REST interface over your manufacturing data — every
         table and view is an endpoint, with full read and write access.
       </Lead>
       <P>
@@ -60,7 +60,7 @@ export default async function ApiIntroPage() {
 
       <H2 id="client-libraries">Client libraries</H2>
       <P>
-        Carbon's API is standard REST, so it works from any language. The
+        AGA OneForge's API is standard REST, so it works from any language. The
         recommended client is the JavaScript SDK, built on{" "}
         <Code>supabase-js</Code>.
       </P>

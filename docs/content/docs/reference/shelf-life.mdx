@@ -1,16 +1,16 @@
 ---
 title: Shelf life
-description: How Carbon stamps expiration dates on tracked stock, and blocks consuming it once expired.
+description: How AGA OneForge stamps expiration dates on tracked stock, and blocks consuming it once expired.
 ---
 
-**Shelf life** is how Carbon decides when a batch or serial of an item *expires*, and what happens when
+**Shelf life** is how AGA OneForge decides when a batch or serial of an item *expires*, and what happens when
 someone tries to use it after that. It only applies to **<Term id="serial">Serial-</Term>** or **<Term id="batch">Batch-tracked</Term>** items, because the
 expiration date lives on the physical lot, the **<Term id="tracked-entity">tracked entity</Term>**, not on the item master.
 
 Three records work together: a **policy** per item (how expiry is decided), an **expiration date** per
 tracked entity (the actual date), and a **company-wide rule** for what to do with expired stock.
 
-Say a batch of adhesive is received under a **180-day** policy: Carbon stamps that lot to expire about six
+Say a batch of adhesive is received under a **180-day** policy: AGA OneForge stamps that lot to expire about six
 months out. Try to issue it to a job on day 200 and the issue is **blocked**. Expired stock can't flow into
 a build unless someone with permission overrides it.
 
@@ -57,7 +57,7 @@ The policy lives on the item's pick method:
 </FieldTable>
 
 <Callout type="note">
-The expiration date is only ever written once, where it was blank. Carbon never silently overwrites a date a
+The expiration date is only ever written once, where it was blank. AGA OneForge never silently overwrites a date a
 batch already carries. A manual override is available, but it requires a **reason**, which is kept on the
 entity's history.
 </Callout>

@@ -68,7 +68,9 @@ export function SiteFooter() {
         <div className="flex flex-col justify-between gap-10 lg:flex-row">
           {/* Brand block */}
           <div className="flex flex-col gap-[18px]">
-            <img src="/carbon-word-dark.svg" alt="Carbon" width={116} height={28} className="block" />
+            <span className="text-ed-18 font-semi tracking-[0.18px] text-white">
+              AGA OneForge
+            </span>
             <div className="flex items-center gap-4">
               {SOCIAL.map((s) => (
                 <SocialIcon key={s.label} {...s} />
@@ -124,7 +126,7 @@ export function SiteFooter() {
         {/* Copyright */}
         <div className="mt-10 border-t border-white/10 pt-5">
           <p className="m-0 text-ed-13 text-white/60">
-            © {year} Carbon Manufacturing Systems Corp. All rights reserved.
+            © {year} AGA OneForge. All rights reserved.
           </p>
         </div>
       </div>

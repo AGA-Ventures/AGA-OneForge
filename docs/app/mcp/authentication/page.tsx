@@ -14,7 +14,7 @@ import { ContentFooter } from "@/components/api/page-footer";
 import { pageSeo, SEO } from "@/lib/seo";
 
 export const metadata = pageSeo({
-  title: `${SEO.mcp.auth.title} — Carbon`,
+  title: `${SEO.mcp.auth.title} — AGA OneForge`,
   ogTitle: SEO.mcp.auth.title,
   description: SEO.mcp.auth.description,
   path: "/mcp/authentication",

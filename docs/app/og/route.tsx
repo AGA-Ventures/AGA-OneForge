@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Carbon";
+export const alt = "AGA OneForge";
 export const contentType = "image/png";
 
 /**
@@ -25,13 +25,13 @@ async function loadDmSans(weight: number, text: string): Promise<ArrayBuffer> {
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const title = (searchParams.get("title") || "Carbon Docs").slice(0, 110);
+  const title = (searchParams.get("title") || "AGA OneForge Docs").slice(0, 110);
   const eyebrow = (searchParams.get("eyebrow") || "Documentation")
     .slice(0, 40)
     .toUpperCase();
 
   // Subset the font to just the glyphs this card draws.
-  const glyphs = `${title}${eyebrow}Carbon carbon.ms`;
+  const glyphs = `${title}${eyebrow}AGA OneForge carbon.ms`;
   const [semibold, regular] = await Promise.all([
     loadDmSans(600, glyphs),
     loadDmSans(400, glyphs)
@@ -100,7 +100,7 @@ export async function GET(request: Request) {
             color: "#262323"
           }}
         >
-          Carbon
+          AGA OneForge
         </div>
       </div>
 

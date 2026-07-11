@@ -14,9 +14,9 @@ A <Term>job</Term> has been collecting cost in <Term id="wip">work-in-process</T
 
 ## Finish into inventory
 
-When the last operation is done, Carbon completes the job. It <Term id="backflush">backflushes</Term> any material still owed, catches up any labor that hasn't posted yet, and then **receives the finished goods into inventory**: a debit to inventory, a credit to work-in-process, tagged *Job Receipt*. The job moves to **"Completed"**.
+When the last operation is done, AGA OneForge completes the job. It <Term id="backflush">backflushes</Term> any material still owed, catches up any labor that hasn't posted yet, and then **receives the finished goods into inventory**: a debit to inventory, a credit to work-in-process, tagged *Job Receipt*. The job moves to **"Completed"**.
 
-The receipt is valued at the job's **actual accumulated WIP cost** — whatever really went in. Carbon does not receive finished goods at standard and book a variance; the finished unit's cost is simply the sum of what the job spent.
+The receipt is valued at the job's **actual accumulated WIP cost** — whatever really went in. AGA OneForge does not receive finished goods at standard and book a variance; the finished unit's cost is simply the sum of what the job spent.
 
 <Callout tone="blue" badge="ACTUAL, NOT STANDARD" title="Finished goods are valued at what the job actually cost.">
 Completion moves the whole WIP balance into inventory one-for-one, equal debit and credit, so there's no variance at finish time. The item's costing method only decides how that cost is carried forward onto the part, not the value it's received at.
@@ -45,7 +45,7 @@ Completion zeroes WIP into finished goods one-for-one, so in the clean case a fi
 Closing sums whatever remains in WIP for the job and, if it's more than a rounding sliver, posts it to a production-variance account (a debit to **Production Variance**, a credit to work-in-process), tagged *Job Close*. The job moves to **"Closed"**, and its WIP is provably zero. This is the one place a job's variance lands.
 
 <Callout tone="green" badge="CLOSE = SWEEP WIP" title="Closing settles the residual to Production Variance.">
-There's no standard-cost variance booked along the way. Finish is at actual, and the only variance Carbon posts for a job is whatever WIP is left over at close. A closed job has zero work-in-process and a complete trail from material in to variance out.
+There's no standard-cost variance booked along the way. Finish is at actual, and the only variance AGA OneForge posts for a job is whatever WIP is left over at close. A closed job has zero work-in-process and a complete trail from material in to variance out.
 </Callout>
 
 <Divider />
