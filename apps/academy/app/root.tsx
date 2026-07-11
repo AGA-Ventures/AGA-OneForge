@@ -99,7 +99,7 @@ export const links: LinksFunction = () => [
 export const meta: MetaFunction = () => {
   return [
     {
-      title: "Carbon Academy"
+      title: "AGA OneForge Academy"
     }
   ];
 };
@@ -207,7 +207,7 @@ export async function action({ request }: ActionFunctionArgs) {
 
 function Document({
   children,
-  title = "Carbon",
+  title = "AGA OneForge",
   mode = "light"
 }: {
   children: React.ReactNode;
@@ -290,16 +290,7 @@ export default function App() {
                 rel="noopener noreferrer"
                 className="cursor-pointer inline-flex flex-row items-end gap-2 flex-shrink-0 font-display"
               >
-                <img
-                  src="/carbon-word-light.svg"
-                  alt="Carbon"
-                  className="h-7 w-auto block dark:hidden"
-                />
-                <img
-                  src="/carbon-word-dark.svg"
-                  alt="Carbon"
-                  className="h-7 w-auto hidden dark:block"
-                />
+                <span className="text-xl font-semibold">AGA OneForge</span>
               </a>
               <div className="flex items-center">
                 <div className="items-center gap-1 hidden md:flex">

@@ -76,7 +76,7 @@ export const links: LinksFunction = () => [
 export const meta: MetaFunction = () => {
   return [
     {
-      title: "Carbon | Starter"
+      title: "AGA OneForge | Starter"
     }
   ];
 };
@@ -142,7 +142,7 @@ export async function action({ request }: ActionFunctionArgs) {
 
 function Document({
   children,
-  title = "Carbon",
+  title = "AGA OneForge",
   mode = "light",
   theme = "zinc"
 }: {

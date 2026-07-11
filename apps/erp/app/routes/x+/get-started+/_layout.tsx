@@ -50,7 +50,7 @@ import { path } from "~/utils/path";
 import { trainingConfig } from "~/utils/training";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Carbon | Get Started" }];
+  return [{ title: "AGA OneForge | Get Started" }];
 };
 
 // Deep links from the Setup Map: each setup row's stable key → the ERP screen

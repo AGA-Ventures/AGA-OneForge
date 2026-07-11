@@ -63,7 +63,7 @@ import type { Result } from "~/types";
 import { path } from "~/utils/path";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Carbon | Login" }];
+  return [{ title: "AGA OneForge | Login" }];
 };
 
 export async function loader({ request }: LoaderFunctionArgs) {
