@@ -114,8 +114,8 @@ msgstr "{remaining, plural, one {# चरण बचा} other {# चरण ब�
 msgid "{scopeCount} permissions"
 msgstr "{scopeCount} अनुमतियाँ"
 
-msgid "{total} phases to get your company live on Carbon. Each one ends at a checkpoint."
-msgstr "{total} phases to get your company live on Carbon. Each one ends at a checkpoint."
+msgid "{total} phases to get your company live on AGA OneForge. Each one ends at a checkpoint."
+msgstr "{total} phases to get your company live on AGA OneForge. Each one ends at a checkpoint."
 
 msgid "{total} phases to go live"
 msgstr "{total} चरण लाइव होने के लिए"
@@ -2380,8 +2380,8 @@ msgstr "पुष्टि की गई आने वाली स्टॉक 
 msgid "Confirming locks the counted quantities. Review the warnings below, then post the count to apply the adjustments."
 msgstr "पुष्टि करने से गिनी गई मात्राएं लॉक हो जाती हैं। नीचे दी गई चेतावनियों की समीक्षा करें, फिर समायोजन लागू करने के लिए गणना पोस्ट करें।"
 
-msgid "Connect Carbon to your accounting, project management, and CAD tools and much more."
-msgstr "Carbon को अपने लेखांकन, परियोजना प्रबंधन, और CAD उपकरणों और बहुत कुछ से जोड़ें।"
+msgid "Connect AGA OneForge to your accounting, project management, and CAD tools and much more."
+msgstr "AGA OneForge को अपने लेखांकन, परियोजना प्रबंधन, और CAD उपकरणों और बहुत कुछ से जोड़ें।"
 
 msgid "Connect Jira issue"
 msgstr "Jira समस्या से कनेक्ट करें"
@@ -6598,6 +6598,9 @@ msgstr "सूची विकल्प"
 msgid "List Parameters"
 msgstr "सूची पैरामीटर"
 
+msgid "Live on AGA OneForge"
+msgstr "AGA OneForge पर लाइव"
+
 msgid "Live on Carbon"
 msgstr "Carbon पर लाइव"
 
@@ -8048,8 +8051,8 @@ msgstr "खुली तारीख"
 msgid "Open Dispatches"
 msgstr "खुली डिस्पैच"
 
-msgid "Open in Carbon"
-msgstr "Carbon में खोलें"
+msgid "Open in AGA OneForge"
+msgstr "AGA OneForge में खोलें"
 
 msgid "Open in MES"
 msgstr "MES में खोलें"
@@ -8969,8 +8972,8 @@ msgstr "सार्वजनिक"
 msgid "Publish"
 msgstr "प्रकाशित करें"
 
-msgid "Published by Carbon"
-msgstr "Carbon द्वारा प्रकाशित"
+msgid "Published by AGA OneForge"
+msgstr "AGA OneForge द्वारा प्रकाशित"
 
 msgid "Pull From"
 msgstr "से खींचें"
@@ -10345,7 +10348,7 @@ msgstr "चयनित: {selectedSum} / विभाजन के बाद श
 msgid "Self Managed"
 msgstr "स्व प्रबंधित"
 
-msgid "Self-Onboarding with Carbon Academy"
+msgid "Self-Onboarding with AGA OneForge Academy"
 msgstr "कार्बन अकादमी के साथ स्व-प्रशिक्षण"
 
 msgid "Self-paced"
@@ -13716,8 +13719,8 @@ msgstr "आपने यह आइटम प्राप्त किया"
 msgid "You received this lot"
 msgstr "आपने यह लॉट प्राप्त किया"
 
-msgid "You're live on Carbon"
-msgstr "आप Carbon पर लाइव हैं"
+msgid "You're live on AGA OneForge"
+msgstr "आप AGA OneForge पर लाइव हैं"
 
 msgid "You're setting Carbon up yourself, at your own pace"
 msgstr "आप Carbon को स्वयं सेट अप कर रहे हैं, अपनी गति से"

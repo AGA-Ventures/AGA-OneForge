@@ -58,27 +58,27 @@ type Lesson = {
 
 export const modules: Config = [
   {
-    name: "Carbon Overview",
+    name: "AGA OneForge Overview",
     background: "#6041d0",
     foreground: "#fff",
     id: "carbon-overview",
     courses: [
       {
-        name: "Introducing Carbon",
+        name: "Introducing AGA OneForge",
         id: "introducing-carbon",
         description:
-          "Learn the fundamentals of Carbon and understand its architecture and capabilities.",
+          "Learn the fundamentals of AGA OneForge and understand its architecture and capabilities.",
         icon: <LuHexagon />,
         topics: [
           {
-            name: "What is Carbon?",
+            name: "What is AGA OneForge?",
             id: "what-is-carbon",
             description:
-              "Meet Carbon, the next generation of accessible, scalable, and data-centric ERP/MES/QMS software.",
+              "Meet AGA OneForge, the next generation of accessible, scalable, and data-centric ERP/MES/QMS software.",
             challenge: [
               {
                 id: "q1",
-                question: "What is Carbon?",
+                question: "What is AGA OneForge?",
                 options: [
                   "A programming language",
                   "A powerful ERP/MES/QMS software",
@@ -89,7 +89,7 @@ export const modules: Config = [
               },
               {
                 id: "q2",
-                question: "What technology does Carbon primarily use?",
+                question: "What technology does AGA OneForge primarily use?",
                 options: [
                   "Mobile apps",
                   "Desktop software",
@@ -100,7 +100,7 @@ export const modules: Config = [
               },
               {
                 id: "q3",
-                question: "How is Carbon designed to be?",
+                question: "How is AGA OneForge designed to be?",
                 options: [
                   "Complex and difficult to use",
                   "Approachable and easy to get started with",
@@ -115,18 +115,18 @@ export const modules: Config = [
                 id: "what-is-carbon",
                 loomUrl:
                   "https://www.loom.com/share/d7a7162c40d547ef806ce3767981f645?sid=86f5681a-bc5f-4ae8-a750-ba2008cde1d4",
-                name: "What is Carbon?",
+                name: "What is AGA OneForge?",
                 description:
-                  "Meet Carbon, the next generation of accessible, scalable, and data-centric ERP/MES/QMS software. Carbon was designed from the ground up to be approachable and easy to get started with, but highly flexible and capable of scaling up to the largest projects.",
+                  "Meet AGA OneForge, the next generation of accessible, scalable, and data-centric ERP/MES/QMS software. AGA OneForge was designed from the ground up to be approachable and easy to get started with, but highly flexible and capable of scaling up to the largest projects.",
                 duration: 216
               },
               {
                 id: "carbon-modules",
                 loomUrl:
                   "https://www.loom.com/share/45200c015d664c219d8ebb8fd99c7594?sid=b7dfa915-19f7-4636-9fb2-ee8603aa42ee",
-                name: "Carbon's Modules",
+                name: "AGA OneForge's Modules",
                 description:
-                  "Learn about Carbon's modular architecture and how different modules work together to provide comprehensive business management capabilities.",
+                  "Learn about AGA OneForge's modular architecture and how different modules work together to provide comprehensive business management capabilities.",
                 duration: 371
               },
               {
@@ -135,7 +135,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/0dcb2952495f41a3931d30ce30ecf60b?sid=a6901e78-ee3d-4b9d-8beb-349d5900f025",
                 name: "Architecture Overview",
                 description:
-                  "Understand Carbon's technical architecture, including its web-based design, database structure, and API capabilities.",
+                  "Understand AGA OneForge's technical architecture, including its web-based design, database structure, and API capabilities.",
                 duration: 123
               }
             ]
@@ -146,26 +146,26 @@ export const modules: Config = [
         name: "The Basics",
         id: "the-basics",
         description:
-          "Master the fundamental components of Carbon's interface and data management.",
+          "Master the fundamental components of AGA OneForge's interface and data management.",
         icon: <LuShapes />,
         topics: [
           {
             name: "Core Components",
             id: "core-components",
             description:
-              "Learn about the essential building blocks of Carbon: tables, forms, documents, and custom fields.",
+              "Learn about the essential building blocks of AGA OneForge: tables, forms, documents, and custom fields.",
             challenge: [
               {
                 id: "q1",
                 question:
-                  "Which component is used to display and manage data in Carbon?",
+                  "Which component is used to display and manage data in AGA OneForge?",
                 options: ["Forms", "Tables", "Documents", "Custom Fields"],
                 correctAnswer: 1
               },
               {
                 id: "q2",
                 question:
-                  "What allows you to collect and edit information in Carbon?",
+                  "What allows you to collect and edit information in AGA OneForge?",
                 options: ["Tables", "Forms", "Documents", "Custom Fields"],
                 correctAnswer: 1
               }
@@ -177,7 +177,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/215955b2b240439f875de13b47f91ac3?sid=0b256eef-13ef-4f43-9191-2b9a8f57aa14",
                 name: "Tables & Views",
                 description:
-                  "Learn how to use tables to view, sort, filter, and manage your data effectively in Carbon.",
+                  "Learn how to use tables to view, sort, filter, and manage your data effectively in AGA OneForge.",
                 duration: 151
               },
               {
@@ -186,7 +186,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/0559b51e4ce44cb9ae2b8c679fd4fed8?sid=0639aec8-55ba-4524-912c-63e16fb6e7da",
                 name: "Forms",
                 description:
-                  "Master the art of creating and using forms to input and edit data in Carbon.",
+                  "Master the art of creating and using forms to input and edit data in AGA OneForge.",
                 duration: 99
               },
               {
@@ -204,7 +204,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/2ae2dd19c507426dbca78f0b3f071e17?sid=0d2b0dab-287b-4155-8b65-aeed58e5eba9",
                 name: "Custom Fields",
                 description:
-                  "Learn how to extend Carbon's functionality by creating custom fields to capture additional data.",
+                  "Learn how to extend AGA OneForge's functionality by creating custom fields to capture additional data.",
                 duration: 166
               }
             ]
@@ -223,19 +223,19 @@ export const modules: Config = [
         name: "Setting Up Your Company",
         id: "setting-up-company",
         description:
-          "Learn how to setup your organization to use Carbon effectively.",
+          "Learn how to setup your organization to use AGA OneForge effectively.",
         icon: <LuCirclePlay />,
         topics: [
           {
             name: "Company Setup",
             id: "company-setup",
             description:
-              "Learn how to setup your company in Carbon. This includes creating your company, adding users, and setting up your company's preferences.",
+              "Learn how to setup your company in AGA OneForge. This includes creating your company, adding users, and setting up your company's preferences.",
             challenge: [
               {
                 id: "q1",
                 question:
-                  "What is the first step to getting your organization ready to use Carbon?",
+                  "What is the first step to getting your organization ready to use AGA OneForge?",
                 options: [
                   "Setting up integrations",
                   "Creating your company",
@@ -264,7 +264,7 @@ export const modules: Config = [
                 loomUrl:
                   "https://www.loom.com/share/d327844f2da4420c9a579f73b343601b?sid=f7f94b5a-68f5-47b5-a1bd-948247be1cda",
                 description:
-                  "Learn how to setup your company in Carbon. This includes creating your company, adding users, and setting up your company's preferences.",
+                  "Learn how to setup your company in AGA OneForge. This includes creating your company, adding users, and setting up your company's preferences.",
                 duration: 158
               },
               {
@@ -273,7 +273,7 @@ export const modules: Config = [
                 loomUrl:
                   "https://www.loom.com/share/39927f9213224b91a071f4b907ee55bd?sid=1fb2d1f0-28e3-43f4-a0b4-e490a36c8e4c",
                 description:
-                  "Learn how to setup your users in Carbon. This includes creating users, setting permissions, and managing access levels.",
+                  "Learn how to setup your users in AGA OneForge. This includes creating users, setting permissions, and managing access levels.",
                 duration: 150
               },
               {
@@ -282,7 +282,7 @@ export const modules: Config = [
                 loomUrl:
                   "https://www.loom.com/share/f05bf13276d341a284670b0792b216c4?sid=324008b1-08bd-4c10-80ee-d1ad23e033a0",
                 description:
-                  "Learn how to setup your work centers, machines, and processes in Carbon. This is essential for manufacturing and resource planning.",
+                  "Learn how to setup your work centers, machines, and processes in AGA OneForge. This is essential for manufacturing and resource planning.",
                 duration: 301
               },
               {
@@ -291,7 +291,7 @@ export const modules: Config = [
                 loomUrl:
                   "https://www.loom.com/share/ee50229e2f294170878038639479a18e?sid=49a1a785-5a45-42b8-bc30-809f2e50fb43",
                 description:
-                  "Learn how to setup your integrations in Carbon to connect with other business systems and tools.",
+                  "Learn how to setup your integrations in AGA OneForge to connect with other business systems and tools.",
                 duration: 91
               }
             ]
@@ -302,19 +302,19 @@ export const modules: Config = [
         name: "Migrating Data",
         id: "migrating-data",
         description:
-          "Learn how to import and migrate your existing data into Carbon.",
+          "Learn how to import and migrate your existing data into AGA OneForge.",
         icon: <LuUpload />,
         topics: [
           {
             name: "Import Tools",
             id: "import-tools",
             description:
-              "Learn how to use Carbon's import tools to bring your existing data into the system efficiently.",
+              "Learn how to use AGA OneForge's import tools to bring your existing data into the system efficiently.",
             challenge: [
               {
                 id: "q1",
                 question:
-                  "What is the primary method for importing data into Carbon?",
+                  "What is the primary method for importing data into AGA OneForge?",
                 options: [
                   "Manual entry",
                   "Import tools",
@@ -331,7 +331,7 @@ export const modules: Config = [
                 loomUrl:
                   "https://www.loom.com/share/48df93ff658342e19a75c178a744c032?sid=0da5594c-26f9-4b51-aa80-670d02ad839c",
                 description:
-                  "Learn how to use Carbon's built-in import tools to efficiently migrate your data from other systems.",
+                  "Learn how to use AGA OneForge's built-in import tools to efficiently migrate your data from other systems.",
                 duration: 174
               }
             ],
@@ -342,7 +342,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/51e0c6dd053b4a3e904fc795d4fc298f?sid=0bb2081d-6bc4-4efb-8361-d2717dda9781",
                 name: "Importing Data with the API",
                 description:
-                  "Learn how to use Carbon's API to programmatically import data and integrate with other systems.",
+                  "Learn how to use AGA OneForge's API to programmatically import data and integrate with other systems.",
                 duration: 0
               }
             ]
@@ -361,19 +361,19 @@ export const modules: Config = [
         name: "Defining an Item",
         id: "defining-item",
         description:
-          "Learn how to define and manage different types of items in Carbon.",
+          "Learn how to define and manage different types of items in AGA OneForge.",
         icon: <LuBlocks />,
         topics: [
           {
             name: "Item Types",
             id: "item-types",
             description:
-              "Understand the different types of items in Carbon: parts, materials, consumables, and tools.",
+              "Understand the different types of items in AGA OneForge: parts, materials, consumables, and tools.",
             challenge: [
               {
                 id: "q1",
                 question:
-                  "Which of the following is NOT a type of item in Carbon?",
+                  "Which of the following is NOT a type of item in AGA OneForge?",
                 options: ["Parts", "Materials", "Consumables", "Services"],
                 correctAnswer: 3
               }
@@ -394,7 +394,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/4a8a1ad61bb44521b421e08f7152953c?sid=05cd0ff7-da25-4042-8967-ae0e19179cf1",
                 name: "Raw Materials",
                 description:
-                  "Learn how to define and manage raw materials in Carbon.",
+                  "Learn how to define and manage raw materials in AGA OneForge.",
                 duration: 242
               },
               {
@@ -425,7 +425,8 @@ export const modules: Config = [
             challenge: [
               {
                 id: "q1",
-                question: "What defines how an item is manufactured in Carbon?",
+                question:
+                  "What defines how an item is manufactured in AGA OneForge?",
                 options: [
                   "Bill of Materials",
                   "Method",
@@ -480,7 +481,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/77f4a8f65c234b2c8f853ed8596003be?sid=87764c32-8656-4179-9d4b-77fe0a41ab11",
                 name: "Get Method and Save Method",
                 description:
-                  "Learn how to retrieve and save methods programmatically using Carbon's API.",
+                  "Learn how to retrieve and save methods programmatically using AGA OneForge's API.",
                 duration: 200
               }
             ]
@@ -489,12 +490,12 @@ export const modules: Config = [
             name: "Advanced Manufacturing",
             id: "advanced-manufacturing",
             description:
-              "Learn how to use Carbon's product configurator to create complex, configurable products.",
+              "Learn how to use AGA OneForge's product configurator to create complex, configurable products.",
             challenge: [
               {
                 id: "q1",
                 question:
-                  "What is the primary purpose of procedures in Carbon?",
+                  "What is the primary purpose of procedures in AGA OneForge?",
                 options: [
                   "To track customer preferences",
                   "To standardize the manufacturing process",
@@ -529,7 +530,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/ec2f2c8607274c2cb35d3479ff97c86a?sid=6635bc72-1c9e-407a-ac6f-fded2726fbcb",
                 name: "Product Configurator",
                 description:
-                  "Learn how to use Carbon's product configurator to create complex, configurable products.",
+                  "Learn how to use AGA OneForge's product configurator to create complex, configurable products.",
                 duration: 328
               }
             ],
@@ -541,7 +542,7 @@ export const modules: Config = [
         name: "Replenishing an Item",
         id: "replenishing-item",
         description:
-          "Learn how to keep your inventory stocked using Carbon's planning, purchasing, and job management tools.",
+          "Learn how to keep your inventory stocked using AGA OneForge's planning, purchasing, and job management tools.",
         icon: <LuBox />,
         topics: [
           {
@@ -553,7 +554,7 @@ export const modules: Config = [
               {
                 id: "q1",
                 question:
-                  "Which of the following is NOT a method for replenishing inventory in Carbon?",
+                  "Which of the following is NOT a method for replenishing inventory in AGA OneForge?",
                 options: [
                   "Manual stock adjustment",
                   "Automated planning and purchasing",
@@ -579,7 +580,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/2eda5d04792a4f91af2c6c375ec46bc3?sid=8b74758d-0273-429b-8a51-aeee9f74a7b6",
                 name: "Planning",
                 description:
-                  "See how Carbon's planning tools help you forecast demand and generate replenishment requirements.",
+                  "See how AGA OneForge's planning tools help you forecast demand and generate replenishment requirements.",
                 duration: 370
               },
               {
@@ -588,7 +589,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/7b696fc6a59345c082e0711441bd948c?sid=9e9d62db-9218-472e-8c45-0d8b58323135",
                 name: "Demand Forecasting",
                 description:
-                  "Learn how to use Carbon's demand forecasting tools to help you plan your inventory.",
+                  "Learn how to use AGA OneForge's demand forecasting tools to help you plan your inventory.",
                 duration: 246
               },
               {
@@ -670,7 +671,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/043ced81ea304fa089802006374b1556?sid=aef9124a-eaf9-4320-835f-d218a73d62cc",
                 name: "Quote Overview",
                 description:
-                  "Understand the structure and components of a quote in Carbon.",
+                  "Understand the structure and components of a quote in AGA OneForge.",
                 duration: 108
               },
 
@@ -703,7 +704,7 @@ export const modules: Config = [
               {
                 id: "q1",
                 question:
-                  "What is the primary purpose of quote methods in Carbon?",
+                  "What is the primary purpose of quote methods in AGA OneForge?",
                 options: [
                   "To track customer preferences",
                   "To standardize the estimation process",
@@ -768,7 +769,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/c5fa13046aaa445a99c43c24434ff2b0?sid=21e5dcc9-cc76-4098-b97e-069212095616",
                 name: "Sales Orders",
                 description:
-                  "Learn how to create and manage sales orders in Carbon.",
+                  "Learn how to create and manage sales orders in AGA OneForge.",
                 duration: 235
               },
               {
@@ -824,7 +825,8 @@ export const modules: Config = [
             challenge: [
               {
                 id: "q1",
-                question: "What is the primary purpose of a job in Carbon?",
+                question:
+                  "What is the primary purpose of a job in AGA OneForge?",
                 options: [
                   "To track customer orders",
                   "To manage production work",
@@ -874,7 +876,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/ad79b6a529fb43ff864f4908eeaf1511?sid=2a041ddf-50be-4e13-9885-694c253af623",
                 name: "Job Overview",
                 description:
-                  "Learn the fundamentals of job management and how jobs drive production in Carbon.",
+                  "Learn the fundamentals of job management and how jobs drive production in AGA OneForge.",
                 duration: 292
               },
               {
@@ -912,7 +914,7 @@ export const modules: Config = [
         name: "Shop Floor",
         id: "shop-floor",
         description:
-          "Learn how to manage shop floor operations using Carbon's MES capabilities.",
+          "Learn how to manage shop floor operations using AGA OneForge's MES capabilities.",
         icon: <LuTvMinimalPlay />,
         topics: [
           {
@@ -985,7 +987,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/76a3ef6d812f497e966f5e53110cb742?sid=87adfc27-22c5-450e-811d-b30427c0a540",
                 name: "MES Overview",
                 description:
-                  "Learn about Manufacturing Execution Systems and how Carbon implements MES functionality.",
+                  "Learn about Manufacturing Execution Systems and how AGA OneForge implements MES functionality.",
                 duration: 166
               },
               {
@@ -1039,7 +1041,7 @@ export const modules: Config = [
       {
         name: "Purchasing Basics",
         id: "purchasing-basics",
-        description: "Learn the fundamentals of purchasing in Carbon.",
+        description: "Learn the fundamentals of purchasing in AGA OneForge.",
         icon: <LuShoppingCart />,
         topics: [
           {
@@ -1246,7 +1248,7 @@ export const modules: Config = [
         name: "Tracking Quality",
         id: "tracking-quality",
         description:
-          "Learn how to implement and manage quality control processes in Carbon.",
+          "Learn how to implement and manage quality control processes in AGA OneForge.",
         icon: <LuFolderCheck />,
         topics: [
           {
@@ -1313,7 +1315,7 @@ export const modules: Config = [
         name: "Using the API",
         id: "using-api",
         description:
-          "Learn how to use Carbon's API for integration and automation.",
+          "Learn how to use AGA OneForge's API for integration and automation.",
         icon: <LuCodeXml />,
         topics: [
           {
@@ -1327,7 +1329,7 @@ export const modules: Config = [
                 question: "What is the purpose of an API key?",
                 options: [
                   "To increase costs",
-                  "To provide secure access to Carbon's API",
+                  "To provide secure access to AGA OneForge's API",
                   "To reduce quality",
                   "To slow down performance"
                 ],
@@ -1387,7 +1389,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/51e0c6dd053b4a3e904fc795d4fc298f?sid=0bb2081d-6bc4-4efb-8361-d2717dda9781",
                 name: "API Keys",
                 description:
-                  "Learn how to create and manage API keys for secure access to Carbon's API.",
+                  "Learn how to create and manage API keys for secure access to AGA OneForge's API.",
                 duration: 0
               },
               {
@@ -1396,7 +1398,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/51e0c6dd053b4a3e904fc795d4fc298f?sid=0bb2081d-6bc4-4efb-8361-d2717dda9781",
                 name: "TypeScript API Client",
                 description:
-                  "Learn how to use Carbon's TypeScript API client for seamless integration.",
+                  "Learn how to use AGA OneForge's TypeScript API client for seamless integration.",
                 duration: 0
               },
               {
@@ -1405,7 +1407,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/51e0c6dd053b4a3e904fc795d4fc298f?sid=0bb2081d-6bc4-4efb-8361-d2717dda9781",
                 name: "C# API Client",
                 description:
-                  "Learn how to use Carbon's C# API client for .NET applications.",
+                  "Learn how to use AGA OneForge's C# API client for .NET applications.",
                 duration: 0
               },
               {
@@ -1414,7 +1416,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/51e0c6dd053b4a3e904fc795d4fc298f?sid=0bb2081d-6bc4-4efb-8361-d2717dda9781",
                 name: "Python API Client",
                 description:
-                  "Learn how to integrate with Carbon using the Python API client.",
+                  "Learn how to integrate with AGA OneForge using the Python API client.",
                 duration: 0
               },
               {
@@ -1423,7 +1425,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/51e0c6dd053b4a3e904fc795d4fc298f?sid=0bb2081d-6bc4-4efb-8361-d2717dda9781",
                 name: "Webhooks",
                 description:
-                  "Learn how to use webhooks for real-time event notifications from Carbon.",
+                  "Learn how to use webhooks for real-time event notifications from AGA OneForge.",
                 duration: 0
               }
             ]
@@ -1431,14 +1433,14 @@ export const modules: Config = [
         ]
       },
       {
-        name: "Integrating with Carbon",
+        name: "Integrating with AGA OneForge",
         id: "integrating-carbon",
         description:
-          "Learn how to build integrations and custom applications with Carbon.",
+          "Learn how to build integrations and custom applications with AGA OneForge.",
         icon: <LuCodeXml />,
         topics: [
           {
-            name: "Integrating with Carbon",
+            name: "Integrating with AGA OneForge",
             id: "integrating-carbon",
             description:
               "Master integration techniques including system integrations and custom application development.",
@@ -1456,7 +1458,7 @@ export const modules: Config = [
               },
               {
                 id: "q2",
-                question: "What can you build with Carbon's API?",
+                question: "What can you build with AGA OneForge's API?",
                 options: [
                   "Only mobile apps",
                   "Custom applications, dashboards, and tools",
@@ -1473,7 +1475,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/ee50229e2f294170878038639479a18e?sid=49a1a785-5a45-42b8-bc30-809f2e50fb43",
                 name: "Integrations",
                 description:
-                  "Learn how to integrate Carbon with other business systems and tools.",
+                  "Learn how to integrate AGA OneForge with other business systems and tools.",
                 duration: 91
               },
               {
@@ -1482,7 +1484,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/2b389bfbd0f54118b676e0231ba2e8c9?sid=2c66f9a6-90b9-442c-94c0-cb8376db9a62",
                 name: "Paperless Parts Integration",
                 description:
-                  "Learn how to sync orders from Paperless Parts to Carbon.",
+                  "Learn how to sync orders from Paperless Parts to AGA OneForge.",
                 duration: 160
               },
               {
@@ -1490,7 +1492,8 @@ export const modules: Config = [
                 loomUrl:
                   "https://www.loom.com/share/714bda8164a64ad28ce7cb6f02b3260a?sid=85542655-886a-4053-9c2f-79426e62232b",
                 name: "Linear Integration",
-                description: "Learn how to sync issues from Linear to Carbon.",
+                description:
+                  "Learn how to sync issues from Linear to AGA OneForge.",
                 duration: 143
               },
 
@@ -1500,7 +1503,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/253cdac4af074328922e558b4fa8e784?sid=13adf6f0-71f3-4bc4-9ce0-07e2e7fb2d7f",
                 name: "Slack Integration",
                 description:
-                  "Learn how to integrate Carbon with Slack for real-time notifications and updates.",
+                  "Learn how to integrate AGA OneForge with Slack for real-time notifications and updates.",
                 duration: 89
               },
               {
@@ -1509,7 +1512,7 @@ export const modules: Config = [
                   "https://www.loom.com/share/51e0c6dd053b4a3e904fc795d4fc298f?sid=0bb2081d-6bc4-4efb-8361-d2717dda9781",
                 name: "Applications",
                 description:
-                  "Learn how to build custom applications that integrate with Carbon's platform.",
+                  "Learn how to build custom applications that integrate with AGA OneForge's platform.",
                 duration: 0
               }
             ]

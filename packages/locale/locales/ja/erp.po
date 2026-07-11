@@ -114,8 +114,8 @@ msgstr "{remaining, plural, one {# フェーズ残り} other {# フェーズ残�
 msgid "{scopeCount} permissions"
 msgstr "{scopeCount} 個の権限"
 
-msgid "{total} phases to get your company live on Carbon. Each one ends at a checkpoint."
-msgstr "{total}個のフェーズでお客様の企業をCarbonで稼働させます。各フェーズはチェックポイントで終了します。"
+msgid "{total} phases to get your company live on AGA OneForge. Each one ends at a checkpoint."
+msgstr "{total}個のフェーズでお客様の企業をAGA OneForgeで稼働させます。各フェーズはチェックポイントで終了します。"
 
 msgid "{total} phases to go live"
 msgstr "{total}個のフェーズをライブにする"
@@ -2380,8 +2380,8 @@ msgstr "確認された出荷在庫 — 販売注文とジョブ材料（ゼロ�
 msgid "Confirming locks the counted quantities. Review the warnings below, then post the count to apply the adjustments."
 msgstr "確認すると、カウント済みの数量がロックされます。以下の警告を確認してから、カウントを転記して調整を適用してください。"
 
-msgid "Connect Carbon to your accounting, project management, and CAD tools and much more."
-msgstr "Carbonを会計、プロジェクト管理、CADツールなど、さまざまなツールに接続できます。"
+msgid "Connect AGA OneForge to your accounting, project management, and CAD tools and much more."
+msgstr "AGA OneForgeを会計、プロジェクト管理、CADツールなど、さまざまなツールに接続できます。"
 
 msgid "Connect Jira issue"
 msgstr "Jira課題に接続"
@@ -6598,6 +6598,9 @@ msgstr "リストオプション"
 msgid "List Parameters"
 msgstr "リストパラメータ"
 
+msgid "Live on AGA OneForge"
+msgstr "AGA OneForgeで稼働中"
+
 msgid "Live on Carbon"
 msgstr "Carbonで稼働中"
 
@@ -8048,8 +8051,8 @@ msgstr "開始日"
 msgid "Open Dispatches"
 msgstr "オープンディスパッチ"
 
-msgid "Open in Carbon"
-msgstr "Carbonで開く"
+msgid "Open in AGA OneForge"
+msgstr "AGA OneForgeで開く"
 
 msgid "Open in MES"
 msgstr "MESで開く"
@@ -8969,8 +8972,8 @@ msgstr "公開"
 msgid "Publish"
 msgstr "公開"
 
-msgid "Published by Carbon"
-msgstr "Carbonによって公開"
+msgid "Published by AGA OneForge"
+msgstr "AGA OneForgeによって公開"
 
 msgid "Pull From"
 msgstr "から取得"
@@ -10345,8 +10348,8 @@ msgstr "選択済み: {selectedSum} / 分割後の残数: {0}"
 msgid "Self Managed"
 msgstr "自己管理"
 
-msgid "Self-Onboarding with Carbon Academy"
-msgstr "Carbon Academyによるセルフオンボーディング"
+msgid "Self-Onboarding with AGA OneForge Academy"
+msgstr "AGA OneForge Academyによるセルフオンボーディング"
 
 msgid "Self-paced"
 msgstr "自習型"
@@ -13716,8 +13719,8 @@ msgstr "あなたがこのアイテムを受け取りました"
 msgid "You received this lot"
 msgstr "このロットを受け取りました"
 
-msgid "You're live on Carbon"
-msgstr "Carbonで本番稼働中です"
+msgid "You're live on AGA OneForge"
+msgstr "AGA OneForgeで本番稼働中です"
 
 msgid "You're setting Carbon up yourself, at your own pace"
 msgstr "あなた自身のペースでCarbonをセットアップしています"

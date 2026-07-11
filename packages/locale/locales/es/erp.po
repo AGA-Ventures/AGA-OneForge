@@ -114,8 +114,8 @@ msgstr "{remaining, plural, one {# fase restante} other {# fases restantes}}"
 msgid "{scopeCount} permissions"
 msgstr "{scopeCount} permisos"
 
-msgid "{total} phases to get your company live on Carbon. Each one ends at a checkpoint."
-msgstr "{total} fases para poner tu empresa en vivo en Carbon. Cada una termina en un punto de control."
+msgid "{total} phases to get your company live on AGA OneForge. Each one ends at a checkpoint."
+msgstr "{total} fases para poner tu empresa en vivo en AGA OneForge. Cada una termina en un punto de control."
 
 msgid "{total} phases to go live"
 msgstr "{total} fases para activar"
@@ -2380,8 +2380,8 @@ msgstr "Existencias salientes confirmadas — órdenes de venta y materiales de 
 msgid "Confirming locks the counted quantities. Review the warnings below, then post the count to apply the adjustments."
 msgstr "Confirmar bloquea las cantidades contadas. Revisa las advertencias a continuación y luego publica el conteo para aplicar los ajustes."
 
-msgid "Connect Carbon to your accounting, project management, and CAD tools and much more."
-msgstr "Conecta Carbon a tus herramientas de contabilidad, gestión de proyectos, CAD y mucho más."
+msgid "Connect AGA OneForge to your accounting, project management, and CAD tools and much more."
+msgstr "Conecta AGA OneForge a tus herramientas de contabilidad, gestión de proyectos, CAD y mucho más."
 
 msgid "Connect Jira issue"
 msgstr "Conectar problema de Jira"
@@ -6598,6 +6598,9 @@ msgstr "Opciones de lista"
 msgid "List Parameters"
 msgstr "Parámetros de Lista"
 
+msgid "Live on AGA OneForge"
+msgstr "En vivo en AGA OneForge"
+
 msgid "Live on Carbon"
 msgstr "En vivo en Carbon"
 
@@ -8048,8 +8051,8 @@ msgstr "Fecha de Apertura"
 msgid "Open Dispatches"
 msgstr "Despachos Abiertos"
 
-msgid "Open in Carbon"
-msgstr "Abrir en Carbon"
+msgid "Open in AGA OneForge"
+msgstr "Abrir en AGA OneForge"
 
 msgid "Open in MES"
 msgstr "Abrir en MES"
@@ -8969,8 +8972,8 @@ msgstr "Público"
 msgid "Publish"
 msgstr "Publicar"
 
-msgid "Published by Carbon"
-msgstr "Publicado por Carbon"
+msgid "Published by AGA OneForge"
+msgstr "Publicado por AGA OneForge"
 
 msgid "Pull From"
 msgstr "Extraer de"
@@ -10345,8 +10348,8 @@ msgstr "Seleccionado: {selectedSum} / restante después de dividir: {0}"
 msgid "Self Managed"
 msgstr "Autogestionado"
 
-msgid "Self-Onboarding with Carbon Academy"
-msgstr "Incorporación automática con Carbon Academy"
+msgid "Self-Onboarding with AGA OneForge Academy"
+msgstr "Incorporación automática con AGA OneForge Academy"
 
 msgid "Self-paced"
 msgstr "Ritmo propio"
@@ -13716,8 +13719,8 @@ msgstr "Recibiste este artículo"
 msgid "You received this lot"
 msgstr "Recibiste este lote"
 
-msgid "You're live on Carbon"
-msgstr "Estás en vivo en Carbon"
+msgid "You're live on AGA OneForge"
+msgstr "Estás en vivo en AGA OneForge"
 
 msgid "You're setting Carbon up yourself, at your own pace"
 msgstr "Estás configurando Carbon por tu cuenta, a tu propio ritmo"

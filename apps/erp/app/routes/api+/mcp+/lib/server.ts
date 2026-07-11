@@ -13,7 +13,7 @@ const logger = getLogger("erp", "mcp");
 function getServerInstructions(): string {
   const today = new Date().toISOString().split("T")[0];
   
-  return `Carbon ERP Manufacturing System
+  return `AGA OneForge ERP Manufacturing System
 ==========================================
 Date: ${today}
 

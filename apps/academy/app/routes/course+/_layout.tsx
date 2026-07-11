@@ -19,8 +19,8 @@ export default function CourseLayout() {
             Your Journey Starts Here
           </Heading>
           <p className="text-muted-foreground dark:text-foreground text-balance text-left font-medium tracking-tighter text-lg max-w-xl">
-            Learn the basics of Carbon and start your journey to becoming an
-            expert in Carbon. All for free.
+            Learn the basics of AGA OneForge and start your journey to becoming
+            an expert in AGA OneForge. All for free.
           </p>
           <div className="flex items-center gap-2">
             <Button

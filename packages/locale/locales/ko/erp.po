@@ -114,8 +114,8 @@ msgstr "{remaining}단계 남음"
 msgid "{scopeCount} permissions"
 msgstr "권한 {scopeCount}개"
 
-msgid "{total} phases to get your company live on Carbon. Each one ends at a checkpoint."
-msgstr "귀사가 Carbon을 도입하기까지 {total}단계가 있습니다. 각 단계는 체크포인트로 마무리됩니다."
+msgid "{total} phases to get your company live on AGA OneForge. Each one ends at a checkpoint."
+msgstr "귀사가 AGA OneForge을 도입하기까지 {total}단계가 있습니다. 각 단계는 체크포인트로 마무리됩니다."
 
 msgid "{total} phases to go live"
 msgstr "도입까지 {total}단계"
@@ -2380,8 +2380,8 @@ msgstr "확정된 출고 재고 — 판매주문 및 작업 자재(0 이하 막�
 msgid "Confirming locks the counted quantities. Review the warnings below, then post the count to apply the adjustments."
 msgstr "확정하면 실사 수량이 고정됩니다. 아래 경고를 검토한 뒤 실사를 전기하여 조정 사항을 적용하세요."
 
-msgid "Connect Carbon to your accounting, project management, and CAD tools and much more."
-msgstr "Carbon을 회계, 프로젝트 관리, CAD 도구 등과 연동하세요."
+msgid "Connect AGA OneForge to your accounting, project management, and CAD tools and much more."
+msgstr "AGA OneForge을 회계, 프로젝트 관리, CAD 도구 등과 연동하세요."
 
 msgid "Connect Jira issue"
 msgstr "Jira 이슈 연결"
@@ -6598,6 +6598,9 @@ msgstr "목록 옵션"
 msgid "List Parameters"
 msgstr "목록 파라미터"
 
+msgid "Live on AGA OneForge"
+msgstr "AGA OneForge 도입 완료"
+
 msgid "Live on Carbon"
 msgstr "Carbon 도입 완료"
 
@@ -8048,8 +8051,8 @@ msgstr "개설일"
 msgid "Open Dispatches"
 msgstr "미결 작업지시"
 
-msgid "Open in Carbon"
-msgstr "Carbon에서 열기"
+msgid "Open in AGA OneForge"
+msgstr "AGA OneForge에서 열기"
 
 msgid "Open in MES"
 msgstr "MES에서 열기"
@@ -8969,8 +8972,8 @@ msgstr "공개"
 msgid "Publish"
 msgstr "게시"
 
-msgid "Published by Carbon"
-msgstr "Carbon에서 게시함"
+msgid "Published by AGA OneForge"
+msgstr "AGA OneForge에서 게시함"
 
 msgid "Pull From"
 msgstr "가져오기 출처"
@@ -10345,8 +10348,8 @@ msgstr "선택됨: {selectedSum} / 분할 후 남은 수량: {0}"
 msgid "Self Managed"
 msgstr "자체 관리"
 
-msgid "Self-Onboarding with Carbon Academy"
-msgstr "Carbon 아카데미로 자체 온보딩"
+msgid "Self-Onboarding with AGA OneForge Academy"
+msgstr "AGA OneForge 아카데미로 자체 온보딩"
 
 msgid "Self-paced"
 msgstr "자율 학습"
@@ -13716,8 +13719,8 @@ msgstr "이 품목을 입고받았습니다"
 msgid "You received this lot"
 msgstr "이 로트를 입고받았습니다"
 
-msgid "You're live on Carbon"
-msgstr "Carbon 도입 완료"
+msgid "You're live on AGA OneForge"
+msgstr "AGA OneForge 도입 완료"
 
 msgid "You're setting Carbon up yourself, at your own pace"
 msgstr "귀사가 원하는 속도로 직접 Carbon을 설정합니다"
