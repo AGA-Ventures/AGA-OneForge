@@ -180,12 +180,12 @@ export default function AuthorizeRoute() {
         <div className="flex justify-center">
           <img
             src="/carbon-mark-light.svg"
-            alt="Carbon Logo"
+            alt="AGA OneForge Logo"
             className="w-24 dark:hidden"
           />
           <img
             src="/carbon-mark-dark.svg"
-            alt="Carbon Logo"
+            alt="AGA OneForge Logo"
             className="hidden w-24 dark:block"
           />
         </div>
@@ -200,7 +200,7 @@ export default function AuthorizeRoute() {
                 {redirectDomain && (
                   <span className="text-xs"> ({redirectDomain})</span>
                 )}{" "}
-                is requesting access to your Carbon account.
+                is requesting access to your AGA OneForge account.
               </p>
               <div className="flex w-full flex-col gap-1.5">
                 <label

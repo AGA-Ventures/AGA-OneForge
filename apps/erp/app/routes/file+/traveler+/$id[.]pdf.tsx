@@ -137,7 +137,7 @@ export async function loader({ request, params }: LoaderFunctionArgs) {
       bomId={bomId}
       locale={locale}
       meta={{
-        author: "Carbon",
+        author: "AGA OneForge",
         keywords: "job traveler, manufacturing",
         subject: "Job Traveler"
       }}

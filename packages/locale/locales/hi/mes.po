@@ -69,6 +69,9 @@ msgstr "इन्वेंटरी जोड़ें"
 msgid "Add Spare Part"
 msgstr "स्पेयर पार्ट जोड़ें"
 
+msgid "AGA OneForge Logo"
+msgstr "AGA OneForge लोगो"
+
 msgid "All"
 msgstr "सभी"
 
@@ -139,9 +142,6 @@ msgstr "रद्द करें"
 
 msgid "Cancelled"
 msgstr "रद्द किया गया"
-
-msgid "Carbon Logo"
-msgstr "कार्बन लोगो"
 
 msgid "Cards"
 msgstr "कार्ड"
@@ -396,8 +396,8 @@ msgstr "घड़ी से बाहर निकलना भूल गए?"
 msgid "Go back to operation"
 msgstr "ऑपरेशन पर वापस जाएं"
 
-msgid "Have a technical issue? Contact <0>Carbon Support.</0>"
-msgstr "क्या आपको कोई तकनीकी समस्या है? <0>Carbon Support</0> से संपर्क करें।"
+msgid "Have a technical issue? Contact <0>AGA OneForge Support.</0>"
+msgstr "क्या आपको कोई तकनीकी समस्या है? <0>AGA OneForge Support</0> से संपर्क करें।"
 
 msgid "How many were actually picked?"
 msgstr "वास्तव में कितने चुने गए?"

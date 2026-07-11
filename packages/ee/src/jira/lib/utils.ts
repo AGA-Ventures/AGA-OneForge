@@ -45,6 +45,6 @@ export const mapCarbonStatusToJiraCategory = (
     case "Skipped":
       return "done";
     default:
-      throw new Error(`Unknown Carbon task status: ${status}`);
+      throw new Error(`Unknown AGA OneForge task status: ${status}`);
   }
 };

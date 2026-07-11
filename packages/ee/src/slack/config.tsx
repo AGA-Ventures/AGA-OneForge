@@ -8,9 +8,9 @@ export const Slack = defineIntegration({
   category: "Assistant",
   active: CONTROLLED_ENVIRONMENT === false,
   logo: Logo,
-  shortDescription: "Use the Carbon Assistant in your Slack workspace.",
+  shortDescription: "Use the AGA OneForge Assistant in your Slack workspace.",
   description:
-    "Integrating Carbon with Slack allows you to use the Carbon Assistant to complete tasks from your Slack workspace.",
+    "Integrating AGA OneForge with Slack allows you to use the AGA OneForge Assistant to complete tasks from your Slack workspace.",
   images: [],
   settings: [],
   schema: z.object({}),

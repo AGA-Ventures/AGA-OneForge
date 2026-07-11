@@ -24,8 +24,11 @@ export default function PublicRoute() {
             </blockquote>
           </div>
         </div>
-        <div className="lg:p-8">
-          <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
+        <div className="min-w-0 lg:p-8">
+          <span className="mb-6 block text-center font-display text-2xl font-semibold lg:hidden">
+            AGA OneForge
+          </span>
+          <div className="mx-auto flex min-w-0 w-full flex-col justify-center space-y-6 sm:w-[350px]">
             <Outlet />
           </div>
         </div>

@@ -120,12 +120,12 @@ export default function Invite() {
         <div className="flex justify-center mb-8">
           <img
             src="/carbon-mark-light.svg"
-            alt={t`Carbon Logo`}
+            alt={t`AGA OneForge Logo`}
             className="w-24 dark:hidden"
           />
           <img
             src="/carbon-mark-dark.svg"
-            alt={t`Carbon Logo`}
+            alt={t`AGA OneForge Logo`}
             className="w-24 hidden dark:block"
           />
         </div>
@@ -157,12 +157,12 @@ export default function Invite() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 2, ease: "easeInOut" }}
           src="/carbon-mark-light.svg"
-          alt="Carbon Logo"
+          alt="AGA OneForge Logo"
           className="w-24 dark:hidden"
         />
         <img
           src="/carbon-mark-dark.svg"
-          alt="Carbon Logo"
+          alt="AGA OneForge Logo"
           className="w-24 hidden dark:block"
         />
 
@@ -172,7 +172,7 @@ export default function Invite() {
           size="h1"
           className="mb-4"
         >
-          <Trans>Welcome to Carbon</Trans>
+          <Trans>Welcome to AGA OneForge</Trans>
         </Heading>
 
         <Form method="post">

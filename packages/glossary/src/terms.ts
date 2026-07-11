@@ -61,12 +61,12 @@ export const terms = {
   },
   method: {
     term: msg`Method`,
-    definition: msg`Carbon's name for a bill of material and bill of process (routing): the components plus the operations that make a part.`,
+    definition: msg`AGA OneForge's name for a bill of material and bill of process (routing): the components plus the operations that make a part.`,
     href: "/docs/reference/methods"
   },
   bom: {
     term: msg`Bill of materials`,
-    definition: msg`Called a method in Carbon — the components plus operations that produce a part.`,
+    definition: msg`Called a method in AGA OneForge — the components plus operations that produce a part.`,
     href: "/docs/reference/methods"
   },
   wip: {
@@ -107,7 +107,7 @@ export const terms = {
   // ── Production & the floor ──────────────────────────────────────────────
   job: {
     term: msg`Job`,
-    definition: msg`Carbon's production order — one job builds a quantity of one item from its own copied method and routing.`,
+    definition: msg`AGA OneForge's production order — one job builds a quantity of one item from its own copied method and routing.`,
     href: "/docs/reference/jobs"
   },
   routing: {
@@ -137,7 +137,7 @@ export const terms = {
   },
   "standard-factor": {
     term: msg`Standard factor`,
-    definition: msg`The unit a routing time is expressed in, such as Hours/Piece or Total Hours, telling Carbon whether the time scales with quantity or is fixed per run.`,
+    definition: msg`The unit a routing time is expressed in, such as Hours/Piece or Total Hours, telling AGA OneForge whether the time scales with quantity or is fixed per run.`,
     href: "/docs/reference/routings"
   },
   "work-center": {
@@ -207,7 +207,7 @@ export const terms = {
   },
   "three-way-match": {
     term: msg`Three-way match`,
-    definition: msg`Reconciling a purchase order against what was received and invoiced — implicit in Carbon, via the line quantities and GR/IR balance.`,
+    definition: msg`Reconciling a purchase order against what was received and invoiced — implicit in AGA OneForge, via the line quantities and GR/IR balance.`,
     href: "/guides/receive-and-bill#match-and-post"
   },
   "gr-ir": {
@@ -219,7 +219,7 @@ export const terms = {
   // ── Inventory, tracking & costing ───────────────────────────────────────
   "tracked-entity": {
     term: msg`Tracked entity`,
-    definition: msg`One serial unit or one batch that Carbon follows individually, carrying its own status and attributes such as an expiry date.`,
+    definition: msg`One serial unit or one batch that AGA OneForge follows individually, carrying its own status and attributes such as an expiry date.`,
     href: "/docs/reference/traceability#tracked-entities"
   },
   serial: {
@@ -282,7 +282,7 @@ export const terms = {
   },
   mrp: {
     term: msg`MRP (planning)`,
-    definition: msg`Carbon's planning run nets supply against demand and explodes methods, surfacing shortfalls — but it creates no orders itself.`,
+    definition: msg`AGA OneForge's planning run nets supply against demand and explodes methods, surfacing shortfalls — but it creates no orders itself.`,
     href: "/docs/reference/planning"
   },
   nonconformance: {
@@ -361,7 +361,7 @@ export const terms = {
   },
   "production-variance": {
     term: msg`Production variance`,
-    definition: msg`The residual WIP a job has left at close, swept to a Production Variance account — the only variance Carbon books for a job.`,
+    definition: msg`The residual WIP a job has left at close, swept to a Production Variance account — the only variance AGA OneForge books for a job.`,
     href: "/guides/job-finish-close#close-the-job"
   },
   "purchase-price-variance": {
@@ -762,7 +762,7 @@ export const terms = {
   },
   "fixed-asset-opening-accumulated-depreciation": {
     term: msg`Accumulated Depreciation (opening)`,
-    definition: msg`Opening balance of depreciation already booked before this asset was added to Carbon (use 0 for new acquisitions).`
+    definition: msg`Opening balance of depreciation already booked before this asset was added to AGA OneForge (use 0 for new acquisitions).`
   },
   "fixed-asset-depreciation-start-date": {
     term: msg`Depreciation Start Date`,
@@ -869,7 +869,7 @@ export const terms = {
   },
   "shipping-method-tracking-url": {
     term: msg`Tracking URL`,
-    definition: msg`The carrier's tracking-page URL with {trackingNumber} as a placeholder — Carbon substitutes the actual number when generating links on shipments.`
+    definition: msg`The carrier's tracking-page URL with {trackingNumber} as a placeholder — AGA OneForge substitutes the actual number when generating links on shipments.`
   },
 
   // ── Warehouse transfers (WarehouseTransferForm) ─────────────────────────
@@ -943,7 +943,7 @@ export const terms = {
   // ── Items: core (Part/Tool/Material/Consumable/Item forms) ──────────────
   "item-tracking-type": {
     term: msg`Tracking Type`,
-    definition: msg`Whether Carbon follows each unit (Serial), each lot (Batch), the quantity (Inventory), or no tracking (Non-Inventory).`
+    definition: msg`Whether AGA OneForge follows each unit (Serial), each lot (Batch), the quantity (Inventory), or no tracking (Non-Inventory).`
   },
   "item-default-method-type": {
     term: msg`Default Method Type`,
@@ -965,7 +965,7 @@ export const terms = {
   // ── Items: Customer/Supplier cross-references ───────────────────────────
   "customer-part-id": {
     term: msg`Customer Part ID`,
-    definition: msg`The identifier the customer uses for this part on their POs; Carbon resolves it to our internal Part ID on order import.`
+    definition: msg`The identifier the customer uses for this part on their POs; AGA OneForge resolves it to our internal Part ID on order import.`
   },
   "customer-part-revision": {
     term: msg`Customer Part Revision`,
@@ -973,7 +973,7 @@ export const terms = {
   },
   "supplier-part-id": {
     term: msg`Supplier Part ID`,
-    definition: msg`The identifier the supplier uses for this part on their quotes and invoices; Carbon resolves it to our internal Part ID.`
+    definition: msg`The identifier the supplier uses for this part on their quotes and invoices; AGA OneForge resolves it to our internal Part ID.`
   },
   "supplier-part-moq": {
     term: msg`Minimum Order Quantity`,
@@ -1300,7 +1300,7 @@ export const terms = {
   },
   "supplier-account-manager": {
     term: msg`Account Manager`,
-    definition: msg`The Carbon user responsible for this supplier relationship; emails and reminders about this supplier route to them.`
+    definition: msg`The AGA OneForge user responsible for this supplier relationship; emails and reminders about this supplier route to them.`
   },
   "invoice-supplier": {
     term: msg`Invoice Supplier`,
@@ -1356,11 +1356,11 @@ export const terms = {
   },
   "purchasing-rfq-due-date": {
     term: msg`Due Date`,
-    definition: msg`When supplier responses are expected back; suppliers see this date on the RFQ portal and Carbon stops accepting late responses after it (configurable).`
+    definition: msg`When supplier responses are expected back; suppliers see this date on the RFQ portal and AGA OneForge stops accepting late responses after it (configurable).`
   },
   "purchasing-rfq-buyer": {
     term: msg`Buyer`,
-    definition: msg`The Carbon user who owns this RFQ; supplier responses and reminders route to them.`
+    definition: msg`The AGA OneForge user who owns this RFQ; supplier responses and reminders route to them.`
   },
 
   // ── Purchasing: Supplier quote (SupplierQuoteForm) ──────────────────────
@@ -1454,7 +1454,7 @@ export const terms = {
   },
   "customer-account-manager": {
     term: msg`Account Manager`,
-    definition: msg`The Carbon user responsible for this customer relationship; emails and reminders about this customer route to them.`
+    definition: msg`The AGA OneForge user responsible for this customer relationship; emails and reminders about this customer route to them.`
   },
   "customer-default-tax-percent": {
     term: msg`Tax Percent`,
@@ -1600,7 +1600,7 @@ export const terms = {
   },
   "sales-order-shipment-receipt-promised-date": {
     term: msg`Receipt Promised Date`,
-    definition: msg`When Carbon committed to having the goods arrive; combined with the shipping method's transit days, this drives Ship Date back-calc.`
+    definition: msg`When AGA OneForge committed to having the goods arrive; combined with the shipping method's transit days, this drives Ship Date back-calc.`
   },
   "sales-order-shipment-date": {
     term: msg`Shipment Date`,

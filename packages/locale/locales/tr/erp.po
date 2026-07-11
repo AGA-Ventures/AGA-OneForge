@@ -188,9 +188,6 @@ msgstr "9-12 hafta"
 msgid "90D"
 msgstr "90G"
 
-msgid "A Carbon-run data migration — you load your own data"
-msgstr "Bir Carbon tarafından yönetilen veri taşıması — kendi verilerinizi yüklersiniz"
-
 msgid "A clearing account holding the value of goods received but not yet billed; the supplier invoice clears it."
 msgstr "Alınan ancak henüz faturalanmayan malların değerini tutan bir takas hesabı; tedarikçi faturası bunu temizler."
 
@@ -720,6 +717,57 @@ msgstr "Sonra"
 msgid "After (calculation method)"
 msgstr "Sonra (hesaplama yöntemi)"
 
+msgid "AGA OneForge"
+msgstr "AGA OneForge"
+
+msgid "AGA OneForge + you"
+msgstr "AGA OneForge + siz"
+
+msgid "AGA OneForge client is not available"
+msgstr "AGA OneForge istemcisi mevcut değil"
+
+msgid "AGA OneForge client not available"
+msgstr "AGA OneForge istemcisi mevcut değil"
+
+msgid "AGA OneForge client not found"
+msgstr "AGA OneForge istemcisi bulunamadı"
+
+msgid "AGA OneForge column"
+msgstr "AGA OneForge sütunu"
+
+msgid "AGA OneForge is configured the way your company runs, your data is loaded, and your team is confident using it. When that's true, you're ready to go live."
+msgstr "AGA OneForge, şirketinizin çalışma şekline göre yapılandırılmış, verileriniz yüklenmiş ve ekibiniz bunu kullanmakta kendinden emin. Bu doğru olduğunda, canlı yayına geçmeye hazırsınız."
+
+msgid "AGA OneForge leads"
+msgstr "AGA OneForge yönetir"
+
+msgid "AGA OneForge Logo"
+msgstr "AGA OneForge Logosu"
+
+msgid "AGA OneForge only"
+msgstr "Yalnızca AGA OneForge"
+
+msgid "AGA OneForge Value"
+msgstr "AGA OneForge Değeri"
+
+msgid "AGA OneForge-only"
+msgstr "Yalnızca AGA OneForge"
+
+msgid "AGA OneForge-only · fill in real targets for this customer. They see the values, locked."
+msgstr "Yalnızca AGA OneForge · bu müşteri için gerçek hedefleri doldurun. Değerleri kilitli olarak görürler."
+
+msgid "AGA OneForge-only · the customer sees this text, locked."
+msgstr "AGA OneForge-only · müşteri bu metni görür, kilitli."
+
+msgid "AGA OneForge's name for a bill of material and bill of process (routing): the components plus the operations that make a part."
+msgstr "Malzeme listesi ve işlem listesi (yönlendirme) için AGA OneForge'un adı: bir parça üreten bileşenler ve işlemler."
+
+msgid "AGA OneForge's planning run nets supply against demand and explodes methods, surfacing shortfalls — but it creates no orders itself."
+msgstr "AGA OneForge'un planlama çalışması arz ve talep tarafından net ve açılı yöntemler, eksikleri ortaya çıkarır — ancak kendi başına siparişler oluşturmaz."
+
+msgid "AGA OneForge's production order — one job builds a quantity of one item from its own copied method and routing."
+msgstr "AGA OneForge'ın üretim emri — bir iş, kopyalanmış yöntemi ve yönlendirmesinden bir öğenin miktarını oluşturur."
+
 msgid "Agree on the scope"
 msgstr "Kapsamda anlaş"
 
@@ -814,6 +862,9 @@ msgstr "Departman veya işlev tarafından harcamaları gruplandıran bir muhaseb
 msgid "An accounting record for a capitalized item you depreciate rather than expense; Draft → Active → Fully Depreciated → Disposed."
 msgstr "Harcama yerine amorti ettiğiniz kapitalize edilmiş bir öğe için bir muhasebe kaydı; Taslak → Etkin → Tamamen amorti edilmiş → İmha edilmiş."
 
+msgid "An AGA OneForge-run data migration — you load your own data"
+msgstr "Bir AGA OneForge tarafından yönetilen veri taşıması — kendi verilerinizi yüklersiniz"
+
 msgid "An asset's acquisition cost minus accumulated depreciation — what it's still worth on the books, and the figure it's disposed at."
 msgstr "Bir varlığın satın alma maliyeti eksi birikmiş amortisman — kitaplarda halen değeri olan ve imha edildiği tutar."
 
@@ -889,8 +940,8 @@ msgstr "API Anahtarı"
 msgid "API Keys"
 msgstr "API Anahtarları"
 
-msgid "API keys for programmatic access to your Carbon data."
-msgstr "Carbon verilerinize programatik erişim için API anahtarları."
+msgid "API keys for programmatic access to your AGA OneForge data."
+msgstr "AGA OneForge verilerinize programatik erişim için API anahtarları."
 
 msgid "Applied"
 msgstr "Uygulandı"
@@ -1721,14 +1772,14 @@ msgstr "Bonus amortisman %"
 msgid "Book a call to discuss guided implementation"
 msgstr "Rehberli uygulamayı tartışmak için bir çağrı ayarlayın"
 
-msgid "Book a call with Carbon"
-msgstr "Carbon ile bir çağrı ayarlayın"
+msgid "Book a call with AGA OneForge"
+msgstr "AGA OneForge ile bir çağrı ayarlayın"
 
 msgid "Breadcrumb"
 msgstr "Sayfa Yolu"
 
-msgid "Bring in your parts, BOMs, Bill of Process, and costing — with Carbon's import tools, CSV, or LLM help."
-msgstr "Parçalarınızı, BOM'larınızı, İşlem Faturasını ve maliyetlendirmeyi getirin — Carbon'ın içe aktarma araçları, CSV veya LLM yardımı ile."
+msgid "Bring in your parts, BOMs, Bill of Process, and costing — with AGA OneForge's import tools, CSV, or LLM help."
+msgstr "Parçalarınızı, BOM'larınızı, İşlem Faturasını ve maliyetlendirmeyi getirin — AGA OneForge'ın içe aktarma araçları, CSV veya LLM yardımı ile."
 
 msgid "Browse library"
 msgstr "Kütüphaneyi göz at"
@@ -1832,8 +1883,8 @@ msgstr "Kalibrasyon Tedarikçisi"
 msgid "Calibrations"
 msgstr "Kalibrasyonlar"
 
-msgid "Called a method in Carbon — the components plus operations that produce a part."
-msgstr "Carbon'da çağrılan bir yöntem — bir parça üreten bileşenler ve işlemler."
+msgid "Called a method in AGA OneForge — the components plus operations that produce a part."
+msgstr "AGA OneForge'da çağrılan bir yöntem — bir parça üreten bileşenler ve işlemler."
 
 msgid "Can't disable the only active break. Add another break or toggle the override's Active instead."
 msgstr "Yalnızca aktif olan aralığı devre dışı bırakamazsınız. Başka bir aralık ekleyin veya geçersiz kılmanın Aktif özelliğini değiştirin."
@@ -1906,57 +1957,6 @@ msgstr "Yüklenemiyor — tedarikçi etkileşimi henüz oluşturulmadı"
 
 msgid "Cannot upload to parts bucket without item ID"
 msgstr "Öğe kimliği olmadan parçalar klasörüne yüklenemez"
-
-msgid "Carbon"
-msgstr "Karbon"
-
-msgid "Carbon + you"
-msgstr "Carbon + siz"
-
-msgid "Carbon client is not available"
-msgstr "Carbon istemcisi mevcut değil"
-
-msgid "Carbon client not available"
-msgstr "Carbon istemcisi mevcut değil"
-
-msgid "Carbon client not found"
-msgstr "Carbon istemcisi bulunamadı"
-
-msgid "Carbon column"
-msgstr "Carbon sütunu"
-
-msgid "Carbon is configured the way your company runs, your data is loaded, and your team is confident using it. When that's true, you're ready to go live."
-msgstr "Carbon, şirketinizin çalışma şekline göre yapılandırılmış, verileriniz yüklenmiş ve ekibiniz bunu kullanmakta kendinden emin. Bu doğru olduğunda, canlı yayına geçmeye hazırsınız."
-
-msgid "Carbon leads"
-msgstr "Carbon yönetir"
-
-msgid "Carbon Logo"
-msgstr "Carbon Logosu"
-
-msgid "Carbon only"
-msgstr "Yalnızca Carbon"
-
-msgid "Carbon Value"
-msgstr "Carbon Değeri"
-
-msgid "Carbon-only"
-msgstr "Yalnızca Carbon"
-
-msgid "Carbon-only · fill in real targets for this customer. They see the values, locked."
-msgstr "Yalnızca Carbon · bu müşteri için gerçek hedefleri doldurun. Değerleri kilitli olarak görürler."
-
-msgid "Carbon-only · the customer sees this text, locked."
-msgstr "Carbon-only · müşteri bu metni görür, kilitli."
-
-msgid "Carbon's name for a bill of material and bill of process (routing): the components plus the operations that make a part."
-msgstr "Malzeme listesi ve işlem listesi (yönlendirme) için Carbon'un adı: bir parça üreten bileşenler ve işlemler."
-
-msgid "Carbon's planning run nets supply against demand and explodes methods, surfacing shortfalls — but it creates no orders itself."
-msgstr "Carbon'un planlama çalışması arz ve talep tarafından net ve açılı yöntemler, eksikleri ortaya çıkarır — ancak kendi başına siparişler oluşturmaz."
-
-msgid "Carbon's production order — one job builds a quantity of one item from its own copied method and routing."
-msgstr "Carbon'ın üretim emri — bir iş, kopyalanmış yöntemi ve yönlendirmesinden bir öğenin miktarını oluşturur."
 
 msgid "Cards"
 msgstr "Kartlar"
@@ -2271,8 +2271,8 @@ msgstr "Yapılandır"
 msgid "Configure {label}"
 msgstr "{label} yapılandır"
 
-msgid "Configure Carbon"
-msgstr "Carbon'ı Yapılandır"
+msgid "Configure AGA OneForge"
+msgstr "AGA OneForge'ı Yapılandır"
 
 msgid "Configure default accounts for cash and bank transactions"
 msgstr "Nakit ve banka işlemleri için varsayılan hesapları yapılandırın"
@@ -3164,11 +3164,11 @@ msgstr "Özelleştir"
 msgid "Customize the layout of your PDF documents — reorder sections, hide what you don't need, and add your own blocks."
 msgstr "PDF belgelerinizin düzenini özelleştirin — bölümleri yeniden sıralayın, ihtiyacınız olmayanları gizleyin ve kendi bloklarınızı ekleyin."
 
-msgid "Cut over to Carbon and freeze the old system"
-msgstr "Carbon'a geçiş yapın ve eski sistemi dondurun"
+msgid "Cut over to AGA OneForge and freeze the old system"
+msgstr "AGA OneForge'a geçiş yapın ve eski sistemi dondurun"
 
-msgid "Cut over, freeze the old system, and confirm you're live on Carbon."
-msgstr "Geçiş yapın, eski sistemi dondurun ve Carbon'da canlı olduğunuzu doğrulayın."
+msgid "Cut over, freeze the old system, and confirm you're live on AGA OneForge."
+msgstr "Geçiş yapın, eski sistemi dondurun ve AGA OneForge'da canlı olduğunuzu doğrulayın."
 
 msgid "Cutover checklist"
 msgstr "Geçiş kontrol listesi"
@@ -4802,8 +4802,8 @@ msgstr "Harici Referans"
 msgid "External Reference"
 msgstr "Harici Referans"
 
-msgid "Extra fields to capture data Carbon doesn't track by default"
-msgstr "Carbon'ın varsayılan olarak izlemediği verileri yakalamak için ekstra alanlar"
+msgid "Extra fields to capture data AGA OneForge doesn't track by default"
+msgstr "AGA OneForge'ın varsayılan olarak izlemediği verileri yakalamak için ekstra alanlar"
 
 msgid "Extra tags for slicing your GL reporting"
 msgstr "GL raporlamanızı dilimlemek için ekstra etiketler"
@@ -4949,8 +4949,8 @@ msgstr "Riskler alınamadı"
 msgid "Failed to fetch suggestions"
 msgstr "Öneriler alınamadı"
 
-msgid "Failed to initialize Carbon client"
-msgstr "Carbon istemcisini başlatamadı"
+msgid "Failed to initialize AGA OneForge client"
+msgstr "AGA OneForge istemcisini başlatamadı"
 
 msgid "Failed to insert quote line"
 msgstr "Teklif satırı eklenemedi"
@@ -5398,8 +5398,8 @@ msgstr "Oluşturulan kimlikler devre dışı"
 msgid "Generated IDs are enabled"
 msgstr "Oluşturulan Kimlikler etkinleştirilmiş"
 
-msgid "Get live on Carbon: one system running quoting, purchasing, the shop floor, inventory, and finance, replacing the current tools."
-msgstr "Carbon'da canlı yayına geçin: alıntı alma, satın alma, atölye tabanı, envanter ve finansmanı çalıştıran ve mevcut araçları değiştiren tek bir sistem."
+msgid "Get live on AGA OneForge: one system running quoting, purchasing, the shop floor, inventory, and finance, replacing the current tools."
+msgstr "AGA OneForge'da canlı yayına geçin: alıntı alma, satın alma, atölye tabanı, envanter ve finansmanı çalıştıran ve mevcut araçları değiştiren tek bir sistem."
 
 msgid "Get Method"
 msgstr "Yöntemi Al"
@@ -5410,8 +5410,8 @@ msgstr "Başlayın"
 msgid "Get Started"
 msgstr "Başlayın"
 
-msgid "Getting around Carbon"
-msgstr "Carbon'da Gezinme"
+msgid "Getting around AGA OneForge"
+msgstr "AGA OneForge'da Gezinme"
 
 msgid "Getting set up"
 msgstr "Kurulum yapılıyor"
@@ -5567,8 +5567,8 @@ msgstr "Canlı yayına geçiş ve kabul imzası"
 msgid "Go-live timing holds if each gate is cleared on schedule"
 msgstr "Canlı yayına geçiş zamanlaması, her kapı zamanında açılırsa geçerli kalır"
 
-msgid "Going live on Carbon"
-msgstr "Carbon'da canlı yayına geçme"
+msgid "Going live on AGA OneForge"
+msgstr "AGA OneForge'da canlı yayına geçme"
 
 #. placeholder {0}: user.firstName
 msgid "Good afternoon, {0}"
@@ -5789,8 +5789,8 @@ msgstr "Nasıl Çalışıyoruz"
 msgid "How We Work Together"
 msgstr "Nasıl Çalışıyoruz"
 
-msgid "How your company's process maps to Carbon"
-msgstr "Şirketinizin süreç haritası Carbon'a nasıl eşlenir"
+msgid "How your company's process maps to AGA OneForge"
+msgstr "Şirketinizin süreç haritası AGA OneForge'a nasıl eşlenir"
 
 msgid "How your quotes, orders, and invoices look when they go out"
 msgstr "Teklifleriniz, siparişleriniz ve faturalarınız gönderildiğinde nasıl göründüğü"
@@ -6601,9 +6601,6 @@ msgstr "Liste Parametreleri"
 msgid "Live on AGA OneForge"
 msgstr "AGA OneForge'da Canlı"
 
-msgid "Live on Carbon"
-msgstr "Carbon'da Canlı"
-
 msgid "Live reloading"
 msgstr "Canlı yeniden yükleniyor"
 
@@ -6625,8 +6622,8 @@ msgstr "İlgili işler yükleniyor..."
 msgid "Loading item details..."
 msgstr "Ürün detayları yükleniyor..."
 
-msgid "Loading your own data with Carbon's import tools"
-msgstr "Carbon'ın içe aktarma araçlarıyla kendi verilerinizi yükleme"
+msgid "Loading your own data with AGA OneForge's import tools"
+msgstr "AGA OneForge'ın içe aktarma araçlarıyla kendi verilerinizi yükleme"
 
 msgid "Loading..."
 msgstr "Yükleniyor..."
@@ -8003,8 +8000,8 @@ msgstr "Eldeki envanter kaldı"
 msgid "On-time delivery"
 msgstr "Zamanında teslimat"
 
-msgid "One serial unit or one batch that Carbon follows individually, carrying its own status and attributes such as an expiry date."
-msgstr "Carbon'un bireysel olarak takip ettiği bir seri birim veya bir batch, sona erme tarihi gibi kendi durumu ve öznitelikleri taşıyan."
+msgid "One serial unit or one batch that AGA OneForge follows individually, carrying its own status and attributes such as an expiry date."
+msgstr "AGA OneForge'un bireysel olarak takip ettiği bir seri birim veya bir batch, sona erme tarihi gibi kendi durumu ve öznitelikleri taşıyan."
 
 msgid "One set of numbers"
 msgstr "Tek bir sayı seti"
@@ -8108,8 +8105,8 @@ msgstr "Açık"
 msgid "Opening"
 msgstr "Açılış"
 
-msgid "Opening balance of depreciation already booked before this asset was added to Carbon (use 0 for new acquisitions)."
-msgstr "Bu varlık Carbon'a eklenmeden önce zaten deftere geçirilmiş amortismanın açılış bakiyesi (yeni satın almalar için 0 kullanın)."
+msgid "Opening balance of depreciation already booked before this asset was added to AGA OneForge (use 0 for new acquisitions)."
+msgstr "Bu varlık AGA OneForge'a eklenmeden önce zaten deftere geçirilmiş amortismanın açılış bakiyesi (yeni satın almalar için 0 kullanın)."
 
 msgid "Operating Expenses"
 msgstr "İşletme Giderleri"
@@ -9271,8 +9268,8 @@ msgstr "Tekliflendirme, üretim ve muhasebe arasında veri yeniden girişi"
 msgid "Reactivate"
 msgstr "Yeniden etkinleştir"
 
-msgid "Read this through — what Carbon will and won't do for your setup. When it looks right, mark it agreed below."
-msgstr "Bunu okuyun — Carbon'un kurulumunuz için neler yapacağını ve yapmayacağını öğrenin. Doğru görünüyorsa, aşağıda kabul ettiğinizi işaretleyin."
+msgid "Read this through — what AGA OneForge will and won't do for your setup. When it looks right, mark it agreed below."
+msgstr "Bunu okuyun — AGA OneForge'un kurulumunuz için neler yapacağını ve yapmayacağını öğrenin. Doğru görünüyorsa, aşağıda kabul ettiğinizi işaretleyin."
 
 msgid "Read this through. When it's right, sign off at the bottom. It's the statement your commercial agreement points to, with no prices or legal terms here."
 msgstr "Bunu baştan sona oku. Doğru olduğunda, altta imzala. Bu, ticari anlaşmanın işaret ettiği beyan olup, burada fiyat veya yasal şart yoktur."
@@ -9344,7 +9341,7 @@ msgid "Receivables"
 msgstr "Alacak Hesapları (varsayılan)"
 
 msgid "Receivables (default)"
-msgstr "Bir satın alma siparişini alınan ve faturalandırılan tutarla uzlaştırma — Carbon'da kapalı, satır miktarları ve GR/IR bakiyesi aracılığıyla."
+msgstr "Bir satın alma siparişini alınan ve faturalandırılan tutarla uzlaştırma — AGA OneForge'da kapalı, satır miktarları ve GR/IR bakiyesi aracılığıyla."
 
 msgid "Receivables aging"
 msgstr "Alacaklar yaşlandırması"
@@ -9395,8 +9392,8 @@ msgstr "Son ödemeler"
 msgid "Recently Created"
 msgstr "Son Oluşturulanlar"
 
-msgid "Reconciling a purchase order against what was received and invoiced — implicit in Carbon, via the line quantities and GR/IR balance."
-msgstr "Geri Kazanım Süresi"
+msgid "Reconciling a purchase order against what was received and invoiced — implicit in AGA OneForge, via the line quantities and GR/IR balance."
+msgstr "Reconciling a purchase order against what was received and invoiced — implicit in AGA OneForge, via the line quantities and GR/IR balance."
 
 msgid "Record"
 msgstr "Kayıt"
@@ -10438,8 +10435,8 @@ msgstr "hizmetler"
 msgid "Set a target"
 msgstr "Hedef belirle"
 
-msgid "Set Carbon up around how your company runs: sites, parts, BOMs, Bill of Process, and the flows you use."
-msgstr "Carbon'ı şirketinizin nasıl çalıştığına göre kurun: siteler, parçalar, BOM'lar, İşlem Faturası ve kullandığınız akışlar."
+msgid "Set AGA OneForge up around how your company runs: sites, parts, BOMs, Bill of Process, and the flows you use."
+msgstr "AGA OneForge'ı şirketinizin nasıl çalıştığına göre kurun: siteler, parçalar, BOM'lar, İşlem Faturası ve kullandığınız akışlar."
 
 msgid "Set Clock Out"
 msgstr "Çıkış Saati Belirle"
@@ -10862,8 +10859,8 @@ msgstr "Barındırma hizmetini ayarlayın (bulut veya kendi barındırılan)"
 msgid "Standard"
 msgstr "Standart"
 
-msgid "Standard cloud Carbon fits how your company runs"
-msgstr "Standart bulut Carbon, şirketinizin nasıl çalıştığına uygun"
+msgid "Standard cloud AGA OneForge fits how your company runs"
+msgstr "Standart bulut AGA OneForge, şirketinizin nasıl çalıştığına uygun"
 
 msgid "Standard factor"
 msgstr "Standart faktör"
@@ -11460,11 +11457,20 @@ msgstr "{0} aşamayı canlı yayına almak için, her biri bir kontrol noktasın
 msgid "The accounting dimension that categorizes items for reporting and analysis."
 msgstr "Raporlama ve analiz için öğeleri kategorize eden muhasebe boyutu."
 
-msgid "The accounts Carbon posts to automatically"
-msgstr "Carbon'ın otomatik olarak deftere naklettiği hesaplar"
+msgid "The accounts AGA OneForge posts to automatically"
+msgstr "AGA OneForge'ın otomatik olarak deftere naklettiği hesaplar"
 
 msgid "The action that copies a saved method (its materials, operations, and work instructions) onto a job or quote line."
 msgstr "Kayıtlı bir yöntemi (malzemeleri, operasyonları ve iş talimatlarını) bir iş veya teklif satırına kopyalayan eylem."
+
+msgid "The AGA OneForge user responsible for this customer relationship; emails and reminders about this customer route to them."
+msgstr "Bu müşteri ilişkisinden sorumlu AGA OneForge kullanıcısı; bu müşteri hakkında e-postalar ve hatırlatmalar onlara yönlendirilir."
+
+msgid "The AGA OneForge user responsible for this supplier relationship; emails and reminders about this supplier route to them."
+msgstr "Bu tedarikçi ilişkisinden sorumlu AGA OneForge kullanıcısı; bu tedarikçi hakkında e-postalar ve hatırlatmalar onlara yönlendirilir."
+
+msgid "The AGA OneForge user who owns this RFQ; supplier responses and reminders route to them."
+msgstr "Bu RFQ'ya sahip olan AGA OneForge kullanıcısı; tedarikçi yanıtları ve hatırlatmalar onlara yönlendirilir."
 
 msgid "The allowed values for a list-type attribute; users pick from these rather than free-typing."
 msgstr "Bir liste türü özniteliği için izin verilen değerler; kullanıcılar serbest yazma yerine bunların arasından seçer."
@@ -11487,20 +11493,11 @@ msgstr "Tüm kaydedilen günlük satırlarının defteri, hesaba göre özetlenm
 msgid "The buckets you track costs against"
 msgstr "Maliyetleri takip ettiğiniz gruplar"
 
-msgid "The Carbon user responsible for this customer relationship; emails and reminders about this customer route to them."
-msgstr "Bu müşteri ilişkisinden sorumlu Carbon kullanıcısı; bu müşteri hakkında e-postalar ve hatırlatmalar onlara yönlendirilir."
-
-msgid "The Carbon user responsible for this supplier relationship; emails and reminders about this supplier route to them."
-msgstr "Bu tedarikçi ilişkisinden sorumlu Carbon kullanıcısı; bu tedarikçi hakkında e-postalar ve hatırlatmalar onlara yönlendirilir."
-
-msgid "The Carbon user who owns this RFQ; supplier responses and reminders route to them."
-msgstr "Bu RFQ'ya sahip olan Carbon kullanıcısı; tedarikçi yanıtları ve hatırlatmalar onlara yönlendirilir."
-
 msgid "The carrier that delivers goods from this supplier, when different from the supplier itself (e.g. supplier sells, FedEx ships)."
 msgstr "Bu tedarikçiden malları teslim eden taşıyıcı, tedarikçinin kendisinden farklı olduğunda (örneğin, tedarikçi satar, FedEx gönderir)."
 
-msgid "The carrier's tracking-page URL with {trackingNumber} as a placeholder — Carbon substitutes the actual number when generating links on shipments."
-msgstr "Taşıyıcının izleme sayfası URL'si {trackingNumber} yer tutucu olarak — Carbon gönderimdeki bağlantıları oluştururken gerçek numarayı değiştirir."
+msgid "The carrier's tracking-page URL with {trackingNumber} as a placeholder — AGA OneForge substitutes the actual number when generating links on shipments."
+msgstr "Taşıyıcının izleme sayfası URL'si {trackingNumber} yer tutucu olarak — AGA OneForge gönderimdeki bağlantıları oluştururken gerçek numarayı değiştirir."
 
 msgid "The carriers and methods you ship orders with"
 msgstr "Siparişleri gönderdiğiniz taşıyıcılar ve yöntemler"
@@ -11694,11 +11691,11 @@ msgstr "Bu iş merkezinde makineleri çalıştırmanın saatlik maliyeti; bir i�
 msgid "The hourly indirect-cost burden applied to this work center; the difference between labor + machine and the full quoting rate is what overhead absorbs."
 msgstr "Bu iş merkezine uygulanan saatlik dolaylı maliyet yükü; işçilik + makine ile tam alıntı oranı arasındaki fark, genel masrafların absorpladığıdır."
 
-msgid "The identifier the customer uses for this part on their POs; Carbon resolves it to our internal Part ID on order import."
-msgstr "Müşterinin bu parça için PO'larında kullandığı tanımlayıcı; Carbon bunu sipariş alımında dahili Parça Kimliğimize çözümler."
+msgid "The identifier the customer uses for this part on their POs; AGA OneForge resolves it to our internal Part ID on order import."
+msgstr "Müşterinin bu parça için PO'larında kullandığı tanımlayıcı; AGA OneForge bunu sipariş alımında dahili Parça Kimliğimize çözümler."
 
-msgid "The identifier the supplier uses for this part on their quotes and invoices; Carbon resolves it to our internal Part ID."
-msgstr "Tedarikçinin bu parça için alıntı ve faturalarında kullandığı tanımlayıcı; Carbon bunu dahili Parça Kimliğimize çözümler."
+msgid "The identifier the supplier uses for this part on their quotes and invoices; AGA OneForge resolves it to our internal Part ID."
+msgstr "Tedarikçinin bu parça için alıntı ve faturalarında kullandığı tanımlayıcı; AGA OneForge bunu dahili Parça Kimliğimize çözümler."
 
 msgid "The immediate nonconformance task that quarantines affected stock or work before the root cause is known."
 msgstr "Kök neden bilinmeden etkilenen stok veya işi karantinaya alan acil uyumsuzluk görevü."
@@ -11787,8 +11784,8 @@ msgstr "Bu tedarikçinin miktar ne olursa olsun bu işlem için tahsil edeceği 
 msgid "The machines, cells, and stations your work runs through"
 msgstr "Çalışmanızın geçtiği makineler, hücreler ve istasyonlar"
 
-msgid "The master data to set up when first configuring Carbon, grouped by module. Mark each one configured as you go."
-msgstr "Carbon'ı ilk kez yapılandırırken ayarlanacak ana veriler, modüle göre gruplandırılmış. Her birini yapılandırıldığında işaretleyin."
+msgid "The master data to set up when first configuring AGA OneForge, grouped by module. Mark each one configured as you go."
+msgstr "AGA OneForge'ı ilk kez yapılandırırken ayarlanacak ana veriler, modüle göre gruplandırılmış. Her birini yapılandırıldığında işaretleyin."
 
 msgid "The material is purchased from a supplier for that specific order, rather than made or pulled from stock."
 msgstr "Malzeme, yapılmak veya stoktan çekilmek yerine, bu belirli sipariş için bir tedarikçiden satın alınır."
@@ -11859,11 +11856,11 @@ msgstr "Parça, ihtiyacı olan üst öğe inşa edildiğinde kendi işi olarak �
 msgid "The part is taken from existing stock when its parent is built — no new job or purchase order."
 msgstr "Parça, ebeveyninin inşa edildiğinde mevcut stoktan alınır - yeni iş veya satın alma siparişi yok."
 
-msgid "The people on the Carbon side who will run your implementation, and how to reach them."
-msgstr "Carbon tarafındaki uygulamanızı yönetecek ve onlara nasıl ulaşacağınızı gösteren kişiler."
+msgid "The people on the AGA OneForge side who will run your implementation, and how to reach them."
+msgstr "AGA OneForge tarafındaki uygulamanızı yönetecek ve onlara nasıl ulaşacağınızı gösteren kişiler."
 
-msgid "The people on your team and their access to Carbon"
-msgstr "Ekibinizdeki kişiler ve Carbon'a erişimleri"
+msgid "The people on your team and their access to AGA OneForge"
+msgstr "Ekibinizdeki kişiler ve AGA OneForge'a erişimleri"
 
 msgid "The percentage of the cash discount. Use 0 for no discount."
 msgstr "Nakit indirim yüzdesi. İndirim yoksa 0 kullanın."
@@ -11919,8 +11916,8 @@ msgstr "İzlenen varlıkların kaydedilmiş soykütüğü - hangi girdiler hangi
 msgid "The reference data everything else hangs off. Loads first."
 msgstr "Diğer her şeyin bağlı olduğu referans veriler. Önce yüklenir."
 
-msgid "The residual WIP a job has left at close, swept to a Production Variance account — the only variance Carbon books for a job."
-msgstr "Bir işin kapatmada bıraktığı artık WIP, bir üretim varyans hesabına süpürülen - Carbon'un bir iş için kaydettiği tek varyans."
+msgid "The residual WIP a job has left at close, swept to a Production Variance account — the only variance AGA OneForge books for a job."
+msgstr "Bir işin kapatmada bıraktığı artık WIP, bir üretim varyans hesabına süpürülen - AGA OneForge'un bir iş için kaydettiği tek varyans."
 
 msgid "The revision number of the part"
 msgstr "Parçanın revizyon numarası"
@@ -12036,8 +12033,8 @@ msgstr "Bu işlem için bu tedarikçiye iş göndermekle geri almak arasında ge
 msgid "The unique identifier on this physical unit; one row per serial, quantity is always 1."
 msgstr "Bu fiziksel birim üzerindeki benzersiz tanımlayıcı; seri numarası başına bir satır, miktar her zaman 1'dir."
 
-msgid "The unit a routing time is expressed in, such as Hours/Piece or Total Hours, telling Carbon whether the time scales with quantity or is fixed per run."
-msgstr "Bir yönlendirme süresinin ifade edildiği birim; örneğin Saat/Parça veya Toplam Saat gibi, Carbon'a zamanın miktarla ölçeklenip ölçeklenmediğini veya çalışma başına sabit olup olmadığını söyler."
+msgid "The unit a routing time is expressed in, such as Hours/Piece or Total Hours, telling AGA OneForge whether the time scales with quantity or is fixed per run."
+msgstr "Bir yönlendirme süresinin ifade edildiği birim; örneğin Saat/Parça veya Toplam Saat gibi, AGA OneForge'a zamanın miktarla ölçeklenip ölçeklenmediğini veya çalışma başına sabit olup olmadığını söyler."
 
 msgid "The unit price of the item at the time of the purchase"
 msgstr "Satın alma zamanındaki birim fiyat"
@@ -13270,8 +13267,8 @@ msgstr "Ağırlıklı Ortalama"
 msgid "Weighted average cost over last year calculated when the invoice is posted"
 msgstr "Faturanın işlendiği sırada hesaplanan ağırlıklı ortalama maliyet"
 
-msgid "Welcome to Carbon"
-msgstr "Carbon'a Hoş Geldiniz"
+msgid "Welcome to AGA OneForge"
+msgstr "AGA OneForge'a Hoş Geldiniz"
 
 msgid "Welcome, {companyName}"
 msgstr "Hoş geldiniz, {companyName}"
@@ -13282,8 +13279,8 @@ msgstr "Bu hangi başarısızlık kategorisidir — Mekanik, Elektrik, Yazılım
 msgid "What changes day to day"
 msgstr "Günden güne ne değişir"
 
-msgid "What changes when you move to Carbon, and roughly what it's worth. Estimates, not a forecast."
-msgstr "Carbon'a geçtiğinizde neler değişir ve kabaca ne kadar değerli olur. Tahminler, tahmin değil."
+msgid "What changes when you move to AGA OneForge, and roughly what it's worth. Estimates, not a forecast."
+msgstr "AGA OneForge'a geçtiğinizde neler değişir ve kabaca ne kadar değerli olur. Tahminler, tahmin değil."
 
 msgid "What data"
 msgstr "Hangi veri"
@@ -13342,8 +13339,8 @@ msgstr "Bir bitmiş ürünün raf ömrü Hesaplanan olarak ayarlandığında, he
 msgid "When a serial or batch expires, and what happens if used after — a company policy can Warn, Block, or BlockWithOverride."
 msgstr "Bir seri veya parti ne zaman süresinin dolduğu ve kullanıldığında ne olduğu — bir şirket politikası Uyar, Engelle veya EngellePrekesiyle yer alabilir."
 
-msgid "When Carbon committed to having the goods arrive; combined with the shipping method's transit days, this drives Ship Date back-calc."
-msgstr "Carbon'un malların gelmesini taahhüt ettiği zaman; gönderme yönteminin transit günleriyle birleştirilmiş, bu Gönderme Tarihi'nin geriye doğru hesaplanmasını sağlar."
+msgid "When AGA OneForge committed to having the goods arrive; combined with the shipping method's transit days, this drives Ship Date back-calc."
+msgstr "AGA OneForge'un malların gelmesini taahhüt ettiği zaman; gönderme yönteminin transit günleriyle birleştirilmiş, bu Gönderme Tarihi'nin geriye doğru hesaplanmasını sağlar."
 
 msgid "When expired stock is used"
 msgstr "Süresi dolmuş stok kullanıldığında"
@@ -13372,8 +13369,8 @@ msgstr "Etkinleştirildiğinde, bu fiyat geçersiz kılması eşleşen siparişl
 msgid "When on, this rule fires for every target of its type. Assignment rows are ignored but preserved."
 msgstr "Açıkken bu kural, türündeki her hedef için tetiklenir. Atama satırları yok sayılır ancak korunur."
 
-msgid "When supplier responses are expected back; suppliers see this date on the RFQ portal and Carbon stops accepting late responses after it (configurable)."
-msgstr "Tedarikçi yanıtlarının ne zaman beklenmesi gerektiği; tedarikçiler RFQ portalında bu tarihi görür ve Carbon bundan sonra geç yanıtları kabul etmeyi durdurur (yapılandırılabilir)."
+msgid "When supplier responses are expected back; suppliers see this date on the RFQ portal and AGA OneForge stops accepting late responses after it (configurable)."
+msgstr "Tedarikçi yanıtlarının ne zaman beklenmesi gerektiği; tedarikçiler RFQ portalında bu tarihi görür ve AGA OneForge bundan sonra geç yanıtları kabul etmeyi durdurur (yapılandırılabilir)."
 
 msgid "When the buyer asked for the goods; the supplier may promise something else on Promised Date and post something else again on Delivery Date."
 msgstr "Alıcı malları istediğinde; tedarikçi Vaat Edilen Tarihte başka bir şey vaat edebilir ve Teslimat Tarihinde yeniden başka bir şey nakdeebilir."
@@ -13465,11 +13462,11 @@ msgstr "Bugün nerede olduğunuz"
 msgid "Where you want to grow"
 msgstr "Büyümek istediğin yer"
 
+msgid "Whether AGA OneForge follows each unit (Serial), each lot (Batch), the quantity (Inventory), or no tracking (Non-Inventory)."
+msgstr "AGA OneForge'ın her birimi (Serial), her lotu (Batch), miktarı (Inventory) mı izlediği yoksa izleme yapmadığı (Non-Inventory) mı."
+
 msgid "Whether Amount is interpreted as a percentage of the line price or as a fixed currency amount."
 msgstr "Tutarın, satır fiyatının yüzdesi olarak mı yoksa sabit bir para birimi tutarı olarak mı yorumlanacağı."
-
-msgid "Whether Carbon follows each unit (Serial), each lot (Batch), the quantity (Inventory), or no tracking (Non-Inventory)."
-msgstr "Carbon'ın her birimi (Serial), her lotu (Batch), miktarı (Inventory) mı izlediği yoksa izleme yapmadığı (Non-Inventory) mı."
 
 msgid "Whether the clock starts when the chosen process begins or when it completes."
 msgstr "Sayacın, seçilen süreç başladığında mı yoksa tamamlandığında mı başlayacağı."
@@ -13722,8 +13719,8 @@ msgstr "Bu partiyi aldınız"
 msgid "You're live on AGA OneForge"
 msgstr "AGA OneForge'da canlısınız"
 
-msgid "You're setting Carbon up yourself, at your own pace"
-msgstr "Carbon'ı kendiniz kendi hızınızda ayarlıyorsunuz"
+msgid "You're setting AGA OneForge up yourself, at your own pace"
+msgstr "AGA OneForge'ı kendiniz kendi hızınızda ayarlıyorsunuz"
 
 msgid "You've been clocked in for {hoursElapsed} hours. Did you forget to clock out?"
 msgstr "Ne kadar süredir giriş yaptınız? Çıkış yapmayı unuttunuz mu?"
@@ -13791,11 +13788,11 @@ msgstr "Gerçek verileriniz yüklendi ve bir örneği kontrol ederek onayladın�
 msgid "Your source data is accessible and reasonably clean"
 msgstr "Kaynak verileriniz erişilebilir ve makul ölçüde temizdir"
 
-msgid "Your team can free up time to learn Carbon and load your data"
-msgstr "Ekibiniz Carbon'u öğrenmek ve verilerinizi yüklemek için zaman ayırabilir"
+msgid "Your team can free up time to learn AGA OneForge and load your data"
+msgstr "Ekibiniz AGA OneForge'u öğrenmek ve verilerinizi yüklemek için zaman ayırabilir"
 
-msgid "Your team leads learn Carbon first using the in-app guides and Academy, then bring everyone else up to speed."
-msgstr "Takım liderleriniz önce uygulama içi kılavuzları ve Academy'yi kullanarak Carbon'u öğrenirler, ardından diğer herkesi hızlandırırlar."
+msgid "Your team leads learn AGA OneForge first using the in-app guides and Academy, then bring everyone else up to speed."
+msgstr "Takım liderleriniz önce uygulama içi kılavuzları ve Academy'yi kullanarak AGA OneForge'u öğrenirler, ardından diğer herkesi hızlandırırlar."
 
 msgid "Your team, structure, and access."
 msgstr "Takımınız, yapı ve erişim."

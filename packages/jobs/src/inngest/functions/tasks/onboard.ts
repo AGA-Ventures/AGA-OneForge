@@ -266,7 +266,7 @@ export const onboardFunction = inngest.createFunction(
         await step.sleep("wait-5m", "5m");
 
         if (sendOnboardingEmail) {
-          const from = `Chase from Carbon <${
+          const from = `Chase from AGA OneForge <${
             RESEND_DOMAIN === "carbon.ms"
               ? "chase@carbon.ms"
               : `no-reply@${RESEND_DOMAIN}`
@@ -275,7 +275,7 @@ export const onboardFunction = inngest.createFunction(
             await sendEmail({
               from,
               to: user.email,
-              subject: `Carbon`,
+              subject: `AGA OneForge`,
               html: await render(WelcomeEmail())
             });
           });
@@ -284,7 +284,7 @@ export const onboardFunction = inngest.createFunction(
         await step.sleep("wait-3d", "3d");
 
         if (sendOnboardingEmail) {
-          const from = `Info from Carbon <${
+          const from = `Info from AGA OneForge <${
             RESEND_DOMAIN === "carbon.ms"
               ? "info@carbon.ms"
               : `no-reply@${RESEND_DOMAIN}`
@@ -293,7 +293,7 @@ export const onboardFunction = inngest.createFunction(
             await sendEmail({
               from,
               to: user.email,
-              subject: `Get the most out of Carbon`,
+              subject: `Get the most out of AGA OneForge`,
               html: await render(
                 GetStartedEmail({
                   firstName: user.firstName,

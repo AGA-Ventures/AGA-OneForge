@@ -12,8 +12,8 @@ export const PaperlessParts = defineIntegration({
   category: "Estimating & Quoting",
   logo: Logo,
   description:
-    "Paperless Parts is an estimating and quoting platform that uses advanced geometric interrogation to generate accurate estimates for sheet metal fabrication, CNC machining, and more. This integration will sync data from Paperless Parts to Carbon.",
-  shortDescription: "Sync data from Paperless Parts to Carbon.",
+    "Paperless Parts is an estimating and quoting platform that uses advanced geometric interrogation to generate accurate estimates for sheet metal fabrication, CNC machining, and more. This integration will sync data from Paperless Parts to AGA OneForge.",
+  shortDescription: "Sync data from Paperless Parts to AGA OneForge.",
   setupInstructions: SetupInstructions,
   images: [],
 

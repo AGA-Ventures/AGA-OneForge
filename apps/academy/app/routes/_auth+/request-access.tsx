@@ -17,12 +17,12 @@ export default function RequestAccessRoute() {
       <div className="flex flex-col items-center justify-center">
         <img
           src="/carbon-mark-light.svg"
-          alt="Carbon Logo"
+          alt="AGA OneForge Logo"
           className="w-24 mb-3 dark:hidden"
         />
         <img
           src="/carbon-mark-dark.svg"
-          alt="Carbon Logo"
+          alt="AGA OneForge Logo"
           className="w-24 mb-3"
         />
 

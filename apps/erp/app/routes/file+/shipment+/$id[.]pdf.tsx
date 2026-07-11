@@ -185,7 +185,7 @@ export async function loader({ request, params }: LoaderFunctionArgs) {
           customer={customer.data}
           locale={locale}
           meta={{
-            author: "Carbon",
+            author: "AGA OneForge",
             keywords: "packing slip",
             subject: "Packing Slip"
           }}
@@ -308,7 +308,7 @@ export async function loader({ request, params }: LoaderFunctionArgs) {
           customer={customer.data}
           locale={locale}
           meta={{
-            author: "Carbon",
+            author: "AGA OneForge",
             keywords: "packing slip",
             subject: "Packing Slip"
           }}
@@ -424,7 +424,7 @@ export async function loader({ request, params }: LoaderFunctionArgs) {
           customer={supplier.data}
           locale={locale}
           meta={{
-            author: "Carbon",
+            author: "AGA OneForge",
             keywords: "packing slip",
             subject: "Packing Slip"
           }}
@@ -538,7 +538,7 @@ export async function loader({ request, params }: LoaderFunctionArgs) {
           customer={{ name: toLocation?.name ?? "" } as any}
           locale={locale}
           meta={{
-            author: "Carbon",
+            author: "AGA OneForge",
             keywords: "packing slip",
             subject: "Packing Slip"
           }}

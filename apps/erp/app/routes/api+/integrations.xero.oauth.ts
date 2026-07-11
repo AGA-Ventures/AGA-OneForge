@@ -162,7 +162,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
     if (company.baseCurrencyCode !== xeroBaseCurrency) {
       return data(
         {
-          error: `Currency mismatch: Your Carbon company uses ${company.baseCurrencyCode}, but your Xero organization uses ${xeroBaseCurrency}. Please ensure both systems use the same base currency before connecting.`
+          error: `Currency mismatch: Your AGA OneForge company uses ${company.baseCurrencyCode}, but your Xero organization uses ${xeroBaseCurrency}. Please ensure both systems use the same base currency before connecting.`
         },
         { status: 400 }
       );

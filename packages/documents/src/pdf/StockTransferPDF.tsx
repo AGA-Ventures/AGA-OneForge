@@ -81,7 +81,7 @@ const StockTransferPDF = ({
       theme={theme}
       title={title}
       meta={{
-        author: "Carbon",
+        author: "AGA OneForge",
         keywords: "stock transfer",
         subject: "Stock Transfer"
       }}

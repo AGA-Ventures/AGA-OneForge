@@ -74,9 +74,9 @@ export async function action({ request }: ActionFunctionArgs) {
   }
 
   await sendEmail({
-    from: `Carbon <no-reply@${RESEND_DOMAIN}>`,
+    from: `AGA OneForge <no-reply@${RESEND_DOMAIN}>`,
     to: result.email,
-    subject: `You have been invited to join ${company.data?.name} on Carbon`,
+    subject: `You have been invited to join ${company.data?.name} on AGA OneForge`,
     headers: {
       "X-Entity-Ref-ID": nanoid()
     },

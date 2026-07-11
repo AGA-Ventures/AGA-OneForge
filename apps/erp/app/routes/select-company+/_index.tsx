@@ -76,7 +76,7 @@ export default function SelectCompany() {
       <div className="flex flex-col items-center gap-4 px-8 pb-6 pt-9">
         <img
           src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/carbon-mark-light.svg"}
-          alt="Carbon Logo"
+          alt="AGA OneForge Logo"
           className={cn(
             "w-10 dark:hidden",
             CONTROLLED_ENVIRONMENT && "grayscale"
@@ -84,7 +84,7 @@ export default function SelectCompany() {
         />
         <img
           src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/carbon-mark-dark.svg"}
-          alt="Carbon Logo"
+          alt="AGA OneForge Logo"
           className={cn(
             "hidden w-10 dark:block",
             CONTROLLED_ENVIRONMENT && "grayscale"

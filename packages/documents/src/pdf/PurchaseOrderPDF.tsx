@@ -127,7 +127,7 @@ const PurchaseOrderPDF = ({
       theme={theme}
       title={headerTitle}
       meta={{
-        author: meta?.author ?? "Carbon",
+        author: meta?.author ?? "AGA OneForge",
         keywords: meta?.keywords ?? "purchase order",
         subject: meta?.subject ?? "Purchase Order"
       }}

@@ -25,6 +25,6 @@ export function ownerForStep(step: StepDef, tier: Tier): Owner {
 // ungrammatical "You leads" the bare label produced.
 export function ownerLeadLabel(owner: Owner): MessageDescriptor {
   if (owner === "you") return msg`You lead`;
-  if (owner === "carbon") return msg`Carbon leads`;
-  return msg`Carbon + you`;
+  if (owner === "carbon") return msg`AGA OneForge leads`;
+  return msg`AGA OneForge + you`;
 }

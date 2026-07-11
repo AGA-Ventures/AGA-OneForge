@@ -118,7 +118,7 @@ export const UploadCSV = ({ table }: { table: keyof typeof importSchemas }) => {
     const fileName = `${company.id}/imports/${nanoid()}.csv`;
 
     if (!carbon) {
-      setError(t`Carbon client not available`);
+      setError(t`AGA OneForge client not available`);
       setFileColumns(null);
       setFirstRows(null);
       setLoading(false);
@@ -142,7 +142,7 @@ export const UploadCSV = ({ table }: { table: keyof typeof importSchemas }) => {
 
   const onDrop = async (acceptedFiles: File[]) => {
     if (!carbon) {
-      toast.error(t`Carbon client not available`);
+      toast.error(t`AGA OneForge client not available`);
       return;
     }
 

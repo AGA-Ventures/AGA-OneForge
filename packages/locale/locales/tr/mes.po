@@ -69,6 +69,9 @@ msgstr "Envantere Ekle"
 msgid "Add Spare Part"
 msgstr "Yedek Parça Ekle"
 
+msgid "AGA OneForge Logo"
+msgstr "AGA OneForge Logosu"
+
 msgid "All"
 msgstr "Tümü"
 
@@ -139,9 +142,6 @@ msgstr "İptal"
 
 msgid "Cancelled"
 msgstr "İptal edildi"
-
-msgid "Carbon Logo"
-msgstr "Carbon Logosu"
 
 msgid "Cards"
 msgstr "Kartlar"
@@ -396,8 +396,8 @@ msgstr "Çıkış yapmayı unuttunuz mu?"
 msgid "Go back to operation"
 msgstr "İşleme geri dön"
 
-msgid "Have a technical issue? Contact <0>Carbon Support.</0>"
-msgstr "Teknik bir sorun mu var? <0>Carbon Desteği</0> ile iletişime geçin."
+msgid "Have a technical issue? Contact <0>AGA OneForge Support.</0>"
+msgstr "Teknik bir sorun mu var? <0>AGA OneForge Desteği</0> ile iletişime geçin."
 
 msgid "How many were actually picked?"
 msgstr "Gerçekte kaç tane alındı?"

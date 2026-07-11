@@ -139,7 +139,7 @@ const JobTravelerPDF = ({
       theme={resolved.theme}
       title={title}
       meta={{
-        author: meta?.author ?? "Carbon",
+        author: meta?.author ?? "AGA OneForge",
         keywords: meta?.keywords ?? "job traveler, manufacturing",
         subject: meta?.subject ?? "Job Traveler"
       }}

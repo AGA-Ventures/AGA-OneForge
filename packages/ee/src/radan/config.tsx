@@ -9,8 +9,8 @@ export const Radan = defineIntegration({
   category: "Nesting",
   logo: Logo,
   description:
-    "Radan is a CAD CAM software for sheet metal fabrication. This integration allows Radan to pull and push data to Carbon.",
-  shortDescription: "Sync data from Carbon to Radan.",
+    "Radan is a CAD CAM software for sheet metal fabrication. This integration allows Radan to pull and push data to AGA OneForge.",
+  shortDescription: "Sync data from AGA OneForge to Radan.",
   setupInstructions: SetupInstructions,
   images: [],
 

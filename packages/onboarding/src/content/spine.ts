@@ -34,7 +34,7 @@ export const SPINE: StepDef[] = [
     // deep-links each item to its ERP screen.
     refSlug: "setup",
     gantt: { color: "#2FA350", startWeek: 1, weeks: 4 },
-    desc: msg`Set Carbon up around how your company runs: sites, parts, BOMs, Bill of Process, and the flows you use.`,
+    desc: msg`Set AGA OneForge up around how your company runs: sites, parts, BOMs, Bill of Process, and the flows you use.`,
     nested: [
       {
         key: "prod:configure-data",
@@ -46,7 +46,7 @@ export const SPINE: StepDef[] = [
       {
         key: "prod:configure-bom",
         label: msg`Import your BOM`,
-        detail: msg`Bring in your parts, BOMs, Bill of Process, and costing — with Carbon's import tools, CSV, or LLM help.`,
+        detail: msg`Bring in your parts, BOMs, Bill of Process, and costing — with AGA OneForge's import tools, CSV, or LLM help.`,
         docsUrl: "https://docs.carbon.ms/docs/reference/items",
         videoKey: "bom",
         detect: "hasItems"
@@ -96,7 +96,7 @@ export const SPINE: StepDef[] = [
     timing: msg`Weeks 5 to 7`,
     refSlug: "training",
     gantt: { color: "#5B6EE1", startWeek: 4, weeks: 3 },
-    desc: msg`Your team leads learn Carbon first using the in-app guides and Academy, then bring everyone else up to speed.`
+    desc: msg`Your team leads learn AGA OneForge first using the in-app guides and Academy, then bring everyone else up to speed.`
   },
   {
     key: "gate:acceptance",
@@ -133,12 +133,12 @@ export const SPINE: StepDef[] = [
     key: "gate:golive",
     n: 6,
     title: msg`Go-Live`,
-    gate: msg`Live on Carbon`,
+    gate: msg`Live on AGA OneForge`,
     owner: "shared",
     timing: msg`Week 8 cutover`,
     refSlug: "go-live",
     gantt: { color: "#1659B2", startWeek: 7, weeks: 1 },
-    desc: msg`Cut over, freeze the old system, and confirm you're live on Carbon.`
+    desc: msg`Cut over, freeze the old system, and confirm you're live on AGA OneForge.`
   }
 ];
 

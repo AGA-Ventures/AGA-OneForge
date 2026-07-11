@@ -161,7 +161,7 @@ const Feedback = () => {
             <p className="text-sm">
               Have a technical issue? Contact{" "}
               <a className="text-primary" href={`mailto:${SUPPORT_EMAIL}`}>
-                Carbon Support.
+                AGA OneForge Support.
               </a>
             </p>
           </VStack>

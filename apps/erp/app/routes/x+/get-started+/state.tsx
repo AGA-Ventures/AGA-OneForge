@@ -75,7 +75,7 @@ export async function action({ request }: ActionFunctionArgs) {
             request,
             error(
               new Error("forbidden"),
-              "Only Carbon staff can edit this field"
+              "Only AGA OneForge staff can edit this field"
             )
           )
         );
@@ -97,7 +97,10 @@ export async function action({ request }: ActionFunctionArgs) {
           { success: false },
           await flash(
             request,
-            error(new Error("forbidden"), "Only Carbon staff can add rows")
+            error(
+              new Error("forbidden"),
+              "Only AGA OneForge staff can add rows"
+            )
           )
         );
       }
@@ -126,7 +129,10 @@ export async function action({ request }: ActionFunctionArgs) {
           { success: false },
           await flash(
             request,
-            error(new Error("forbidden"), "Only Carbon staff can delete rows")
+            error(
+              new Error("forbidden"),
+              "Only AGA OneForge staff can delete rows"
+            )
           )
         );
       }
@@ -157,7 +163,7 @@ export async function action({ request }: ActionFunctionArgs) {
             request,
             error(
               new Error("forbidden"),
-              "Only Carbon staff can change this setting"
+              "Only AGA OneForge staff can change this setting"
             )
           )
         );

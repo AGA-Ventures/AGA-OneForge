@@ -1124,10 +1124,10 @@ export async function getCustomerIdAndContactId(
 
         if (newCustomer.error || !newCustomer.data) {
           logger.error(
-            "Failed to create customer in Carbon",
+            "Failed to create customer in AGA OneForge",
             newCustomer.error
           );
-          throw new Error("Failed to create customer in Carbon");
+          throw new Error("Failed to create customer in AGA OneForge");
         }
 
         customerId = newCustomer.data.id;
@@ -1333,10 +1333,10 @@ export async function getCustomerIdAndContactId(
 
         if (newCustomer.error || !newCustomer.data) {
           logger.error(
-            "Failed to create customer in Carbon",
+            "Failed to create customer in AGA OneForge",
             newCustomer.error
           );
-          throw new Error("Failed to create customer in Carbon");
+          throw new Error("Failed to create customer in AGA OneForge");
         }
 
         customerId = newCustomer.data.id;
@@ -1406,7 +1406,7 @@ export async function getCustomerIdAndContactId(
         .single();
 
       if (updatedContact.error || !updatedContact.data) {
-        logger.error("Failed to update contact in Carbon", {
+        logger.error("Failed to update contact in AGA OneForge", {
           error: updatedContact.error
         });
         return {
@@ -1441,7 +1441,7 @@ export async function getCustomerIdAndContactId(
         .single();
 
       if (newContact.error || !newContact.data) {
-        logger.error("Failed to create contact in Carbon", {
+        logger.error("Failed to create contact in AGA OneForge", {
           error: newContact.error
         });
         return {
@@ -1597,10 +1597,10 @@ export async function getCustomerLocationIds(
 
           if (newAddress.error || !newAddress.data) {
             logger.error(
-              "Failed to create billing address in Carbon",
+              "Failed to create billing address in AGA OneForge",
               newAddress.error
             );
-            throw new Error("Failed to create billing address in Carbon");
+            throw new Error("Failed to create billing address in AGA OneForge");
           }
 
           addressId = newAddress.data.id;
@@ -1623,7 +1623,7 @@ export async function getCustomerLocationIds(
 
         if (newCustomerLocation.error || !newCustomerLocation.data) {
           throw new Error(
-            "Failed to create customer billing location in Carbon"
+            "Failed to create customer billing location in AGA OneForge"
           );
         }
 
@@ -1720,10 +1720,12 @@ export async function getCustomerLocationIds(
 
           if (newAddress.error || !newAddress.data) {
             logger.error(
-              "Failed to create shipping address in Carbon",
+              "Failed to create shipping address in AGA OneForge",
               newAddress.error
             );
-            throw new Error("Failed to create shipping address in Carbon");
+            throw new Error(
+              "Failed to create shipping address in AGA OneForge"
+            );
           }
 
           addressId = newAddress.data.id;
@@ -1747,7 +1749,7 @@ export async function getCustomerLocationIds(
 
         if (newCustomerLocation.error || !newCustomerLocation.data) {
           throw new Error(
-            "Failed to create customer shipping location in Carbon"
+            "Failed to create customer shipping location in AGA OneForge"
           );
         }
 

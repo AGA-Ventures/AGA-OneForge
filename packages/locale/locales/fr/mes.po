@@ -69,6 +69,9 @@ msgstr "Ajouter au stock"
 msgid "Add Spare Part"
 msgstr "Ajouter une pièce de rechange"
 
+msgid "AGA OneForge Logo"
+msgstr "Logo AGA OneForge"
+
 msgid "All"
 msgstr "Tout"
 
@@ -139,9 +142,6 @@ msgstr "Annuler"
 
 msgid "Cancelled"
 msgstr "Annulé"
-
-msgid "Carbon Logo"
-msgstr "Logo Carbon"
 
 msgid "Cards"
 msgstr "Cartes"
@@ -396,8 +396,8 @@ msgstr "Oubli de pointer la sortie ?"
 msgid "Go back to operation"
 msgstr "Revenir à l'opération"
 
-msgid "Have a technical issue? Contact <0>Carbon Support.</0>"
-msgstr "Vous avez un problème technique ? Contactez le <0>Support Carbon.</0>"
+msgid "Have a technical issue? Contact <0>AGA OneForge Support.</0>"
+msgstr "Vous avez un problème technique ? Contactez le <0>Support AGA OneForge.</0>"
 
 msgid "How many were actually picked?"
 msgstr "Combien ont réellement été prélevés ?"

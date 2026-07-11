@@ -274,16 +274,16 @@ export default function LoginRoute() {
       <div className="flex justify-center mb-8">
         <img
           src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/carbon-mark-light.svg"}
-          alt={t`Carbon Logo`}
+          alt={t`AGA OneForge Logo`}
           className="w-24 dark:hidden"
         />
         <img
           src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/carbon-mark-dark.svg"}
-          alt={t`Carbon Logo`}
+          alt={t`AGA OneForge Logo`}
           className="w-24 hidden dark:block"
         />
       </div>
-      <div className="rounded-lg md:bg-card md:border md:border-border md:shadow-lg p-8 w-[380px]">
+      <div className="w-full max-w-[380px] rounded-lg p-8 md:border md:border-border md:bg-card md:shadow-lg">
         {fetcher.data?.success === true ? (
           <>
             <VStack spacing={4} className="items-center justify-center">
@@ -385,7 +385,7 @@ export default function LoginRoute() {
           </ValidatedForm>
         )}
       </div>
-      <div className="flex flex-col gap-4 text-sm text-center text-balance text-muted-foreground w-[380px]">
+      <div className="flex w-full max-w-[380px] flex-col gap-4 text-balance text-center text-sm text-muted-foreground">
         {CONTROLLED_ENVIRONMENT && <ItarLoginDisclaimer />}
         {CarbonEdition !== Edition.Community && (
           <p>

@@ -16,7 +16,7 @@ export interface OwnerToken {
 
 export const OWNER_TOKENS: Record<Owner, OwnerToken> = {
   carbon: {
-    label: msg`Carbon`,
+    label: msg`AGA OneForge`,
     cls: "bg-blue-500/10 text-blue-600 dark:text-blue-400",
     dot: "bg-blue-500"
   },

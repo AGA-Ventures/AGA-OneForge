@@ -215,7 +215,7 @@ export class InventoryAdjustmentSyncer extends BaseEntitySyncer<
     _remote: Xero.ManualJournal
   ): Promise<Partial<Accounting.InventoryAdjustment>> {
     throw new Error(
-      "Inventory adjustments are push-only. Cannot map from Xero to Carbon."
+      "Inventory adjustments are push-only. Cannot map from Xero to AGA OneForge."
     );
   }
 

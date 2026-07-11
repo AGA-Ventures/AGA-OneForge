@@ -91,9 +91,9 @@ export const userAdminFunction = inngest.createFunction(
             .single();
 
           await sendEmail({
-            from: `Carbon <no-reply@${RESEND_DOMAIN}>`,
+            from: `AGA OneForge <no-reply@${RESEND_DOMAIN}>`,
             to: user.data.email,
-            subject: `You have been invited to join ${company.data?.name} on Carbon`,
+            subject: `You have been invited to join ${company.data?.name} on AGA OneForge`,
             headers: {
               "X-Entity-Ref-ID": nanoid()
             },

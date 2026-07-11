@@ -102,7 +102,7 @@ const IssuePDF = ({
       theme={resolved.theme}
       title={title}
       meta={{
-        author: meta?.author ?? "Carbon",
+        author: meta?.author ?? "AGA OneForge",
         keywords: meta?.keywords ?? "issue report",
         subject: meta?.subject ?? "Issue Report"
       }}

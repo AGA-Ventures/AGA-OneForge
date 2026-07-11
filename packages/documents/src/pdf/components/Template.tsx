@@ -67,7 +67,7 @@ const Template = ({
 
   return (
     <Document
-      author={meta?.author ?? "Carbon"}
+      author={meta?.author ?? "AGA OneForge"}
       keywords={meta?.keywords}
       subject={meta?.subject}
       title={title}

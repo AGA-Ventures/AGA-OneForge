@@ -24,7 +24,7 @@ export const GUIDED_UPSELL: GuidedUpsell = {
     msg`In the loop together`,
     msg`Set up the right way`
   ],
-  cta: msg`Book a call with Carbon`
+  cta: msg`Book a call with AGA OneForge`
 };
 
 // The guided-implementation row in "How to reach us" (Go-Live page), shown to

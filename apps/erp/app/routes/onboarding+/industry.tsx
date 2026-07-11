@@ -232,13 +232,13 @@ export default function OnboardingIndustry() {
       value: "template",
       title: "Use a demo template",
       description:
-        "We'll add sample customers, suppliers, parts and quotes to explore Carbon",
+        "We'll add sample customers, suppliers, parts and quotes to explore AGA OneForge",
       icon: <LuDatabase className="h-5 w-5" />
     },
     {
       value: "import" as const,
       title: "Restore from a backup",
-      description: "Set up from a Carbon backup of another company",
+      description: "Set up from an AGA OneForge backup of another company",
       icon: <LuUpload className="h-5 w-5" />
     },
     {
@@ -256,7 +256,8 @@ export default function OnboardingIndustry() {
           <CardHeader>
             <CardTitle>Restore from a backup</CardTitle>
             <CardDescription>
-              Upload a Carbon backup and we'll set up your new company from it.
+              Upload an AGA OneForge backup and we'll set up your new company
+              from it.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -281,7 +282,7 @@ export default function OnboardingIndustry() {
                     Choose your backup file
                   </span>
                   <span className="text-xs text-muted-foreground">
-                    A Carbon backup (.carbon.tar.gz)
+                    An AGA OneForge backup (.carbon.tar.gz)
                   </span>
                 </>
               )}

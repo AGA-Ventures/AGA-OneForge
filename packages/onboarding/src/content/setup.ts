@@ -66,7 +66,7 @@ export const SETUP_GROUPS: SetupGroup[] = [
       {
         key: "custom-fields",
         object: msg`Custom Fields`,
-        detail: msg`Extra fields to capture data Carbon doesn't track by default`
+        detail: msg`Extra fields to capture data AGA OneForge doesn't track by default`
       },
       {
         key: "integrations",
@@ -135,7 +135,7 @@ export const SETUP_GROUPS: SetupGroup[] = [
       {
         key: "employees",
         object: msg`Employees`,
-        detail: msg`The people on your team and their access to Carbon`
+        detail: msg`The people on your team and their access to AGA OneForge`
       },
       {
         key: "departments",
@@ -365,7 +365,7 @@ export const SETUP_GROUPS: SetupGroup[] = [
       {
         key: "default-accounts",
         object: msg`Default Accounts`,
-        detail: msg`The accounts Carbon posts to automatically`,
+        detail: msg`The accounts AGA OneForge posts to automatically`,
         moduleTags: ["acc"]
       },
       {

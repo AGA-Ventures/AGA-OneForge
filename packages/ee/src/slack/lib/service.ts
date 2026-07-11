@@ -98,7 +98,7 @@ export async function createIssueSlackThread(
                   type: "button",
                   text: {
                     type: "plain_text",
-                    text: "View in Carbon"
+                    text: "View in AGA OneForge"
                   },
                   url: data.carbonUrl,
                   action_id: "view_in_carbon"
