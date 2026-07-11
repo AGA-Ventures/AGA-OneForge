@@ -88,7 +88,7 @@ export const links: Route.LinksFunction = () => [
 export const meta: MetaFunction = () => {
   return [
     {
-      title: "Carbon | MES"
+      title: "AGA OneForge | MES"
     }
   ];
 };
@@ -174,7 +174,7 @@ export async function action({ request }: ActionFunctionArgs) {
 
 function Document({
   children,
-  title = "Carbon",
+  title = "AGA OneForge",
   lang = "en",
   mode = "light",
   theme = "zinc"

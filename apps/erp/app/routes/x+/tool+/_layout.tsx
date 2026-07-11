@@ -8,7 +8,7 @@ import type { Handle } from "~/utils/handle";
 import { path } from "~/utils/path";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Carbon | Tools" }];
+  return [{ title: "AGA OneForge | Tools" }];
 };
 
 export const handle: Handle = {

@@ -6,7 +6,7 @@ import type { MetaFunction } from "react-router";
 export const meta: MetaFunction = () => {
   return [
     {
-      title: "Carbon Developers | Request Access"
+      title: "AGA OneForge Developers | Request Access"
     }
   ];
 };

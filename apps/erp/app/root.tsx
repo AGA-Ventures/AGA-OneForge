@@ -96,7 +96,7 @@ export const links: LinksFunction = () => {
 export const meta: MetaFunction = ({ error }) => {
   return [
     {
-      title: error ? "Carbon | Error" : "Carbon"
+      title: error ? "AGA OneForge | Error" : "AGA OneForge"
     }
   ];
 };

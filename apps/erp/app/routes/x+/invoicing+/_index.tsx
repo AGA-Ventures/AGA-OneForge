@@ -14,7 +14,7 @@ import { getCompanySettings } from "~/modules/settings";
 import { getGenericQueryFilters } from "~/utils/query";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Carbon | Invoicing" }];
+  return [{ title: "AGA OneForge | Invoicing" }];
 };
 
 // The four bucket boundaries the dashboard rolls aging into (Current, 1–30,

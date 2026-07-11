@@ -27,7 +27,7 @@ import { acceptInvite } from "~/modules/users/users.server";
 import { path } from "~/utils/path";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Accept Invite | Carbon" }];
+  return [{ title: "Accept Invite | AGA OneForge" }];
 };
 
 export async function loader({ request, params }: LoaderFunctionArgs) {
