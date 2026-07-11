@@ -61,7 +61,6 @@ function SocialIcon({ label, href, path }: { label: string; href: string; path: 
 
 /** Site-wide footer, mirroring carbon.ms: brand · social · status, link columns, ITAR, copyright. */
 export function SiteFooter() {
-  const year = new Date().getFullYear();
   return (
     <footer className="w-full border-t border-white/10 bg-ed-dark-bg text-white">
       <div className="mx-auto w-full max-w-320 px-6 py-12 md:px-8">
@@ -126,7 +125,7 @@ export function SiteFooter() {
         {/* Copyright */}
         <div className="mt-10 border-t border-white/10 pt-5">
           <p className="m-0 text-ed-13 text-white/60">
-            © {year} AGA OneForge. All rights reserved.
+            © 2025 Carbon Manufacturing Systems Corp. AGA OneForge is a modified distribution of Carbon.
           </p>
         </div>
       </div>
