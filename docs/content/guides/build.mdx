@@ -11,7 +11,7 @@ Open the job you just released and look at what it actually takes to build a rob
 
 ## The bill of materials
 
-A robot's <Term id="bom">bill of materials</Term> (BoM) is a tree. The robot is built from an arm and a leg; each of those is built from a machined part and a motor. Carbon shows the whole structure at a glance, with every node carrying an icon for how it's obtained.
+A robot's <Term id="bom">bill of materials</Term> (BoM) is a tree. The robot is built from an arm and a leg; each of those is built from a machined part and a motor. AGA OneForge shows the whole structure at a glance, with every node carrying an icon for how it's obtained.
 
 <Figure illustration="bom-tree" caption="The robot BoM: made parts in blue, bought parts in amber, every leaf pulled from stock." />
 
@@ -33,11 +33,11 @@ Method type answers "how does this part get into its parent?": Make to Order, Pu
 
 ## Kits & subassemblies
 
-Because the arm and leg are Make to Order parts, they aren't just line items — they're built things. But Carbon gives a made item in a BoM two flavors, and the choice changes how the floor handles it:
+Because the arm and leg are Make to Order parts, they aren't just line items — they're built things. But AGA OneForge gives a made item in a BoM two flavors, and the choice changes how the floor handles it:
 
 <Figure illustration="kit-vs-subassembly" caption="Same arm, two treatments: a Subassembly builds as its own job; a Kit is issued straight into the parent." />
 
-- <Term>Subassembly</Term>: built as its own job, with its own <Term>routing</Term> and its own completion. You can release the left arm independently of the final robot, and Carbon keeps the hierarchy in sync.
+- <Term>Subassembly</Term>: built as its own job, with its own <Term>routing</Term> and its own completion. You can release the left arm independently of the final robot, and AGA OneForge keeps the hierarchy in sync.
 - <Term>Kit</Term>: not built separately at all. Its components are issued together straight into the parent job, as a set. There's no kit job and no kit operation — just the parts, grouped.
 
 Reach for a subassembly when the thing is genuinely manufactured and worth tracking on its own. Reach for a kit when a cluster of parts always goes in together and a separate build would just be ceremony.

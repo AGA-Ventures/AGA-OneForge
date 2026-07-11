@@ -1,9 +1,9 @@
 ---
 title: Environment variables
-description: Every variable that configures a Carbon instance, grouped by concern. The source of truth is packages/env.
+description: Every variable that configures an AGA OneForge instance, grouped by concern. The source of truth is packages/env.
 ---
 
-Carbon reads its configuration from environment variables. The registry lives in `packages/env`;
+AGA OneForge reads its configuration from environment variables. The registry lives in `packages/env`;
 `.env.example` is the template; infrastructure-only variables are read by `sst.config.ts`. A minimal
 instance needs the Supabase connection, a session secret, and Redis. Everything else activates features
 as you need them.
@@ -25,7 +25,7 @@ Platform-wide behavior and edition.
 
 ## Database — Supabase
 
-Carbon's single Postgres database. All five are required.
+AGA OneForge's single Postgres database. All five are required.
 
 <EnvVars>
 <EnvVar name="SUPABASE_URL" type="url" required>Supabase project URL.</EnvVar>

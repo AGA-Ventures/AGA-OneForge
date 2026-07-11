@@ -17,8 +17,8 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
   const { tool } = await props.params;
   const found = getTool(tool);
   return pageSeo({
-    title: found ? `${found.tool.name} — Carbon MCP` : "Carbon MCP",
-    ogTitle: found?.tool.name ?? "Carbon MCP",
+    title: found ? `${found.tool.name} — AGA OneForge MCP` : "AGA OneForge MCP",
+    ogTitle: found?.tool.name ?? "AGA OneForge MCP",
     description: found?.tool.description,
     path: `/mcp/tools/${tool}`,
     eyebrow: found ? `MCP · ${found.module.name}` : "MCP"

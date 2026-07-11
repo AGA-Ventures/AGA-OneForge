@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   // Child routes set their own full <title>; this is the fallback for the home route.
   title: SEO.site.title,
   description: SEO.site.description,
-  applicationName: "Carbon",
+  applicationName: "AGA OneForge",
   keywords: [
-    "Carbon",
+    "AGA OneForge",
     "manufacturing system",
     "ERP",
     "MES",
@@ -43,12 +43,12 @@ export const metadata: Metadata = {
     "REST API",
     "MCP"
   ],
-  authors: [{ name: "Carbon" }],
+  authors: [{ name: "AGA OneForge" }],
   // Favicon comes from the app/icon.svg file convention.
   openGraph: {
     title: SEO.site.title,
     description: SEO.site.description,
-    siteName: "Carbon",
+    siteName: "AGA OneForge",
     url: SITE.url,
     type: "website",
     locale: "en_US",
@@ -80,7 +80,7 @@ const jsonLd = JSON.stringify({
     {
       "@type": "Organization",
       "@id": `${SITE.url}/#organization`,
-      name: "Carbon",
+      name: "AGA OneForge",
       url: SITE.url,
       logo: `${SITE.url}/carbon-mark-light.svg`
     },

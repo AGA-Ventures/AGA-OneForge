@@ -177,7 +177,7 @@ export function MobileNav({ active, children }: { active?: Active; children?: Re
             >
               <span aria-hidden="true" className="pointer-events-none absolute inset-0 rounded-lg cta-btn-dark" />
               <span className="text-on-dark relative z-10 text-ed-15 font-book tracking-[0.15px]">
-                Open Carbon
+                Open AGA OneForge
               </span>
             </a>
           </div>

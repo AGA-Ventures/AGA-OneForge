@@ -12,7 +12,7 @@
  *
  *   import { source } from "@/lib/source";
  *   // walk source.pageTree: folders → chapters, pages → steps {title, url}
- *   <ChapterNav chapters={chapters} title="How to run your shop with Carbon" />
+ *   <ChapterNav chapters={chapters} title="How to run your shop with AGA OneForge" />
  *
  * Keeping it presentational (chapters passed in) makes it trivial to test and
  * avoids coupling to a specific Fumadocs tree shape.
@@ -33,7 +33,7 @@ function dotClass(state: "active" | "done" | "todo") {
 
 export function ChapterNav({
   chapters,
-  title = "How to run your shop with Carbon",
+  title = "How to run your shop with AGA OneForge",
 }: {
   chapters: Chapter[];
   title?: string;

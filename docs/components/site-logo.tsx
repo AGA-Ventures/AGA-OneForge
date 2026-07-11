@@ -15,10 +15,12 @@ export function SiteLogo() {
     <Link
       href="/"
       className="flex shrink-0 items-center no-underline"
-      aria-label="Carbon home"
+      aria-label="AGA OneForge home"
       onClick={() => window.dispatchEvent(new CustomEvent("carbon:home"))}
     >
-      <img src="/carbon-word-light.svg" alt="Carbon" width={99} height={24} className="block" />
+      <span className="text-ed-16 font-semi tracking-[0.16px] text-ink-ui">
+        AGA OneForge
+      </span>
     </Link>
   );
 }

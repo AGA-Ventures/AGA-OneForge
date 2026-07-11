@@ -27,7 +27,7 @@ The purchase-receipt path activates the asset and posts its acquisition entry **
 
 ## Depreciating
 
-<Term id="depreciation">Depreciation</Term> runs as a **monthly batch you trigger**. There's no background poster. You create a run for a period, Carbon pulls every Active asset and computes each charge, you review it as a draft, then post: debit depreciation expense, credit accumulated depreciation. Carbon keeps a separate **tax** book too, including <Term>MACRS</Term>, when tax depreciation is enabled. When an asset's <Term id="net-book-value">net book value</Term> reaches its residual, posting flips it to **Fully Depreciated**.
+<Term id="depreciation">Depreciation</Term> runs as a **monthly batch you trigger**. There's no background poster. You create a run for a period, AGA OneForge pulls every Active asset and computes each charge, you review it as a draft, then post: debit depreciation expense, credit accumulated depreciation. AGA OneForge keeps a separate **tax** book too, including <Term>MACRS</Term>, when tax depreciation is enabled. When an asset's <Term id="net-book-value">net book value</Term> reaches its residual, posting flips it to **Fully Depreciated**.
 
 Book depreciation follows the asset's method: <Term id="straight-line">straight line</Term>, <Term id="declining-balance">declining balance</Term>, or units of production.
 
@@ -47,7 +47,7 @@ Selling and disposing are **not** two names for one thing. Selling hands the ass
 </Callout>
 
 <Callout type="info">
-A fixed asset is **not** the same record as a work center. The machine you schedule production on and the machine you depreciate are tracked independently. Carbon keeps no link between them.
+A fixed asset is **not** the same record as a work center. The machine you schedule production on and the machine you depreciate are tracked independently. AGA OneForge keeps no link between them.
 </Callout>
 
 ## Related

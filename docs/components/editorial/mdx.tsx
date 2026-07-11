@@ -74,7 +74,7 @@ export function Screenshot({
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-2.5 px-6 text-center">
             <ImageGlyph />
             <span className="font-mono text-ed-10 tracking-[0.08em] uppercase text-ed-ink/70">
-              Carbon screenshot
+              AGA OneForge screenshot
             </span>
             <span className="text-ed-14 font-medium text-ed-ink/78 max-w-90">{label}</span>
           </div>

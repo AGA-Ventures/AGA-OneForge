@@ -35,7 +35,7 @@ export function SiteHeader() {
         <Link className="shrink-0 flex items-center gap-2.5 no-underline" aria-label="Home" href="/">
           <img src="/carbon-mark-light.svg" alt="" width={22} height={22} className="block" />
           <span className="hidden min-[480px]:inline text-ink-ui text-ed-16 font-semi tracking-[0.16px]">
-            Carbon
+            AGA OneForge
           </span>
         </Link>
 
@@ -111,7 +111,7 @@ export function SiteHeader() {
                 className="pointer-events-none absolute inset-0 rounded-lg btn-dark-hover opacity-0 duration-200 ease-out group-hover:opacity-100 transition-opacity"
               />
               <span className="relative z-10 inline-flex items-center justify-center gap-1.5">
-                <span className="font-book text-ed-15 tracking-[0.15px] text-on-dark">Open Carbon</span>
+                <span className="font-book text-ed-15 tracking-[0.15px] text-on-dark">Open AGA OneForge</span>
               </span>
             </a>
           </nav>

@@ -3,7 +3,7 @@ title: Maintenance
 description: "Keeping work centers running: reactive and preventive maintenance dispatches."
 ---
 
-Maintenance in Carbon keeps the machines on the floor running. The unit of work is a **dispatch**, a work-order-like record raised against a **<Term>work center</Term>**, raised either reactively when something breaks or on a recurring preventive schedule. Execution happens on the floor in MES; authoring and reporting live in the back office under Resources.
+Maintenance in AGA OneForge keeps the machines on the floor running. The unit of work is a **dispatch**, a work-order-like record raised against a **<Term>work center</Term>**, raised either reactively when something breaks or on a recurring preventive schedule. Execution happens on the floor in MES; authoring and reporting live in the back office under Resources.
 
 ## Dispatches
 
@@ -24,7 +24,7 @@ Every dispatch carries a **priority** (Low, Medium, High, Critical) and a **sour
 A dispatch is attached to a **work center** and its location — the machine being maintained.
 
 <Callout type="note">
-Maintenance targets a **work center**, not a <Term id="fixed-asset">fixed asset</Term> or an equipment record. The same physical machine may also be a depreciable fixed asset, but Carbon keeps those independent. Maintenance is about keeping the *production resource* available, not about the asset's book value.
+Maintenance targets a **work center**, not a <Term id="fixed-asset">fixed asset</Term> or an equipment record. The same physical machine may also be a depreciable fixed asset, but AGA OneForge keeps those independent. Maintenance is about keeping the *production resource* available, not about the asset's book value.
 </Callout>
 
 ## Preventive schedules
@@ -36,7 +36,7 @@ Recurring upkeep is defined as a **maintenance schedule**: a work center, a **fr
 Each dispatch declares its **OEE impact**: `Down`, `Planned`, `Impact`, or `No Impact`. This is an **availability gate**, not a metric.
 
 <Callout type="warn">
-A dispatch marked **Down** or **Planned** blocks its work center: on the floor, a blocked work center **cannot start a production operation** until the maintenance clears. There is no OEE percentage or uptime ratio in Carbon. The impact value exists to gate work, not to score it. Maintenance analytics are reliability KPIs (MTTR, MTBF, spare-part cost) computed from dispatch event durations.
+A dispatch marked **Down** or **Planned** blocks its work center: on the floor, a blocked work center **cannot start a production operation** until the maintenance clears. There is no OEE percentage or uptime ratio in AGA OneForge. The impact value exists to gate work, not to score it. Maintenance analytics are reliability KPIs (MTTR, MTBF, spare-part cost) computed from dispatch event durations.
 </Callout>
 
 ## Material and cost

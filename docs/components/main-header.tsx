@@ -13,7 +13,7 @@ const NAV = [
 
 type Active = (typeof NAV)[number]["key"];
 
-/** The single site-wide header: Carbon · Guide · Reference · API · Open Carbon.
+/** The single site-wide header: AGA OneForge · Guide · Reference · API · Open AGA OneForge.
  *  `mobileNav` is the current surface's section tree, surfaced in the hamburger
  *  drawer below `lg` where the desktop sidebar is hidden. */
 export function MainHeader({ active, mobileNav }: { active?: Active; mobileNav?: ReactNode }) {
@@ -56,7 +56,7 @@ export function MainHeader({ active, mobileNav }: { active?: Active; mobileNav?:
             aria-hidden="true"
             className="pointer-events-none absolute inset-0 rounded-lg btn-dark-hover opacity-0 transition-opacity duration-200 ease-out group-hover:opacity-100"
           />
-          <span className="text-on-dark relative z-10 text-ed-14 font-book tracking-[0.15px]">Open Carbon</span>
+          <span className="text-on-dark relative z-10 text-ed-14 font-book tracking-[0.15px]">Open AGA OneForge</span>
         </a>
         <MobileNav active={active}>{mobileNav}</MobileNav>
         </div>

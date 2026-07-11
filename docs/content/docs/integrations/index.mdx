@@ -1,9 +1,9 @@
 ---
 title: Integrations
-description: Connect Carbon to your accounting, CAD, project-management, estimating, and messaging tools.
+description: Connect AGA OneForge to your accounting, CAD, project-management, estimating, and messaging tools.
 ---
 
-Carbon ships a set of first-party **integrations** to third-party apps. Each one is enabled per company
+AGA OneForge ships a set of first-party **integrations** to third-party apps. Each one is enabled per company
 under **Settings → Integrations**, where you flip it on and supply its credentials or settings.
 
 Integrations are an **Enterprise** capability. On [Carbon Cloud](https://app.carbon.ms) they're included
@@ -17,7 +17,7 @@ An integration has two parts: a system-wide **definition** and a per-company **a
 
 - The **definition** describes the fields that integration needs: API keys, OAuth tokens, mapping options.
 - The **activation** is a `companyIntegration` record: an `active` flag plus a `metadata` object holding
-  your credentials and settings. Carbon validates that metadata against the definition, so an integration
+  your credentials and settings. AGA OneForge validates that metadata against the definition, so an integration
   can't be switched on with incomplete configuration.
 
 Connections are established one of three ways, depending on the app:
@@ -26,7 +26,7 @@ Connections are established one of three ways, depending on the app:
 | --- | --- | --- |
 | Provider settings | Email | Pick a provider and fill in its fields. |
 | API key | Linear, Paperless Parts, Exchange Rates | Paste a key (and any options). |
-| OAuth | Xero, Jira, Onshape, Slack | Authorize Carbon with the provider; tokens are stored for you. |
+| OAuth | Xero, Jira, Onshape, Slack | Authorize AGA OneForge with the provider; tokens are stored for you. |
 
 <Callout type="note">
 Disconnecting an integration sets `active = false` but **keeps your stored credentials**. Reconnecting
@@ -37,10 +37,10 @@ disconnect.
 ## What's available depends on your deployment
 
 <Callout type="warn">
-Which integrations even appear depends on how Carbon is deployed. The OAuth connectors, **Xero**, **Jira**,
+Which integrations even appear depends on how AGA OneForge is deployed. The OAuth connectors, **Xero**, **Jira**,
 and **Onshape**, only show up when their OAuth client is configured server-side (see
 [Environment variables](/docs/platform/self-hosting/environment-variables)), and **Slack** is hidden in controlled (ITAR)
-environments. So the same Carbon build can offer a different set of integrations depending on its
+environments. So the same AGA OneForge build can offer a different set of integrations depending on its
 configuration.
 </Callout>
 
@@ -63,7 +63,7 @@ configuration.
     Send outbound email through Resend or your own SMTP server.
   </Card>
   <Card title="Assistant" href="/docs/integrations/assistant">
-    Bring the Carbon Assistant into Slack.
+    Bring the AGA OneForge Assistant into Slack.
   </Card>
 </Cards>
 

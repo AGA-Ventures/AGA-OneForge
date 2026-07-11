@@ -1,10 +1,10 @@
 ---
 title: Webhooks
 plan: Business
-description: Get an HTTP callback the moment a Carbon record is created, changed, or deleted.
+description: Get an HTTP callback the moment an AGA OneForge record is created, changed, or deleted.
 ---
 
-A **webhook** sends an HTTP `POST` to a URL you choose whenever a record in a subscribed table is inserted, updated, or deleted. It's the lightest way to react to Carbon in your own systems without polling the API.
+A **webhook** sends an HTTP `POST` to a URL you choose whenever a record in a subscribed table is inserted, updated, or deleted. It's the lightest way to react to AGA OneForge in your own systems without polling the API.
 
 ## Subscribable tables
 
@@ -24,7 +24,7 @@ For each webhook you choose which operations fire it (**insert**, **update**, **
 
 ## The payload
 
-Carbon `POST`s a JSON body to your URL. `type` is the operation, `record` is the affected row, and `old` carries the previous row on updates and deletes.
+AGA OneForge `POST`s a JSON body to your URL. `type` is the operation, `record` is the affected row, and `old` carries the previous row on updates and deletes.
 
 ```json
 {
@@ -48,14 +48,14 @@ Create and manage webhooks under **Settings → Webhooks**. A webhook has:
 - **Triggers:** any of insert, update, delete (at least one).
 - **Active:** webhooks are on by default; switch off to pause delivery.
 
-Carbon tracks a success and error count per webhook, with the timestamp of the last of each, so you can see at a glance whether your endpoint is healthy.
+AGA OneForge tracks a success and error count per webhook, with the timestamp of the last of each, so you can see at a glance whether your endpoint is healthy.
 
 ## Delivery & reliability
 
-Delivery is **at-most-once**: Carbon fires a single `POST` per change and records the outcome. There are no automatic retries, no backoff, and no rate limiting on outbound calls. If your endpoint is down when the event fires, that delivery is missed (the success/error counters will show it). Build your consumer to tolerate the occasional gap, and reconcile against the API when it matters.
+Delivery is **at-most-once**: AGA OneForge fires a single `POST` per change and records the outcome. There are no automatic retries, no backoff, and no rate limiting on outbound calls. If your endpoint is down when the event fires, that delivery is missed (the success/error counters will show it). Build your consumer to tolerate the occasional gap, and reconcile against the API when it matters.
 
 <Callout type="warn">
-Carbon does **not** sign webhook payloads. There is no shared secret or signature header to verify against. Treat the webhook URL itself as the secret: serve it over HTTPS and include an unguessable token in the path or query so you can reject anything that doesn't carry it.
+AGA OneForge does **not** sign webhook payloads. There is no shared secret or signature header to verify against. Treat the webhook URL itself as the secret: serve it over HTTPS and include an unguessable token in the path or query so you can reject anything that doesn't carry it.
 </Callout>
 
 ## Related

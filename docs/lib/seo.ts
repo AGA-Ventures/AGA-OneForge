@@ -9,7 +9,7 @@ import type { Metadata } from "next";
  */
 export const SITE = {
   url: "https://docs.carbon.ms",
-  name: "Carbon",
+  name: "AGA OneForge",
 } as const;
 
 /**
@@ -20,14 +20,14 @@ export const SITE = {
  */
 export const SEO = {
   site: {
-    title: "Carbon Docs",
+    title: "AGA OneForge Docs",
     description:
-      "Docs for Carbon — the manufacturing system. ERP for the office, MES for the floor.",
+      "Docs for AGA OneForge — the manufacturing system. ERP for the office, MES for the floor.",
   },
   api: {
     intro: {
       title: "API reference",
-      description: "Carbon's REST API — every table and view is an endpoint.",
+      description: "AGA OneForge's REST API — every table and view is an endpoint.",
     },
     auth: {
       title: "API authentication",
@@ -37,7 +37,7 @@ export const SEO = {
   mcp: {
     intro: {
       title: "MCP server",
-      description: "Connect Carbon to Claude, Cursor, and other AI clients over MCP.",
+      description: "Connect AGA OneForge to Claude, Cursor, and other AI clients over MCP.",
     },
     auth: {
       title: "MCP authentication",
@@ -75,7 +75,7 @@ export function ogImage(opts: { title: string; eyebrow?: string }) {
 /**
  * Per-page SEO: a self-referencing canonical plus Open Graph + Twitter cards that
  * share one dynamic OG template (`/og`). `title` is the full <title> (it may carry a
- * surface suffix like "— Carbon API"); `ogTitle` is the cleaner line drawn on the card.
+ * surface suffix like "— AGA OneForge API"); `ogTitle` is the cleaner line drawn on the card.
  */
 export function pageSeo(opts: {
   title: string;

@@ -1,10 +1,10 @@
 /**
  * FeatureCallout — the two-column "bridge to product" card. Left: the
  * explanation + a CTA. Right: a muted aside. Use whenever a concept maps to a
- * direct action in Carbon. Server component (no client JS needed).
+ * direct action in AGA OneForge. Server component (no client JS needed).
  *
  * Usage in MDX:
- *   <FeatureCallout title="Try in Carbon" href="https://app.carbon.ms"
+ *   <FeatureCallout title="Try in AGA OneForge" href="https://app.carbon.ms"
  *     cta="Open the routing builder →" aside="Templated per item revision.">
  *   Lay out operations and assign each to a work center...
  *   </FeatureCallout>
@@ -13,9 +13,9 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 export function FeatureCallout({
-  title = "Try in Carbon",
+  title = "Try in AGA OneForge",
   href,
-  cta = "Open Carbon →",
+  cta = "Open AGA OneForge →",
   aside,
   children,
 }: {
