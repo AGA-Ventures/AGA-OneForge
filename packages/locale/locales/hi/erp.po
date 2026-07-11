@@ -188,9 +188,6 @@ msgstr "9-12 सप्ताह"
 msgid "90D"
 msgstr "90 दिन"
 
-msgid "A Carbon-run data migration — you load your own data"
-msgstr "एक कार्बन-चलाया गया डेटा माइग्रेशन — आप अपना डेटा लोड करते हैं"
-
 msgid "A clearing account holding the value of goods received but not yet billed; the supplier invoice clears it."
 msgstr "एक क्लीयरिंग खाता जो प्राप्त किए गए लेकिन अभी तक चालान नहीं किए गए सामान का मूल्य रखता है; आपूर्तिकर्ता चालान इसे साफ करता है।"
 
@@ -720,6 +717,57 @@ msgstr "के बाद"
 msgid "After (calculation method)"
 msgstr "बाद में (गणना विधि)"
 
+msgid "AGA OneForge"
+msgstr "AGA OneForge"
+
+msgid "AGA OneForge + you"
+msgstr "AGA OneForge + आप"
+
+msgid "AGA OneForge client is not available"
+msgstr "AGA OneForge क्लाइंट उपलब्ध नहीं है"
+
+msgid "AGA OneForge client not available"
+msgstr "AGA OneForge क्लाइंट उपलब्ध नहीं है"
+
+msgid "AGA OneForge client not found"
+msgstr "AGA OneForge क्लाइंट नहीं मिला"
+
+msgid "AGA OneForge column"
+msgstr "AGA OneForge कॉलम"
+
+msgid "AGA OneForge is configured the way your company runs, your data is loaded, and your team is confident using it. When that's true, you're ready to go live."
+msgstr "AGA OneForge को आपकी कंपनी के तरीके से कॉन्फ़िगर किया गया है, आपका डेटा लोड किया गया है, और आपकी टीम इसे उपयोग करने में आत्मविश्वास रखती है। जब यह सच हो, तो आप लाइव जाने के लिए तैयार हैं।"
+
+msgid "AGA OneForge leads"
+msgstr "AGA OneForge नेतृत्व करता है"
+
+msgid "AGA OneForge Logo"
+msgstr "AGA OneForge लोगो"
+
+msgid "AGA OneForge only"
+msgstr "केवल AGA OneForge"
+
+msgid "AGA OneForge Value"
+msgstr "AGA OneForge मान"
+
+msgid "AGA OneForge-only"
+msgstr "AGA OneForge-केवल"
+
+msgid "AGA OneForge-only · fill in real targets for this customer. They see the values, locked."
+msgstr "AGA OneForge-only · इस ग्राहक के लिए वास्तविक लक्ष्य भरें। वे मान देख सकते हैं, लॉक किए गए।"
+
+msgid "AGA OneForge-only · the customer sees this text, locked."
+msgstr "AGA OneForge-only · ग्राहक यह पाठ देखता है, लॉक किया गया।"
+
+msgid "AGA OneForge's name for a bill of material and bill of process (routing): the components plus the operations that make a part."
+msgstr "सामग्री की सूची और प्रक्रिया सूची (रूटिंग) के लिए AGA OneForge का नाम: घटक और संचालन जो एक हिस्सा बनाते हैं।"
+
+msgid "AGA OneForge's planning run nets supply against demand and explodes methods, surfacing shortfalls — but it creates no orders itself."
+msgstr "AGA OneForge का योजना रन आपूर्ति को मांग के विरुद्ध नेट करता है और विधियों को विस्फोट करता है, कमियों को दिखाता है — लेकिन यह स्वयं कोई आदेश नहीं बनाता।"
+
+msgid "AGA OneForge's production order — one job builds a quantity of one item from its own copied method and routing."
+msgstr "AGA OneForge का उत्पादन आदेश — एक कार्य अपनी प्रतिलिपि की गई विधि और रूटिंग से एक आइटम की मात्रा बनाता है।"
+
 msgid "Agree on the scope"
 msgstr "दायरे पर सहमति दें"
 
@@ -814,6 +862,9 @@ msgstr "एक लेखांकन बाल्टी जो विभाग �
 msgid "An accounting record for a capitalized item you depreciate rather than expense; Draft → Active → Fully Depreciated → Disposed."
 msgstr "एक पूंजीकृत वस्तु के लिए एक लेखांकन रिकॉर्ड जिसे आप खर्च करने के बजाय मूल्यह्रास करते हैं; मसौदा → सक्रिय → पूर्ण रूप से मूल्यह्रास → निपटान।"
 
+msgid "An AGA OneForge-run data migration — you load your own data"
+msgstr "एक AGA OneForge-चलाया गया डेटा माइग्रेशन — आप अपना डेटा लोड करते हैं"
+
 msgid "An asset's acquisition cost minus accumulated depreciation — what it's still worth on the books, and the figure it's disposed at."
 msgstr "एक संपत्ति की अधिग्रहण लागत माइनस संचयी मूल्यह्रास — यह किताबों पर अभी भी क्या मूल्य है और राशि जिस पर इसे निपटाया जाता है।"
 
@@ -889,8 +940,8 @@ msgstr "एपीआई कुंजी"
 msgid "API Keys"
 msgstr "एपीआई कुंजियाँ"
 
-msgid "API keys for programmatic access to your Carbon data."
-msgstr "आपके Carbon डेटा के लिए प्रोग्रामेटिक एक्सेस के लिए API कुंजियाँ।"
+msgid "API keys for programmatic access to your AGA OneForge data."
+msgstr "आपके AGA OneForge डेटा के लिए प्रोग्रामेटिक एक्सेस के लिए API कुंजियाँ।"
 
 msgid "Applied"
 msgstr "लागू"
@@ -1721,14 +1772,14 @@ msgstr "बोनस मूल्यह्रास %"
 msgid "Book a call to discuss guided implementation"
 msgstr "गाइडेड कार्यान्वयन पर चर्चा करने के लिए कॉल बुक करें"
 
-msgid "Book a call with Carbon"
-msgstr "Carbon के साथ कॉल बुक करें"
+msgid "Book a call with AGA OneForge"
+msgstr "AGA OneForge के साथ कॉल बुक करें"
 
 msgid "Breadcrumb"
 msgstr "ब्रेडक्रम्ब"
 
-msgid "Bring in your parts, BOMs, Bill of Process, and costing — with Carbon's import tools, CSV, or LLM help."
-msgstr "अपने पार्ट्स, BOMs, Bill of Process, और कोस्टिंग लाएं — Carbon के इम्पोर्ट टूल्स, CSV, या LLM हेल्प के साथ।"
+msgid "Bring in your parts, BOMs, Bill of Process, and costing — with AGA OneForge's import tools, CSV, or LLM help."
+msgstr "अपने पार्ट्स, BOMs, Bill of Process, और कोस्टिंग लाएं — AGA OneForge के इम्पोर्ट टूल्स, CSV, या LLM हेल्प के साथ।"
 
 msgid "Browse library"
 msgstr "लाइब्रेरी ब्राउज़ करें"
@@ -1832,8 +1883,8 @@ msgstr "अंशांकन आपूर्तिकर्ता"
 msgid "Calibrations"
 msgstr "अंशांकन"
 
-msgid "Called a method in Carbon — the components plus operations that produce a part."
-msgstr "कार्बन में एक विधि कहा जाता है — घटक और संचालन जो एक हिस्सा तैयार करते हैं।"
+msgid "Called a method in AGA OneForge — the components plus operations that produce a part."
+msgstr "AGA OneForge में एक विधि कहा जाता है — घटक और संचालन जो एक हिस्सा तैयार करते हैं।"
 
 msgid "Can't disable the only active break. Add another break or toggle the override's Active instead."
 msgstr "केवल सक्रिय ब्रेक को अक्षम नहीं कर सकते। एक और ब्रेक जोड़ें या ओवरराइड के सक्रिय को टॉगल करें।"
@@ -1906,57 +1957,6 @@ msgstr "अपलोड नहीं कर सकते — आपूर्त�
 
 msgid "Cannot upload to parts bucket without item ID"
 msgstr "आइटम आईडी के बिना पार्ट्स बकेट में अपलोड नहीं कर सकते"
-
-msgid "Carbon"
-msgstr "कार्बन"
-
-msgid "Carbon + you"
-msgstr "Carbon + आप"
-
-msgid "Carbon client is not available"
-msgstr "Carbon क्लाइंट उपलब्ध नहीं है"
-
-msgid "Carbon client not available"
-msgstr "Carbon क्लाइंट उपलब्ध नहीं है"
-
-msgid "Carbon client not found"
-msgstr "कार्बन क्लाइंट नहीं मिला"
-
-msgid "Carbon column"
-msgstr "कार्बन कॉलम"
-
-msgid "Carbon is configured the way your company runs, your data is loaded, and your team is confident using it. When that's true, you're ready to go live."
-msgstr "Carbon को आपकी कंपनी के तरीके से कॉन्फ़िगर किया गया है, आपका डेटा लोड किया गया है, और आपकी टीम इसे उपयोग करने में आत्मविश्वास रखती है। जब यह सच हो, तो आप लाइव जाने के लिए तैयार हैं।"
-
-msgid "Carbon leads"
-msgstr "कार्बन नेतृत्व करता है"
-
-msgid "Carbon Logo"
-msgstr "कार्बन लोगो"
-
-msgid "Carbon only"
-msgstr "केवल कार्बन"
-
-msgid "Carbon Value"
-msgstr "कार्बन मान"
-
-msgid "Carbon-only"
-msgstr "कार्बन-केवल"
-
-msgid "Carbon-only · fill in real targets for this customer. They see the values, locked."
-msgstr "Carbon-only · इस ग्राहक के लिए वास्तविक लक्ष्य भरें। वे मान देख सकते हैं, लॉक किए गए।"
-
-msgid "Carbon-only · the customer sees this text, locked."
-msgstr "Carbon-only · ग्राहक यह पाठ देखता है, लॉक किया गया।"
-
-msgid "Carbon's name for a bill of material and bill of process (routing): the components plus the operations that make a part."
-msgstr "सामग्री की सूची और प्रक्रिया सूची (रूटिंग) के लिए कार्बन का नाम: घटक और संचालन जो एक हिस्सा बनाते हैं।"
-
-msgid "Carbon's planning run nets supply against demand and explodes methods, surfacing shortfalls — but it creates no orders itself."
-msgstr "कार्बन का योजना रन आपूर्ति को मांग के विरुद्ध नेट करता है और विधियों को विस्फोट करता है, कमियों को दिखाता है — लेकिन यह स्वयं कोई आदेश नहीं बनाता।"
-
-msgid "Carbon's production order — one job builds a quantity of one item from its own copied method and routing."
-msgstr "कार्बन का उत्पादन आदेश — एक कार्य अपनी प्रतिलिपि की गई विधि और रूटिंग से एक आइटम की मात्रा बनाता है।"
 
 msgid "Cards"
 msgstr "कार्ड"
@@ -2271,8 +2271,8 @@ msgstr "कॉन्फ़िगर करें"
 msgid "Configure {label}"
 msgstr "{label} को कॉन्फ़िगर करें"
 
-msgid "Configure Carbon"
-msgstr "कार्बन कॉन्फ़िगर करें"
+msgid "Configure AGA OneForge"
+msgstr "AGA OneForge कॉन्फ़िगर करें"
 
 msgid "Configure default accounts for cash and bank transactions"
 msgstr "नकद और बैंकिंग लेनदेन के लिए डिफ़ॉल्ट खाते कॉन्फ़िगर करें"
@@ -3164,11 +3164,11 @@ msgstr "अनुकूलित करें"
 msgid "Customize the layout of your PDF documents — reorder sections, hide what you don't need, and add your own blocks."
 msgstr "अपने PDF दस्तावेज़ों के लेआउट को कस्टमाइज़ करें — अनुभागों को पुनः व्यवस्थित करें, जो आपको आवश्यकता नहीं है उसे छिपाएं, और अपने स्वयं के ब्लॉक जोड़ें।"
 
-msgid "Cut over to Carbon and freeze the old system"
-msgstr "कार्बन में स्विच करें और पुरानी प्रणाली को फ्रीज करें"
+msgid "Cut over to AGA OneForge and freeze the old system"
+msgstr "AGA OneForge में स्विच करें और पुरानी प्रणाली को फ्रीज करें"
 
-msgid "Cut over, freeze the old system, and confirm you're live on Carbon."
-msgstr "पुरानी प्रणाली को बंद करें, फ्रीज करें, और पुष्टि करें कि आप Carbon पर लाइव हैं।"
+msgid "Cut over, freeze the old system, and confirm you're live on AGA OneForge."
+msgstr "पुरानी प्रणाली को बंद करें, फ्रीज करें, और पुष्टि करें कि आप AGA OneForge पर लाइव हैं।"
 
 msgid "Cutover checklist"
 msgstr "कटओवर चेकलिस्ट"
@@ -4802,8 +4802,8 @@ msgstr "बाहरी संदर्भ"
 msgid "External Reference"
 msgstr "बाहरी संदर्भ"
 
-msgid "Extra fields to capture data Carbon doesn't track by default"
-msgstr "कार्बन डिफ़ॉल्ट रूप से ट्रैक नहीं करता है ऐसा डेटा कैप्चर करने के लिए अतिरिक्त फ़ील्ड"
+msgid "Extra fields to capture data AGA OneForge doesn't track by default"
+msgstr "AGA OneForge डिफ़ॉल्ट रूप से ट्रैक नहीं करता है ऐसा डेटा कैप्चर करने के लिए अतिरिक्त फ़ील्ड"
 
 msgid "Extra tags for slicing your GL reporting"
 msgstr "आपकी GL रिपोर्टिंग को स्लाइस करने के लिए अतिरिक्त टैग"
@@ -4949,8 +4949,8 @@ msgstr "जोखिमों को प्राप्त करने मे�
 msgid "Failed to fetch suggestions"
 msgstr "सुझाव प्राप्त करने में विफल"
 
-msgid "Failed to initialize Carbon client"
-msgstr "Carbon क्लाइंट को इनिशियलाइज़ करने में विफल"
+msgid "Failed to initialize AGA OneForge client"
+msgstr "AGA OneForge क्लाइंट को इनिशियलाइज़ करने में विफल"
 
 msgid "Failed to insert quote line"
 msgstr "उद्धरण पंक्ति सम्मिलित करने में विफल"
@@ -5398,8 +5398,8 @@ msgstr "जेनरेट की गई आईडी अक्षम हैं"
 msgid "Generated IDs are enabled"
 msgstr "जेनरेट की गई आईडी सक्षम हैं"
 
-msgid "Get live on Carbon: one system running quoting, purchasing, the shop floor, inventory, and finance, replacing the current tools."
-msgstr "Carbon पर लाइव जाएं: एक सिस्टम जो कोटिंग, खरीद, शॉप फ्लोर, इन्वेंटरी और वित्त चलाता है, वर्तमान उपकरणों को प्रतिस्थापित करता है।"
+msgid "Get live on AGA OneForge: one system running quoting, purchasing, the shop floor, inventory, and finance, replacing the current tools."
+msgstr "AGA OneForge पर लाइव जाएं: एक सिस्टम जो कोटिंग, खरीद, शॉप फ्लोर, इन्वेंटरी और वित्त चलाता है, वर्तमान उपकरणों को प्रतिस्थापित करता है।"
 
 msgid "Get Method"
 msgstr "विधि प्राप्त करें"
@@ -5410,8 +5410,8 @@ msgstr "शुरुआत करें"
 msgid "Get Started"
 msgstr "शुरुआत करें"
 
-msgid "Getting around Carbon"
-msgstr "कार्बन के चारों ओर घूमना"
+msgid "Getting around AGA OneForge"
+msgstr "AGA OneForge के चारों ओर घूमना"
 
 msgid "Getting set up"
 msgstr "सेटअप हो रहा है"
@@ -5567,8 +5567,8 @@ msgstr "Go-live और स्वीकृति sign-off"
 msgid "Go-live timing holds if each gate is cleared on schedule"
 msgstr "यदि प्रत्येक गेट समय पर क्लीयर हो जाए तो गो-लाइव टाइमिंग बनी रहती है"
 
-msgid "Going live on Carbon"
-msgstr "कार्बन पर लाइव जाना"
+msgid "Going live on AGA OneForge"
+msgstr "AGA OneForge पर लाइव जाना"
 
 #. placeholder {0}: user.firstName
 msgid "Good afternoon, {0}"
@@ -5789,8 +5789,8 @@ msgstr "हम कैसे काम करते हैं"
 msgid "How We Work Together"
 msgstr "हम कैसे एक साथ काम करते हैं"
 
-msgid "How your company's process maps to Carbon"
-msgstr "आपकी कंपनी की प्रक्रिया कार्बन से कैसे मैप होती है"
+msgid "How your company's process maps to AGA OneForge"
+msgstr "आपकी कंपनी की प्रक्रिया AGA OneForge से कैसे मैप होती है"
 
 msgid "How your quotes, orders, and invoices look when they go out"
 msgstr "आपके उद्धरण, ऑर्डर और चालान भेजे जाने पर कैसे दिखते हैं"
@@ -6601,9 +6601,6 @@ msgstr "सूची पैरामीटर"
 msgid "Live on AGA OneForge"
 msgstr "AGA OneForge पर लाइव"
 
-msgid "Live on Carbon"
-msgstr "Carbon पर लाइव"
-
 msgid "Live reloading"
 msgstr "लाइव रीलोडिंग"
 
@@ -6625,8 +6622,8 @@ msgstr "संबंधित कार्य लोड हो रहे है�
 msgid "Loading item details..."
 msgstr "आइटम विवरण लोड हो रहे हैं..."
 
-msgid "Loading your own data with Carbon's import tools"
-msgstr "Carbon के आयात उपकरणों के साथ अपना डेटा लोड करना"
+msgid "Loading your own data with AGA OneForge's import tools"
+msgstr "AGA OneForge के आयात उपकरणों के साथ अपना डेटा लोड करना"
 
 msgid "Loading..."
 msgstr "लोड हो रहा है..."
@@ -8003,8 +8000,8 @@ msgstr "हाथ में इन्वेंटरी बची है"
 msgid "On-time delivery"
 msgstr "समय पर डिलीवरी"
 
-msgid "One serial unit or one batch that Carbon follows individually, carrying its own status and attributes such as an expiry date."
-msgstr "एक सीरीज यूनिट या एक बैच जो Carbon व्यक्तिगत रूप से अनुसरण करता है, अपनी स्वयं की स्थिति और विशेषताएं जैसे समाप्ति तिथि ले जाता है।"
+msgid "One serial unit or one batch that AGA OneForge follows individually, carrying its own status and attributes such as an expiry date."
+msgstr "एक सीरीज यूनिट या एक बैच जो AGA OneForge व्यक्तिगत रूप से अनुसरण करता है, अपनी स्वयं की स्थिति और विशेषताएं जैसे समाप्ति तिथि ले जाता है।"
 
 msgid "One set of numbers"
 msgstr "एक ही संख्या का सेट"
@@ -8108,8 +8105,8 @@ msgstr "खुला हुआ"
 msgid "Opening"
 msgstr "शुरुआती"
 
-msgid "Opening balance of depreciation already booked before this asset was added to Carbon (use 0 for new acquisitions)."
-msgstr "अवक्षयण का खाता खोलने के संतुलन को पहले ही बुक किया गया है इससे पहले कि यह संपत्ति Carbon में जोड़ी गई थी (नई खरीद के लिए 0 का उपयोग करें)।"
+msgid "Opening balance of depreciation already booked before this asset was added to AGA OneForge (use 0 for new acquisitions)."
+msgstr "अवक्षयण का खाता खोलने के संतुलन को पहले ही बुक किया गया है इससे पहले कि यह संपत्ति AGA OneForge में जोड़ी गई थी (नई खरीद के लिए 0 का उपयोग करें)।"
 
 msgid "Operating Expenses"
 msgstr "परिचालन व्यय"
@@ -9271,8 +9268,8 @@ msgstr "उद्धरण, फर्श और वित्त के बीच
 msgid "Reactivate"
 msgstr "पुनः सक्रिय करें"
 
-msgid "Read this through — what Carbon will and won't do for your setup. When it looks right, mark it agreed below."
-msgstr "इसे पूरी तरह पढ़ें — Carbon आपके सेटअप के लिए क्या करेगा और क्या नहीं करेगा। जब यह सही लगे, तो नीचे सहमत के रूप में चिह्नित करें।"
+msgid "Read this through — what AGA OneForge will and won't do for your setup. When it looks right, mark it agreed below."
+msgstr "इसे पूरी तरह पढ़ें — AGA OneForge आपके सेटअप के लिए क्या करेगा और क्या नहीं करेगा। जब यह सही लगे, तो नीचे सहमत के रूप में चिह्नित करें।"
 
 msgid "Read this through. When it's right, sign off at the bottom. It's the statement your commercial agreement points to, with no prices or legal terms here."
 msgstr "इसे पूरी तरह पढ़ें। जब यह सही हो, तो नीचे साइन ऑफ करें। यह वह विवरण है जिसकी ओर आपका व्यावसायिक समझौता इशारा करता है, यहाँ कोई कीमत या कानूनी शर्तें नहीं हैं।"
@@ -9344,7 +9341,7 @@ msgid "Receivables"
 msgstr "प्राप्य खाते (डिफ़ॉल्ट)"
 
 msgid "Receivables (default)"
-msgstr "एक क्रय आदेश को प्राप्त और चालान किए गए के साथ समेटना — Carbon में निहित, लाइन मात्रा और GR/IR शेष के माध्यम से।"
+msgstr "एक क्रय आदेश को प्राप्त और चालान किए गए के साथ समेटना — AGA OneForge में निहित, लाइन मात्रा और GR/IR शेष के माध्यम से।"
 
 msgid "Receivables aging"
 msgstr "प्राप्य उम्र बढ़ना"
@@ -9395,8 +9392,8 @@ msgstr "हाल के भुगतान"
 msgid "Recently Created"
 msgstr "हाल ही में बनाया गया"
 
-msgid "Reconciling a purchase order against what was received and invoiced — implicit in Carbon, via the line quantities and GR/IR balance."
-msgstr "वसूली अवधि"
+msgid "Reconciling a purchase order against what was received and invoiced — implicit in AGA OneForge, via the line quantities and GR/IR balance."
+msgstr "Reconciling a purchase order against what was received and invoiced — implicit in AGA OneForge, via the line quantities and GR/IR balance."
 
 msgid "Record"
 msgstr "रिकॉर्ड करें"
@@ -10349,7 +10346,7 @@ msgid "Self Managed"
 msgstr "स्व प्रबंधित"
 
 msgid "Self-Onboarding with AGA OneForge Academy"
-msgstr "कार्बन अकादमी के साथ स्व-प्रशिक्षण"
+msgstr "AGA OneForge अकादमी के साथ स्व-प्रशिक्षण"
 
 msgid "Self-paced"
 msgstr "स्व-गति"
@@ -10438,8 +10435,8 @@ msgstr "सेवाएं"
 msgid "Set a target"
 msgstr "लक्ष्य निर्धारित करें"
 
-msgid "Set Carbon up around how your company runs: sites, parts, BOMs, Bill of Process, and the flows you use."
-msgstr "Carbon को अपनी कंपनी के संचालन के अनुसार सेट करें: साइट्स, पार्ट्स, BOMs, बिल ऑफ प्रोसेस, और आप जो फ्लो उपयोग करते हैं।"
+msgid "Set AGA OneForge up around how your company runs: sites, parts, BOMs, Bill of Process, and the flows you use."
+msgstr "AGA OneForge को अपनी कंपनी के संचालन के अनुसार सेट करें: साइट्स, पार्ट्स, BOMs, बिल ऑफ प्रोसेस, और आप जो फ्लो उपयोग करते हैं।"
 
 msgid "Set Clock Out"
 msgstr "क्लॉक आउट सेट करें"
@@ -10862,8 +10859,8 @@ msgstr "होस्टिंग सेट अप करें (क्लाउ�
 msgid "Standard"
 msgstr "मानक"
 
-msgid "Standard cloud Carbon fits how your company runs"
-msgstr "मानक क्लाउड कार्बन आपकी कंपनी के संचालन के तरीके के अनुरूप है"
+msgid "Standard cloud AGA OneForge fits how your company runs"
+msgstr "मानक क्लाउड AGA OneForge आपकी कंपनी के संचालन के तरीके के अनुरूप है"
 
 msgid "Standard factor"
 msgstr "मानक कारक"
@@ -11460,11 +11457,20 @@ msgstr "{0} चरणों को लाइव करने के लिए, �
 msgid "The accounting dimension that categorizes items for reporting and analysis."
 msgstr "लेखा आयाम जो रिपोर्टिंग और विश्लेषण के लिए वस्तुओं को वर्गीकृत करता है।"
 
-msgid "The accounts Carbon posts to automatically"
-msgstr "वे खाते जो Carbon स्वचालित रूप से पोस्ट करता है"
+msgid "The accounts AGA OneForge posts to automatically"
+msgstr "वे खाते जो AGA OneForge स्वचालित रूप से पोस्ट करता है"
 
 msgid "The action that copies a saved method (its materials, operations, and work instructions) onto a job or quote line."
 msgstr "वह कार्रवाई जो एक सहेजी गई विधि (इसकी सामग्री, संचालन और कार्य निर्देश) को एक कार्य या उद्धरण पंक्ति पर कॉपी करती है।"
+
+msgid "The AGA OneForge user responsible for this customer relationship; emails and reminders about this customer route to them."
+msgstr "AGA OneForge उपयोगकर्ता जो इस ग्राहक संबंध के लिए जिम्मेदार है; इस ग्राहक के बारे में ईमेल और अनुस्मारक उन्हें रूट किए जाते हैं।"
+
+msgid "The AGA OneForge user responsible for this supplier relationship; emails and reminders about this supplier route to them."
+msgstr "AGA OneForge उपयोगकर्ता जो इस आपूर्तिकर्ता संबंध के लिए जिम्मेदार है; इस आपूर्तिकर्ता के बारे में ईमेल और अनुस्मारक उन्हें रूट किए जाते हैं।"
+
+msgid "The AGA OneForge user who owns this RFQ; supplier responses and reminders route to them."
+msgstr "AGA OneForge उपयोगकर्ता जो इस RFQ का मालिक है; आपूर्तिकर्ता प्रतिक्रिया और अनुस्मारक उन्हें रूट किए जाते हैं।"
 
 msgid "The allowed values for a list-type attribute; users pick from these rather than free-typing."
 msgstr "एक सूची-प्रकार की विशेषता के लिए अनुमत मान; उपयोगकर्ता स्वतंत्र रूप से टाइप करने के बजाय इन में से चुनते हैं।"
@@ -11487,20 +11493,11 @@ msgstr "सभी पोस्ट की गई जर्नल पंक्त�
 msgid "The buckets you track costs against"
 msgstr "वह बाल्टियाँ जिनके विरुद्ध आप लागत को ट्रैक करते हैं"
 
-msgid "The Carbon user responsible for this customer relationship; emails and reminders about this customer route to them."
-msgstr "Carbon उपयोगकर्ता जो इस ग्राहक संबंध के लिए जिम्मेदार है; इस ग्राहक के बारे में ईमेल और अनुस्मारक उन्हें रूट किए जाते हैं।"
-
-msgid "The Carbon user responsible for this supplier relationship; emails and reminders about this supplier route to them."
-msgstr "Carbon उपयोगकर्ता जो इस आपूर्तिकर्ता संबंध के लिए जिम्मेदार है; इस आपूर्तिकर्ता के बारे में ईमेल और अनुस्मारक उन्हें रूट किए जाते हैं।"
-
-msgid "The Carbon user who owns this RFQ; supplier responses and reminders route to them."
-msgstr "Carbon उपयोगकर्ता जो इस RFQ का मालिक है; आपूर्तिकर्ता प्रतिक्रिया और अनुस्मारक उन्हें रूट किए जाते हैं।"
-
 msgid "The carrier that delivers goods from this supplier, when different from the supplier itself (e.g. supplier sells, FedEx ships)."
 msgstr "वह वाहक जो इस आपूर्तिकर्ता से सामान की डिलीवरी करता है, जब आपूर्तिकर्ता स्वयं से अलग हो (जैसे आपूर्तिकर्ता बेचता है, FedEx शिप करता है)।"
 
-msgid "The carrier's tracking-page URL with {trackingNumber} as a placeholder — Carbon substitutes the actual number when generating links on shipments."
-msgstr "{trackingNumber} को प्लेसहोल्डर के रूप में उपयोग करके वाहक का ट्रैकिंग-पेज URL - Carbon शिपमेंट पर लिंक उत्पन्न करते समय वास्तविक संख्या को प्रतिस्थापित करता है।"
+msgid "The carrier's tracking-page URL with {trackingNumber} as a placeholder — AGA OneForge substitutes the actual number when generating links on shipments."
+msgstr "{trackingNumber} को प्लेसहोल्डर के रूप में उपयोग करके वाहक का ट्रैकिंग-पेज URL - AGA OneForge शिपमेंट पर लिंक उत्पन्न करते समय वास्तविक संख्या को प्रतिस्थापित करता है।"
 
 msgid "The carriers and methods you ship orders with"
 msgstr "वह वाहक और तरीके जिनसे आप ऑर्डर भेजते हैं"
@@ -11694,11 +11691,11 @@ msgstr "इस कार्य केंद्र पर मशीनरी च�
 msgid "The hourly indirect-cost burden applied to this work center; the difference between labor + machine and the full quoting rate is what overhead absorbs."
 msgstr "इस कार्य केंद्र पर लागू प्रति घंटा अप्रत्यक्ष-लागत बोझ; श्रम + मशीन और पूर्ण उद्धरण दर के बीच का अंतर वह है जो ओवरहेड अवशोषित करता है।"
 
-msgid "The identifier the customer uses for this part on their POs; Carbon resolves it to our internal Part ID on order import."
-msgstr "पहचानकर्ता जो ग्राहक इस भाग के लिए अपने POs पर उपयोग करता है; Carbon आदेश आयात पर इसे हमारे आंतरिक भाग ID में हल करता है।"
+msgid "The identifier the customer uses for this part on their POs; AGA OneForge resolves it to our internal Part ID on order import."
+msgstr "पहचानकर्ता जो ग्राहक इस भाग के लिए अपने POs पर उपयोग करता है; AGA OneForge आदेश आयात पर इसे हमारे आंतरिक भाग ID में हल करता है।"
 
-msgid "The identifier the supplier uses for this part on their quotes and invoices; Carbon resolves it to our internal Part ID."
-msgstr "पहचानकर्ता जो आपूर्तिकर्ता इस भाग के लिए अपने उद्धरणों और चालानों पर उपयोग करता है; Carbon इसे हमारे आंतरिक भाग ID में हल करता है।"
+msgid "The identifier the supplier uses for this part on their quotes and invoices; AGA OneForge resolves it to our internal Part ID."
+msgstr "पहचानकर्ता जो आपूर्तिकर्ता इस भाग के लिए अपने उद्धरणों और चालानों पर उपयोग करता है; AGA OneForge इसे हमारे आंतरिक भाग ID में हल करता है।"
 
 msgid "The immediate nonconformance task that quarantines affected stock or work before the root cause is known."
 msgstr "तत्काल अनुरूपता कार्य जो प्रभावित स्टॉक या कार्य को अलग रखता है इससे पहले कि मूल कारण ज्ञात हो।"
@@ -11787,8 +11784,8 @@ msgstr "सबसे कम राशि जो यह आपूर्तिक�
 msgid "The machines, cells, and stations your work runs through"
 msgstr "वे मशीनें, सेल और स्टेशन जिनके माध्यम से आपका काम चलता है"
 
-msgid "The master data to set up when first configuring Carbon, grouped by module. Mark each one configured as you go."
-msgstr "Carbon को पहली बार कॉन्फ़िगर करते समय सेट अप करने के लिए मास्टर डेटा, मॉड्यूल द्वारा समूहीकृत। जैसे-जैसे आप आगे बढ़ें, प्रत्येक को कॉन्फ़िगर किए गए के रूप में चिह्नित करें।"
+msgid "The master data to set up when first configuring AGA OneForge, grouped by module. Mark each one configured as you go."
+msgstr "AGA OneForge को पहली बार कॉन्फ़िगर करते समय सेट अप करने के लिए मास्टर डेटा, मॉड्यूल द्वारा समूहीकृत। जैसे-जैसे आप आगे बढ़ें, प्रत्येक को कॉन्फ़िगर किए गए के रूप में चिह्नित करें।"
 
 msgid "The material is purchased from a supplier for that specific order, rather than made or pulled from stock."
 msgstr "सामग्री एक विशेष आदेश के लिए एक आपूर्तिकर्ता से खरीदी जाती है, बजाय इसे बनाने या स्टॉक से खींचने के।"
@@ -11859,11 +11856,11 @@ msgstr "जब माता-पिता जो इसकी आवश्यक�
 msgid "The part is taken from existing stock when its parent is built — no new job or purchase order."
 msgstr "जब इसके माता-पिता को बनाया जाता है तब भाग मौजूदा स्टॉक से लिया जाता है - कोई नई नौकरी या खरीद आदेश नहीं।"
 
-msgid "The people on the Carbon side who will run your implementation, and how to reach them."
-msgstr "कार्बन की ओर से वे लोग जो आपके कार्यान्वयन को चलाएंगे, और उन तक कैसे पहुंचें।"
+msgid "The people on the AGA OneForge side who will run your implementation, and how to reach them."
+msgstr "AGA OneForge की ओर से वे लोग जो आपके कार्यान्वयन को चलाएंगे, और उन तक कैसे पहुंचें।"
 
-msgid "The people on your team and their access to Carbon"
-msgstr "आपकी टीम के लोग और Carbon तक उनकी पहुंच"
+msgid "The people on your team and their access to AGA OneForge"
+msgstr "आपकी टीम के लोग और AGA OneForge तक उनकी पहुंच"
 
 msgid "The percentage of the cash discount. Use 0 for no discount."
 msgstr "नकद छूट का प्रतिशत। कोई छूट नहीं के लिए 0 का उपयोग करें।"
@@ -11919,8 +11916,8 @@ msgstr "ट्रैक किए गए इकाइयों का रिक�
 msgid "The reference data everything else hangs off. Loads first."
 msgstr "संदर्भ डेटा जिस पर सब कुछ निर्भर करता है। पहले लोड होता है।"
 
-msgid "The residual WIP a job has left at close, swept to a Production Variance account — the only variance Carbon books for a job."
-msgstr "अवशिष्ट WIP जो एक काम को बंद करने पर छोड़ गया है, उत्पादन विचरण खाते में स्वेप किया गया - एक काम के लिए कार्बन पुस्तकें का एकमात्र विचरण।"
+msgid "The residual WIP a job has left at close, swept to a Production Variance account — the only variance AGA OneForge books for a job."
+msgstr "अवशिष्ट WIP जो एक काम को बंद करने पर छोड़ गया है, उत्पादन विचरण खाते में स्वेप किया गया - एक काम के लिए AGA OneForge पुस्तकें का एकमात्र विचरण।"
 
 msgid "The revision number of the part"
 msgstr "भाग की संशोधन संख्या"
@@ -12036,8 +12033,8 @@ msgstr "इस आपूर्तिकर्ता को इस प्रक�
 msgid "The unique identifier on this physical unit; one row per serial, quantity is always 1."
 msgstr "इस भौतिक इकाई पर अद्वितीय पहचानकर्ता; प्रति सीरीज़ नंबर एक पंक्ति, मात्रा हमेशा 1 होती है।"
 
-msgid "The unit a routing time is expressed in, such as Hours/Piece or Total Hours, telling Carbon whether the time scales with quantity or is fixed per run."
-msgstr "वह इकाई जिसमें रूटिंग समय व्यक्त किया जाता है, जैसे घंटे/टुकड़ा या कुल घंटे, कार्बन को बताता है कि समय मात्रा के साथ बढ़ता है या प्रति रन निश्चित है।"
+msgid "The unit a routing time is expressed in, such as Hours/Piece or Total Hours, telling AGA OneForge whether the time scales with quantity or is fixed per run."
+msgstr "वह इकाई जिसमें रूटिंग समय व्यक्त किया जाता है, जैसे घंटे/टुकड़ा या कुल घंटे, AGA OneForge को बताता है कि समय मात्रा के साथ बढ़ता है या प्रति रन निश्चित है।"
 
 msgid "The unit price of the item at the time of the purchase"
 msgstr "खरीद के समय आइटम की यूनिट कीमत"
@@ -13270,8 +13267,8 @@ msgstr "भारित औसत"
 msgid "Weighted average cost over last year calculated when the invoice is posted"
 msgstr "पिछले साल की भारित औसत लागत जो चालान पोस्ट किए जाने पर गणना की जाती है"
 
-msgid "Welcome to Carbon"
-msgstr "कार्बन में आपका स्वागत है"
+msgid "Welcome to AGA OneForge"
+msgstr "AGA OneForge में आपका स्वागत है"
 
 msgid "Welcome, {companyName}"
 msgstr "स्वागत है, {companyName}"
@@ -13282,8 +13279,8 @@ msgstr "यह किस विफलता श्रेणी का है —
 msgid "What changes day to day"
 msgstr "दिन-प्रतिदिन क्या बदलता है"
 
-msgid "What changes when you move to Carbon, and roughly what it's worth. Estimates, not a forecast."
-msgstr "जब आप Carbon पर जाते हैं तो क्या बदलता है, और मोटे तौर पर इसकी कीमत क्या है। अनुमान, पूर्वानुमान नहीं।"
+msgid "What changes when you move to AGA OneForge, and roughly what it's worth. Estimates, not a forecast."
+msgstr "जब आप AGA OneForge पर जाते हैं तो क्या बदलता है, और मोटे तौर पर इसकी कीमत क्या है। अनुमान, पूर्वानुमान नहीं।"
 
 msgid "What data"
 msgstr "कौन सा डेटा"
@@ -13342,8 +13339,8 @@ msgstr "जब किसी तैयार उत्पाद का शेल�
 msgid "When a serial or batch expires, and what happens if used after — a company policy can Warn, Block, or BlockWithOverride."
 msgstr "जब एक सीरियल या बैच समाप्त हो जाता है, और उपयोग के बाद क्या होता है — एक कंपनी नीति सतर्क, अवरुद्ध, या ब्लॉकविदअधिग्रहण हो सकती है।"
 
-msgid "When Carbon committed to having the goods arrive; combined with the shipping method's transit days, this drives Ship Date back-calc."
-msgstr "जब कार्बन ने माल के आने का वचन दिया; शिपिंग विधि के ट्रांजिट दिनों के साथ संयुक्त, यह जहाज तारीख की पिछली गणना को चलाता है।"
+msgid "When AGA OneForge committed to having the goods arrive; combined with the shipping method's transit days, this drives Ship Date back-calc."
+msgstr "जब AGA OneForge ने माल के आने का वचन दिया; शिपिंग विधि के ट्रांजिट दिनों के साथ संयुक्त, यह जहाज तारीख की पिछली गणना को चलाता है।"
 
 msgid "When expired stock is used"
 msgstr "जब समाप्त हो चुका स्टॉक उपयोग किया जाता है"
@@ -13372,8 +13369,8 @@ msgstr "जब सक्षम हो, तो यह मूल्य ओवर�
 msgid "When on, this rule fires for every target of its type. Assignment rows are ignored but preserved."
 msgstr "जब चालू हो, तो यह नियम अपने प्रकार के प्रत्येक लक्ष्य के लिए सक्रिय होता है। असाइनमेंट पंक्तियों को अनदेखा किया जाता है लेकिन संरक्षित रखा जाता है।"
 
-msgid "When supplier responses are expected back; suppliers see this date on the RFQ portal and Carbon stops accepting late responses after it (configurable)."
-msgstr "जब आपूर्तिकर्ता प्रतिक्रिया की उम्मीद की जाती है; आपूर्तिकर्ता आरएफक्यू पोर्टल पर यह तारीख देखते हैं और कार्बन इसके बाद देर से प्रतिक्रिया स्वीकार नहीं करता है (कॉन्फ़िगर करने योग्य)।"
+msgid "When supplier responses are expected back; suppliers see this date on the RFQ portal and AGA OneForge stops accepting late responses after it (configurable)."
+msgstr "जब आपूर्तिकर्ता प्रतिक्रिया की उम्मीद की जाती है; आपूर्तिकर्ता आरएफक्यू पोर्टल पर यह तारीख देखते हैं और AGA OneForge इसके बाद देर से प्रतिक्रिया स्वीकार नहीं करता है (कॉन्फ़िगर करने योग्य)।"
 
 msgid "When the buyer asked for the goods; the supplier may promise something else on Promised Date and post something else again on Delivery Date."
 msgstr "जब खरीदार ने माल की मांग की; आपूर्तिकर्ता वादा किए गए तारीख को कुछ और का वचन दे सकता है और डिलीवरी की तारीख को फिर से कुछ और बुक कर सकता है।"
@@ -13465,11 +13462,11 @@ msgstr "आप आज कहाँ हैं"
 msgid "Where you want to grow"
 msgstr "जहां आप बढ़ना चाहते हैं"
 
+msgid "Whether AGA OneForge follows each unit (Serial), each lot (Batch), the quantity (Inventory), or no tracking (Non-Inventory)."
+msgstr "क्या AGA OneForge प्रत्येक इकाई (Serial), प्रत्येक लॉट (Batch), मात्रा (Inventory), या कोई ट्रैकिंग नहीं (Non-Inventory) को ट्रैक करता है।"
+
 msgid "Whether Amount is interpreted as a percentage of the line price or as a fixed currency amount."
 msgstr "क्या राशि को लाइन मूल्य के प्रतिशत के रूप में या एक निश्चित मुद्रा राशि के रूप में समझा जाता है।"
-
-msgid "Whether Carbon follows each unit (Serial), each lot (Batch), the quantity (Inventory), or no tracking (Non-Inventory)."
-msgstr "क्या Carbon प्रत्येक इकाई (Serial), प्रत्येक लॉट (Batch), मात्रा (Inventory), या कोई ट्रैकिंग नहीं (Non-Inventory) को ट्रैक करता है।"
 
 msgid "Whether the clock starts when the chosen process begins or when it completes."
 msgstr "क्या घड़ी तब शुरू होती है जब चुनी गई प्रक्रिया शुरू होती है या जब वह पूरी होती है।"
@@ -13722,8 +13719,8 @@ msgstr "आपने यह लॉट प्राप्त किया"
 msgid "You're live on AGA OneForge"
 msgstr "आप AGA OneForge पर लाइव हैं"
 
-msgid "You're setting Carbon up yourself, at your own pace"
-msgstr "आप Carbon को स्वयं सेट अप कर रहे हैं, अपनी गति से"
+msgid "You're setting AGA OneForge up yourself, at your own pace"
+msgstr "आप AGA OneForge को स्वयं सेट अप कर रहे हैं, अपनी गति से"
 
 msgid "You've been clocked in for {hoursElapsed} hours. Did you forget to clock out?"
 msgstr "आप {hoursElapsed} घंटे के लिए क्लॉक इन हैं। क्या आप क्लॉक आउट करना भूल गए?"
@@ -13791,11 +13788,11 @@ msgstr "आपका वास्तविक डेटा लोड हो ग�
 msgid "Your source data is accessible and reasonably clean"
 msgstr "आपका स्रोत डेटा सुलभ है और उचित रूप से स्वच्छ है"
 
-msgid "Your team can free up time to learn Carbon and load your data"
-msgstr "आपकी टीम Carbon सीखने और अपना डेटा लोड करने के लिए समय निकाल सकती है"
+msgid "Your team can free up time to learn AGA OneForge and load your data"
+msgstr "आपकी टीम AGA OneForge सीखने और अपना डेटा लोड करने के लिए समय निकाल सकती है"
 
-msgid "Your team leads learn Carbon first using the in-app guides and Academy, then bring everyone else up to speed."
-msgstr "आपकी टीम के नेता पहले इन-ऐप गाइड और Academy का उपयोग करके Carbon सीखते हैं, फिर बाकी सभी को तेजी से सीखाते हैं।"
+msgid "Your team leads learn AGA OneForge first using the in-app guides and Academy, then bring everyone else up to speed."
+msgstr "आपकी टीम के नेता पहले इन-ऐप गाइड और Academy का उपयोग करके AGA OneForge सीखते हैं, फिर बाकी सभी को तेजी से सीखाते हैं।"
 
 msgid "Your team, structure, and access."
 msgstr "आपकी टीम, संरचना, और पहुंच।"

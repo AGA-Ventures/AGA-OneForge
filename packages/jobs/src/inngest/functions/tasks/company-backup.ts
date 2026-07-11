@@ -450,7 +450,7 @@ export async function readBackup(
   }
   const manifest = JSON.parse(await mf.data.text()) as Manifest;
   if (manifest.kind !== BACKUP_KIND) {
-    throw new Error("Not a Carbon company backup");
+    throw new Error("Not an AGA OneForge company backup");
   }
 
   const data: CompanyBackup["data"] = {};

@@ -56,7 +56,7 @@ export const action: ActionFunction = async ({ request }) => {
     await linear.createAttachmentLink(companyId, {
       issueId: issue.id,
       url,
-      title: `Linked Carbon Issue: ${carbonIssue.data?.nonConformanceId ?? ""}`
+      title: `Linked AGA OneForge Issue: ${carbonIssue.data?.nonConformanceId ?? ""}`
     });
 
     return new Response("Linear issue created");

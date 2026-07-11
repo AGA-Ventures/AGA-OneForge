@@ -136,11 +136,11 @@ export const paperlessPartsFunction = inngest.createFunction(
     ]);
 
     if (company.error || !company.data) {
-      throw new Error("Failed to fetch company from Carbon");
+      throw new Error("Failed to fetch company from AGA OneForge");
     }
 
     if (integration.error || !integration.data) {
-      throw new Error("Failed to fetch integration from Carbon");
+      throw new Error("Failed to fetch integration from AGA OneForge");
     }
 
     const integrationData = integrationSchema.safeParse(
@@ -198,7 +198,7 @@ export const paperlessPartsFunction = inngest.createFunction(
         if (!ppQuote.data.contact) {
           // This should never happen based on the validation rules in Paperless Parts
           throw new Error(
-            "Quote contact not found in Paperless Parts - cannot create Carbon Quote"
+            "Quote contact not found in Paperless Parts - cannot create AGA OneForge Quote"
           );
         }
 
@@ -431,7 +431,7 @@ export const paperlessPartsFunction = inngest.createFunction(
           break;
         }
 
-        logger.info("New Carbon quote created from Paperless Parts");
+        logger.info("New AGA OneForge quote created from Paperless Parts");
 
         result = {
           success: true,
@@ -724,7 +724,9 @@ export const paperlessPartsFunction = inngest.createFunction(
           break;
         }
 
-        logger.info("New Carbon sales order created from Paperless Parts");
+        logger.info(
+          "New AGA OneForge sales order created from Paperless Parts"
+        );
 
         result = {
           success: true,

@@ -24,12 +24,12 @@ export default function ConfirmMagicLink() {
         <img
           src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/carbon-mark-light.svg"}
           className="w-24 dark:hidden"
-          alt={t`Carbon Logo`}
+          alt={t`AGA OneForge Logo`}
         />
         <img
           src={CONTROLLED_ENVIRONMENT ? "/flag.png" : "/carbon-mark-dark.svg"}
           className="w-24 hidden dark:block"
-          alt={t`Carbon Logo`}
+          alt={t`AGA OneForge Logo`}
         />
       </div>
       <div className="rounded-lg md:bg-card md:border md:border-border md:shadow-lg p-8 w-[380px]">

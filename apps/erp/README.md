@@ -1,4 +1,4 @@
-# Carbon ERP
+# AGA OneForge ERP
 
 Application for managing a manufacturing business.
 

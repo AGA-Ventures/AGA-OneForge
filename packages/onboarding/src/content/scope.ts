@@ -39,7 +39,7 @@ export const SCOPE_IN: ScopeItem[] = [
     tiers: ["guided", "enterprise"]
   },
   {
-    label: msg`Loading your own data with Carbon's import tools`,
+    label: msg`Loading your own data with AGA OneForge's import tools`,
     tiers: ["self_serve"]
   },
   { label: msg`Training your team via the Academy and in-app guides` },
@@ -47,7 +47,7 @@ export const SCOPE_IN: ScopeItem[] = [
     label: msg`Go-live and acceptance sign-off`,
     tiers: ["guided", "enterprise"]
   },
-  { label: msg`Going live on Carbon`, tiers: ["self_serve"] }
+  { label: msg`Going live on AGA OneForge`, tiers: ["self_serve"] }
 ];
 
 export const SCOPE_OUT: MessageDescriptor[] = [
@@ -60,7 +60,7 @@ export const SCOPE_OUT: MessageDescriptor[] = [
 const SCOPE_OUT_SELF_SERVE: MessageDescriptor[] = [
   msg`Anything not explicitly listed in scope above`,
   msg`Custom development, integrations, or self-hosting`,
-  msg`A Carbon-run data migration — you load your own data`,
+  msg`An AGA OneForge-run data migration — you load your own data`,
   msg`A formal acceptance / sign-off phase`
 ];
 
@@ -76,10 +76,10 @@ export const SCOPE_ASSUMPTIONS: MessageDescriptor[] = [
 ];
 
 const SCOPE_ASSUMPTIONS_SELF_SERVE: MessageDescriptor[] = [
-  msg`You're setting Carbon up yourself, at your own pace`,
-  msg`Your team can free up time to learn Carbon and load your data`,
+  msg`You're setting AGA OneForge up yourself, at your own pace`,
+  msg`Your team can free up time to learn AGA OneForge and load your data`,
   msg`Your data is accessible and reasonably clean`,
-  msg`Standard cloud Carbon fits how your company runs`
+  msg`Standard cloud AGA OneForge fits how your company runs`
 ];
 
 export function scopeAssumptionsForTier(tier: Tier): MessageDescriptor[] {
@@ -91,12 +91,12 @@ export function scopeAssumptionsForTier(tier: Tier): MessageDescriptor[] {
 // "How we know we're done" copy, by tier. Self-serve has no acceptance/sign-off.
 export function scopeDoneForTier(tier: Tier): MessageDescriptor {
   return tier === "self_serve"
-    ? msg`Carbon is configured the way your company runs, your data is loaded, and your team is confident using it. When that's true, you're ready to go live.`
+    ? msg`AGA OneForge is configured the way your company runs, your data is loaded, and your team is confident using it. When that's true, you're ready to go live.`
     : msg`The system passes every in-scope acceptance test in your configured system, with your data; the data is validated; and you sign off. Then go-live.`;
 }
 
-export const SCOPE_GOAL_DEFAULT: MessageDescriptor = msg`Get live on Carbon: one system running quoting, purchasing, the shop floor, inventory, and finance, replacing the current tools.`;
+export const SCOPE_GOAL_DEFAULT: MessageDescriptor = msg`Get live on AGA OneForge: one system running quoting, purchasing, the shop floor, inventory, and finance, replacing the current tools.`;
 
 // Self-serve page intro — no commercial agreement / legal sign-off, unlike the
 // paid lead in PAGE_COPY.scope.
-export const SCOPE_LEAD_SELF_SERVE: MessageDescriptor = msg`Read this through — what Carbon will and won't do for your setup. When it looks right, mark it agreed below.`;
+export const SCOPE_LEAD_SELF_SERVE: MessageDescriptor = msg`Read this through — what AGA OneForge will and won't do for your setup. When it looks right, mark it agreed below.`;

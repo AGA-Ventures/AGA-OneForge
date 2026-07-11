@@ -244,7 +244,7 @@ export function FieldMapping({
                 <Trans>CSV column</Trans>
               </div>
               <div className="text-sm">
-                <Trans>Carbon column</Trans>
+                <Trans>AGA OneForge column</Trans>
               </div>
               {Object.entries(mappableFields).map(
                 ([name, { label, required, type }]) => (
@@ -585,7 +585,7 @@ function EnumMappingStep({
           {`${capitalize(mappedColumn ?? "CSV")} Value`}
         </div>
         <div className="font-medium">
-          <Trans>Carbon Value</Trans>
+          <Trans>AGA OneForge Value</Trans>
         </div>
 
         {[...new Set([...uniqueValues, "Default"])].map((csvValue) => {

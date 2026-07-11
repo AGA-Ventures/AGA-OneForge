@@ -225,7 +225,7 @@ const QuotePDF = ({
       theme={theme}
       title={title}
       meta={{
-        author: meta?.author ?? "Carbon",
+        author: meta?.author ?? "AGA OneForge",
         keywords: meta?.keywords ?? "quote",
         subject: meta?.subject ?? "Quote"
       }}

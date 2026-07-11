@@ -118,9 +118,9 @@ export const PAGE_GROUP_LABEL: Record<PageDef["group"], MessageDescriptor> = {
   "get-started": msg`Get started`,
   align: msg`Align on scope`,
   plan: msg`Plan the work`,
-  configure: msg`Configure Carbon`,
+  configure: msg`Configure AGA OneForge`,
   launch: msg`Train & go live`,
-  "carbon-only": msg`Carbon only`
+  "carbon-only": msg`AGA OneForge only`
 };
 
 export const PAGE_GROUP_ORDER: PageDef["group"][] = [

@@ -302,12 +302,12 @@ function ErrorBoundaryContent({ error }: { error: unknown }) {
         <div className="flex flex-col w-full h-screen  items-center justify-center space-y-4 ">
           <img
             src="/carbon-mark-light.svg"
-            alt="Carbon Logo"
+            alt="AGA OneForge Logo"
             className="block max-w-[60px] dark:hidden"
           />
           <img
             src="/carbon-mark-dark.svg"
-            alt="Carbon Logo"
+            alt="AGA OneForge Logo"
             className="max-w-[60px] hidden dark:block"
           />
           <Heading size="h1">

@@ -916,7 +916,7 @@ export const notifyFunction = inngest.createFunction(
             payload.companyId,
             payload.documentType
           );
-          const text = `${description}\n<${ctaUrl}|View in Carbon>`;
+          const text = `${description}\n<${ctaUrl}|View in AGA OneForge>`;
 
           const slackUserIds = await Promise.all(
             userIds.map((userId) =>

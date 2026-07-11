@@ -32,12 +32,12 @@ export function OnboardingHubSummary({
       <div className="shrink-0 size-12 rounded-xl border flex items-center justify-center">
         <img
           src="/carbon-mark-light.svg"
-          alt="Carbon"
+          alt="AGA OneForge"
           className="size-6 dark:hidden"
         />
         <img
           src="/carbon-mark-dark.svg"
-          alt="Carbon"
+          alt="AGA OneForge"
           className="size-6 hidden dark:block"
         />
       </div>

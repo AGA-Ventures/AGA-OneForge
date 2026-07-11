@@ -69,6 +69,9 @@ msgstr "재고 추가"
 msgid "Add Spare Part"
 msgstr "예비 부품 추가"
 
+msgid "AGA OneForge Logo"
+msgstr "AGA OneForge 로고"
+
 msgid "All"
 msgstr "전체"
 
@@ -139,9 +142,6 @@ msgstr "취소"
 
 msgid "Cancelled"
 msgstr "취소됨"
-
-msgid "Carbon Logo"
-msgstr "Carbon 로고"
 
 msgid "Cards"
 msgstr "카드"
@@ -396,8 +396,8 @@ msgstr "퇴근 체크를 잊으셨나요?"
 msgid "Go back to operation"
 msgstr "공정작업으로 돌아가기"
 
-msgid "Have a technical issue? Contact <0>Carbon Support.</0>"
-msgstr "기술적인 문제가 있으신가요? <0>Carbon 지원팀</0>에 문의하세요."
+msgid "Have a technical issue? Contact <0>AGA OneForge Support.</0>"
+msgstr "기술적인 문제가 있으신가요? <0>AGA OneForge 지원팀</0>에 문의하세요."
 
 msgid "How many were actually picked?"
 msgstr "실제로 몇 개를 피킹했습니까?"

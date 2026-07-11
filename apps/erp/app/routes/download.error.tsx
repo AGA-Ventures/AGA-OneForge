@@ -32,7 +32,7 @@ export default function DownloadErrorRoute() {
       <header className="p-6">
         <img
           src="/carbon-word-light.svg"
-          alt="Carbon"
+          alt="AGA OneForge"
           className={cn(
             "max-w-[160px] dark:hidden",
             CONTROLLED_ENVIRONMENT && "grayscale"
@@ -40,7 +40,7 @@ export default function DownloadErrorRoute() {
         />
         <img
           src="/carbon-word-dark.svg"
-          alt="Carbon"
+          alt="AGA OneForge"
           className={cn(
             "max-w-[160px] hidden dark:block",
             CONTROLLED_ENVIRONMENT && "grayscale"

@@ -419,7 +419,7 @@ export abstract class BaseEntitySyncer<
         return {
           status: "error",
           action: "none",
-          error: `Entity ${entityId} not found in Carbon`
+          error: `Entity ${entityId} not found in AGA OneForge`
         };
       }
 
@@ -626,7 +626,7 @@ export abstract class BaseEntitySyncer<
           status: "error",
           action: "none",
           localId: id,
-          error: `Entity ${id} not found in Carbon`
+          error: `Entity ${id} not found in AGA OneForge`
         });
       }
 
@@ -781,7 +781,7 @@ export abstract class BaseEntitySyncer<
               action: "none",
               remoteId,
               localId: existingLocalId,
-              error: "Carbon is System of Record"
+              error: "AGA OneForge is System of Record"
             });
             continue;
           }

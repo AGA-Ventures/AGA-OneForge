@@ -33,7 +33,7 @@ export const Xero = defineIntegration({
   category: "Accounting",
   logo: Logo,
   description:
-    "Integrating Carbon with Xero enables you to post transactions from sales invoices and purchase invoices into your existing accounting software, neatly organizing everything in your bookkeeping software.",
+    "Integrating AGA OneForge with Xero enables you to post transactions from sales invoices and purchase invoices into your existing accounting software, neatly organizing everything in your bookkeeping software.",
   shortDescription:
     "Automatically post transactions from sales and purchase invoices.",
   images: [],
@@ -84,12 +84,12 @@ export const Xero = defineIntegration({
         {
           value: "accounting",
           label: "Xero",
-          description: "Xero data overwrites Carbon data"
+          description: "Xero data overwrites AGA OneForge data"
         },
         {
           value: "carbon",
-          label: "Carbon",
-          description: "Carbon data overwrites Xero data"
+          label: "AGA OneForge",
+          description: "AGA OneForge data overwrites Xero data"
         }
       ],
       required: false,
@@ -104,12 +104,12 @@ export const Xero = defineIntegration({
         {
           value: "accounting",
           label: "Xero",
-          description: "Xero data overwrites Carbon data"
+          description: "Xero data overwrites AGA OneForge data"
         },
         {
           value: "carbon",
-          label: "Carbon",
-          description: "Carbon data overwrites Xero data"
+          label: "AGA OneForge",
+          description: "AGA OneForge data overwrites Xero data"
         }
       ],
       required: false,
@@ -123,13 +123,13 @@ export const Xero = defineIntegration({
       listOptions: [
         {
           value: "carbon",
-          label: "Carbon",
-          description: "Carbon data overwrites Xero data"
+          label: "AGA OneForge",
+          description: "AGA OneForge data overwrites Xero data"
         },
         {
           value: "accounting",
           label: "Xero",
-          description: "Xero data overwrites Carbon data"
+          description: "Xero data overwrites AGA OneForge data"
         }
       ],
       required: false,
@@ -144,12 +144,12 @@ export const Xero = defineIntegration({
         {
           value: "accounting",
           label: "Xero",
-          description: "Xero data overwrites Carbon data"
+          description: "Xero data overwrites AGA OneForge data"
         },
         {
           value: "carbon",
-          label: "Carbon",
-          description: "Carbon data overwrites Xero data"
+          label: "AGA OneForge",
+          description: "AGA OneForge data overwrites Xero data"
         }
       ],
       required: false,
@@ -164,12 +164,12 @@ export const Xero = defineIntegration({
         {
           value: "accounting",
           label: "Xero",
-          description: "Xero data overwrites Carbon data"
+          description: "Xero data overwrites AGA OneForge data"
         },
         {
           value: "carbon",
-          label: "Carbon",
-          description: "Carbon data overwrites Xero data"
+          label: "AGA OneForge",
+          description: "AGA OneForge data overwrites Xero data"
         }
       ],
       required: false,

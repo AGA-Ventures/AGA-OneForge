@@ -71,7 +71,7 @@ export function SetupControls() {
             <Trans>Setup & Controls</Trans>
           </h1>
           <Badge variant="blue">
-            <Trans>Carbon only</Trans>
+            <Trans>AGA OneForge only</Trans>
           </Badge>
         </div>
         <p className="text-sm text-muted-foreground max-w-xl text-pretty">

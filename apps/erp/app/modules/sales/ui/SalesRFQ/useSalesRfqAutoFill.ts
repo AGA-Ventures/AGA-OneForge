@@ -162,7 +162,7 @@ export function useSalesRfqAutoFill(initialValues: SalesRFQFormValues) {
     newValue: { value: string | undefined } | null
   ) => {
     if (!carbon) {
-      toast.error(t`Carbon client not found`);
+      toast.error(t`AGA OneForge client not found`);
       return;
     }
 

@@ -112,7 +112,7 @@ const QuoteToOrderDrawer = ({
 
   const onDrop = async (acceptedFiles: File[]) => {
     if (!carbon) {
-      toast.error(t`Carbon client not available`);
+      toast.error(t`AGA OneForge client not available`);
       return;
     }
 
@@ -158,7 +158,7 @@ const QuoteToOrderDrawer = ({
 
   const removePurchaseOrder = async () => {
     if (!carbon) {
-      toast.error(t`Failed to initialize Carbon client`);
+      toast.error(t`Failed to initialize AGA OneForge client`);
       return;
     }
 

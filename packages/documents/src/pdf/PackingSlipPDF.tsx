@@ -123,7 +123,7 @@ const PackingSlipPDF = ({
       theme={theme}
       title={title}
       meta={{
-        author: meta?.author ?? "Carbon",
+        author: meta?.author ?? "AGA OneForge",
         keywords: meta?.keywords ?? "packing slip",
         subject: meta?.subject ?? "Packing Slip"
       }}

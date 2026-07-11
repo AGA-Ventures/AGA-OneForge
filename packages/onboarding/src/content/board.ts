@@ -117,7 +117,7 @@ export const BOARD_TASKS: BoardTask[] = [
   },
   {
     key: "cutover",
-    label: msg`Cut over to Carbon and freeze the old system`,
+    label: msg`Cut over to AGA OneForge and freeze the old system`,
     stepKey: "gate:golive",
     owner: "shared"
   },

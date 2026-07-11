@@ -534,7 +534,7 @@ export class JiraClient {
             globalId: `carbon-${url}`,
             application: {
               type: "com.carbon.ms",
-              name: "Carbon"
+              name: "AGA OneForge"
             },
             object: {
               url,

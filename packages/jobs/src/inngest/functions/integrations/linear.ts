@@ -31,11 +31,11 @@ export const linearSyncFunction = inngest.createFunction(
     ]);
 
     if (company.error || !company.data) {
-      throw new Error("Failed to fetch company from Carbon");
+      throw new Error("Failed to fetch company from AGA OneForge");
     }
 
     if (integration.error || !integration.data) {
-      throw new Error("Failed to fetch integration from Carbon");
+      throw new Error("Failed to fetch integration from AGA OneForge");
     }
 
     // Look up the action task via the mapping table

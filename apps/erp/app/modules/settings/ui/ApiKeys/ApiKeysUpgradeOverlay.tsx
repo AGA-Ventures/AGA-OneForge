@@ -105,7 +105,9 @@ export default function ApiKeysUpgradeOverlay() {
             <Trans>API Keys</Trans>
           </UpgradeOverlayTitle>
           <UpgradeOverlayDescription>
-            <Trans>API keys for programmatic access to your Carbon data.</Trans>
+            <Trans>
+              API keys for programmatic access to your AGA OneForge data.
+            </Trans>
           </UpgradeOverlayDescription>
         </UpgradeOverlayContent>
         <UpgradeOverlayActions>

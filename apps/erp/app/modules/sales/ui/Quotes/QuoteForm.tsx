@@ -77,7 +77,7 @@ const QuoteForm = ({ initialValues }: QuoteFormProps) => {
     } | null
   ) => {
     if (!carbon) {
-      toast.error(t`Carbon client not found`);
+      toast.error(t`AGA OneForge client not found`);
       return;
     }
 

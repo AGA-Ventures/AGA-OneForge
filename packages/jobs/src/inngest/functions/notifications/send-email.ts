@@ -36,7 +36,7 @@ export const sendEmailFunction = inngest.createFunction(
       );
     }
 
-    const fromAddress = `Carbon <no-reply@${RESEND_DOMAIN}>`;
+    const fromAddress = `AGA OneForge <no-reply@${RESEND_DOMAIN}>`;
 
     const result = await step.run("send-email", async () => {
       if (process.env.DISABLE_RESEND) {

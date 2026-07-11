@@ -69,6 +69,9 @@ msgstr "Add Inventory"
 msgid "Add Spare Part"
 msgstr "Add Spare Part"
 
+msgid "AGA OneForge Logo"
+msgstr "AGA OneForge Logo"
+
 msgid "All"
 msgstr "All"
 
@@ -139,9 +142,6 @@ msgstr "Cancel"
 
 msgid "Cancelled"
 msgstr "Cancelled"
-
-msgid "Carbon Logo"
-msgstr "Carbon Logo"
 
 msgid "Cards"
 msgstr "Cards"
@@ -396,8 +396,8 @@ msgstr "Forgot to Clock Out?"
 msgid "Go back to operation"
 msgstr "Go back to operation"
 
-msgid "Have a technical issue? Contact <0>Carbon Support.</0>"
-msgstr "Have a technical issue? Contact <0>Carbon Support.</0>"
+msgid "Have a technical issue? Contact <0>AGA OneForge Support.</0>"
+msgstr "Have a technical issue? Contact <0>AGA OneForge Support.</0>"
 
 msgid "How many were actually picked?"
 msgstr "How many were actually picked?"

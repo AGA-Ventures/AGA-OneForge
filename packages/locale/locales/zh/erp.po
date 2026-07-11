@@ -188,9 +188,6 @@ msgstr "9-12 周"
 msgid "90D"
 msgstr "90天"
 
-msgid "A Carbon-run data migration — you load your own data"
-msgstr "Carbon 运行的数据迁移 — 您加载自己的数据"
-
 msgid "A clearing account holding the value of goods received but not yet billed; the supplier invoice clears it."
 msgstr "持有已收但未开票商品价值的结算账户；供应商发票将其结清。"
 
@@ -720,6 +717,57 @@ msgstr "之后"
 msgid "After (calculation method)"
 msgstr "之后（计算方法）"
 
+msgid "AGA OneForge"
+msgstr "AGA OneForge"
+
+msgid "AGA OneForge + you"
+msgstr "AGA OneForge + 你"
+
+msgid "AGA OneForge client is not available"
+msgstr "AGA OneForge 客户端不可用"
+
+msgid "AGA OneForge client not available"
+msgstr "AGA OneForge 客户端不可用"
+
+msgid "AGA OneForge client not found"
+msgstr "找不到 AGA OneForge 客户端"
+
+msgid "AGA OneForge column"
+msgstr "AGA OneForge 列"
+
+msgid "AGA OneForge is configured the way your company runs, your data is loaded, and your team is confident using it. When that's true, you're ready to go live."
+msgstr "AGA OneForge已按照您公司的运营方式进行配置，您的数据已加载，您的团队对使用它充满信心。当这一切都实现时，您就可以上线了。"
+
+msgid "AGA OneForge leads"
+msgstr "AGA OneForge 主导"
+
+msgid "AGA OneForge Logo"
+msgstr "AGA OneForge 标志"
+
+msgid "AGA OneForge only"
+msgstr "仅限 AGA OneForge"
+
+msgid "AGA OneForge Value"
+msgstr "AGA OneForge值"
+
+msgid "AGA OneForge-only"
+msgstr "仅限AGA OneForge"
+
+msgid "AGA OneForge-only · fill in real targets for this customer. They see the values, locked."
+msgstr "仅限AGA OneForge · 为此客户填入真实目标。他们可以看到这些值，但已锁定。"
+
+msgid "AGA OneForge-only · the customer sees this text, locked."
+msgstr "仅限AGA OneForge · 客户可以看到此文本，已锁定。"
+
+msgid "AGA OneForge's name for a bill of material and bill of process (routing): the components plus the operations that make a part."
+msgstr "AGA OneForge对物料清单和工艺路线的名称：生成零件的组件和操作。"
+
+msgid "AGA OneForge's planning run nets supply against demand and explodes methods, surfacing shortfalls — but it creates no orders itself."
+msgstr "AGA OneForge的规划运行对供应和需求进行净额并展开方法，显示缺陷—但它本身不会创建订单。"
+
+msgid "AGA OneForge's production order — one job builds a quantity of one item from its own copied method and routing."
+msgstr "AGA OneForge的生产订单 — 一个作业从其复制的方法和路由构建一个物品的数量。"
+
 msgid "Agree on the scope"
 msgstr "就范围达成一致"
 
@@ -814,6 +862,9 @@ msgstr "一个会计桶，按部门或职能对支出进行分组，以便GL可�
 msgid "An accounting record for a capitalized item you depreciate rather than expense; Draft → Active → Fully Depreciated → Disposed."
 msgstr "资本化项目的会计记录，您要贬值而不是支出；草稿→活跃→完全贬值→处置。"
 
+msgid "An AGA OneForge-run data migration — you load your own data"
+msgstr "AGA OneForge 运行的数据迁移 — 您加载自己的数据"
+
 msgid "An asset's acquisition cost minus accumulated depreciation — what it's still worth on the books, and the figure it's disposed at."
 msgstr "资产的收购成本减去累计折旧—仍在账簿上的价值和处置的金额。"
 
@@ -889,8 +940,8 @@ msgstr "API 密钥"
 msgid "API Keys"
 msgstr "API 密钥"
 
-msgid "API keys for programmatic access to your Carbon data."
-msgstr "用于以编程方式访问您的 Carbon 数据的 API 密钥。"
+msgid "API keys for programmatic access to your AGA OneForge data."
+msgstr "用于以编程方式访问您的 AGA OneForge 数据的 API 密钥。"
 
 msgid "Applied"
 msgstr "已应用"
@@ -1721,14 +1772,14 @@ msgstr "奖金折旧%"
 msgid "Book a call to discuss guided implementation"
 msgstr "预约通话讨论引导式实施"
 
-msgid "Book a call with Carbon"
-msgstr "与 Carbon 预约通话"
+msgid "Book a call with AGA OneForge"
+msgstr "与 AGA OneForge 预约通话"
 
 msgid "Breadcrumb"
 msgstr "面包屑"
 
-msgid "Bring in your parts, BOMs, Bill of Process, and costing — with Carbon's import tools, CSV, or LLM help."
-msgstr "导入您的零件、物料清单、工艺流程和成本——使用 Carbon 的导入工具、CSV 或 LLM 帮助。"
+msgid "Bring in your parts, BOMs, Bill of Process, and costing — with AGA OneForge's import tools, CSV, or LLM help."
+msgstr "导入您的零件、物料清单、工艺流程和成本——使用 AGA OneForge 的导入工具、CSV 或 LLM 帮助。"
 
 msgid "Browse library"
 msgstr "浏览库"
@@ -1832,8 +1883,8 @@ msgstr "校准供应商"
 msgid "Calibrations"
 msgstr "校准"
 
-msgid "Called a method in Carbon — the components plus operations that produce a part."
-msgstr "在Carbon中称为方法—生成零件的组件和操作。"
+msgid "Called a method in AGA OneForge — the components plus operations that produce a part."
+msgstr "在AGA OneForge中称为方法—生成零件的组件和操作。"
 
 msgid "Can't disable the only active break. Add another break or toggle the override's Active instead."
 msgstr "无法禁用唯一的活跃价格段。请添加另一个价格段或改为切换覆盖的\"活跃\"状态。"
@@ -1906,57 +1957,6 @@ msgstr "无法上传 — 供应商互动尚未创建"
 
 msgid "Cannot upload to parts bucket without item ID"
 msgstr "无法在没有项目ID的情况下上传到零件存储桶"
-
-msgid "Carbon"
-msgstr "Carbon"
-
-msgid "Carbon + you"
-msgstr "Carbon + 你"
-
-msgid "Carbon client is not available"
-msgstr "Carbon 客户端不可用"
-
-msgid "Carbon client not available"
-msgstr "Carbon 客户端不可用"
-
-msgid "Carbon client not found"
-msgstr "找不到 Carbon 客户端"
-
-msgid "Carbon column"
-msgstr "Carbon 列"
-
-msgid "Carbon is configured the way your company runs, your data is loaded, and your team is confident using it. When that's true, you're ready to go live."
-msgstr "Carbon已按照您公司的运营方式进行配置，您的数据已加载，您的团队对使用它充满信心。当这一切都实现时，您就可以上线了。"
-
-msgid "Carbon leads"
-msgstr "Carbon 主导"
-
-msgid "Carbon Logo"
-msgstr "Carbon 标志"
-
-msgid "Carbon only"
-msgstr "仅限 Carbon"
-
-msgid "Carbon Value"
-msgstr "碳值"
-
-msgid "Carbon-only"
-msgstr "仅限Carbon"
-
-msgid "Carbon-only · fill in real targets for this customer. They see the values, locked."
-msgstr "仅限Carbon · 为此客户填入真实目标。他们可以看到这些值，但已锁定。"
-
-msgid "Carbon-only · the customer sees this text, locked."
-msgstr "仅限Carbon · 客户可以看到此文本，已锁定。"
-
-msgid "Carbon's name for a bill of material and bill of process (routing): the components plus the operations that make a part."
-msgstr "Carbon对物料清单和工艺路线的名称：生成零件的组件和操作。"
-
-msgid "Carbon's planning run nets supply against demand and explodes methods, surfacing shortfalls — but it creates no orders itself."
-msgstr "Carbon的规划运行对供应和需求进行净额并展开方法，显示缺陷—但它本身不会创建订单。"
-
-msgid "Carbon's production order — one job builds a quantity of one item from its own copied method and routing."
-msgstr "Carbon的生产订单 — 一个作业从其复制的方法和路由构建一个物品的数量。"
 
 msgid "Cards"
 msgstr "卡片"
@@ -2271,8 +2271,8 @@ msgstr "配置"
 msgid "Configure {label}"
 msgstr "配置 {label}"
 
-msgid "Configure Carbon"
-msgstr "配置 Carbon"
+msgid "Configure AGA OneForge"
+msgstr "配置 AGA OneForge"
 
 msgid "Configure default accounts for cash and bank transactions"
 msgstr "配置现金和银行交易的默认账户"
@@ -3164,11 +3164,11 @@ msgstr "自定义"
 msgid "Customize the layout of your PDF documents — reorder sections, hide what you don't need, and add your own blocks."
 msgstr "自定义您的 PDF 文档布局 — 重新排列部分、隐藏不需要的内容，并添加您自己的块。"
 
-msgid "Cut over to Carbon and freeze the old system"
-msgstr "切换到 Carbon 并冻结旧系统"
+msgid "Cut over to AGA OneForge and freeze the old system"
+msgstr "切换到 AGA OneForge 并冻结旧系统"
 
-msgid "Cut over, freeze the old system, and confirm you're live on Carbon."
-msgstr "切换系统，冻结旧系统，并确认您已在 Carbon 上线。"
+msgid "Cut over, freeze the old system, and confirm you're live on AGA OneForge."
+msgstr "切换系统，冻结旧系统，并确认您已在 AGA OneForge 上线。"
 
 msgid "Cutover checklist"
 msgstr "转换检查清单"
@@ -4802,8 +4802,8 @@ msgstr "外部参考"
 msgid "External Reference"
 msgstr "外部参考"
 
-msgid "Extra fields to capture data Carbon doesn't track by default"
-msgstr "用于捕获 Carbon 默认不跟踪的额外数据的字段"
+msgid "Extra fields to capture data AGA OneForge doesn't track by default"
+msgstr "用于捕获 AGA OneForge 默认不跟踪的额外数据的字段"
 
 msgid "Extra tags for slicing your GL reporting"
 msgstr "用于切分总账报告的额外标签"
@@ -4949,8 +4949,8 @@ msgstr "获取风险失败"
 msgid "Failed to fetch suggestions"
 msgstr "获取建议失败"
 
-msgid "Failed to initialize Carbon client"
-msgstr "未能初始化 Carbon 客户端"
+msgid "Failed to initialize AGA OneForge client"
+msgstr "未能初始化 AGA OneForge 客户端"
 
 msgid "Failed to insert quote line"
 msgstr "插入报价行失败"
@@ -5398,8 +5398,8 @@ msgstr "生成的ID已禁用"
 msgid "Generated IDs are enabled"
 msgstr "生成的ID已启用"
 
-msgid "Get live on Carbon: one system running quoting, purchasing, the shop floor, inventory, and finance, replacing the current tools."
-msgstr "在 Carbon 上线：一个系统运行报价、采购、车间、库存和财务，替代当前工具。"
+msgid "Get live on AGA OneForge: one system running quoting, purchasing, the shop floor, inventory, and finance, replacing the current tools."
+msgstr "在 AGA OneForge 上线：一个系统运行报价、采购、车间、库存和财务，替代当前工具。"
 
 msgid "Get Method"
 msgstr "获取方法"
@@ -5410,8 +5410,8 @@ msgstr "开始使用"
 msgid "Get Started"
 msgstr "开始使用"
 
-msgid "Getting around Carbon"
-msgstr "在 Carbon 中导航"
+msgid "Getting around AGA OneForge"
+msgstr "在 AGA OneForge 中导航"
 
 msgid "Getting set up"
 msgstr "正在设置"
@@ -5567,8 +5567,8 @@ msgstr "上线和验收签字"
 msgid "Go-live timing holds if each gate is cleared on schedule"
 msgstr "如果每个阶段都按时通过，上线时间表将保持不变"
 
-msgid "Going live on Carbon"
-msgstr "在 Carbon 上线"
+msgid "Going live on AGA OneForge"
+msgstr "在 AGA OneForge 上线"
 
 #. placeholder {0}: user.firstName
 msgid "Good afternoon, {0}"
@@ -5789,8 +5789,8 @@ msgstr "我们如何合作"
 msgid "How We Work Together"
 msgstr "我们如何合作"
 
-msgid "How your company's process maps to Carbon"
-msgstr "您的公司流程如何映射到 Carbon"
+msgid "How your company's process maps to AGA OneForge"
+msgstr "您的公司流程如何映射到 AGA OneForge"
 
 msgid "How your quotes, orders, and invoices look when they go out"
 msgstr "您的报价单、订单和发票发出时的外观"
@@ -6601,9 +6601,6 @@ msgstr "列表参数"
 msgid "Live on AGA OneForge"
 msgstr "在 AGA OneForge 上线"
 
-msgid "Live on Carbon"
-msgstr "在 Carbon 上线"
-
 msgid "Live reloading"
 msgstr "实时重新加载"
 
@@ -6625,8 +6622,8 @@ msgstr "正在加载关联的工作..."
 msgid "Loading item details..."
 msgstr "正在加载项目详情..."
 
-msgid "Loading your own data with Carbon's import tools"
-msgstr "使用 Carbon 的导入工具加载您自己的数据"
+msgid "Loading your own data with AGA OneForge's import tools"
+msgstr "使用 AGA OneForge 的导入工具加载您自己的数据"
 
 msgid "Loading..."
 msgstr "加载中..."
@@ -8003,8 +8000,8 @@ msgstr "现有库存仍然存在"
 msgid "On-time delivery"
 msgstr "准时交付"
 
-msgid "One serial unit or one batch that Carbon follows individually, carrying its own status and attributes such as an expiry date."
-msgstr "Carbon单独跟踪的一个序列号单位或一个批次，具有自己的状态和属性，例如过期日期。"
+msgid "One serial unit or one batch that AGA OneForge follows individually, carrying its own status and attributes such as an expiry date."
+msgstr "AGA OneForge单独跟踪的一个序列号单位或一个批次，具有自己的状态和属性，例如过期日期。"
 
 msgid "One set of numbers"
 msgstr "一套数字"
@@ -8108,8 +8105,8 @@ msgstr "打开"
 msgid "Opening"
 msgstr "期初"
 
-msgid "Opening balance of depreciation already booked before this asset was added to Carbon (use 0 for new acquisitions)."
-msgstr "在将此资产添加到Carbon之前已入账的折旧的期初余额（新购置的情况下使用0）。"
+msgid "Opening balance of depreciation already booked before this asset was added to AGA OneForge (use 0 for new acquisitions)."
+msgstr "在将此资产添加到AGA OneForge之前已入账的折旧的期初余额（新购置的情况下使用0）。"
 
 msgid "Operating Expenses"
 msgstr "运营费用"
@@ -9271,8 +9268,8 @@ msgstr "在报价、车间和财务之间重复输入数据"
 msgid "Reactivate"
 msgstr "重新激活"
 
-msgid "Read this through — what Carbon will and won't do for your setup. When it looks right, mark it agreed below."
-msgstr "通读以下内容——Carbon 将为您的设置做什么和不会做什么。当看起来合适时，在下方标记为已同意。"
+msgid "Read this through — what AGA OneForge will and won't do for your setup. When it looks right, mark it agreed below."
+msgstr "通读以下内容——AGA OneForge 将为您的设置做什么和不会做什么。当看起来合适时，在下方标记为已同意。"
 
 msgid "Read this through. When it's right, sign off at the bottom. It's the statement your commercial agreement points to, with no prices or legal terms here."
 msgstr "通读此内容。确认无误后，在底部签署。这是您商业协议所指向的声明，不包含价格或法律条款。"
@@ -9344,7 +9341,7 @@ msgid "Receivables"
 msgstr "应收账款（默认）"
 
 msgid "Receivables (default)"
-msgstr "将采购订单与所收货物和发票进行对账——在Carbon中隐含进行，通过行数量和GR/IR余额。"
+msgstr "将采购订单与所收货物和发票进行对账——在AGA OneForge中隐含进行，通过行数量和GR/IR余额。"
 
 msgid "Receivables aging"
 msgstr "应收账款账龄"
@@ -9395,8 +9392,8 @@ msgstr "最近的付款"
 msgid "Recently Created"
 msgstr "最近创建"
 
-msgid "Reconciling a purchase order against what was received and invoiced — implicit in Carbon, via the line quantities and GR/IR balance."
-msgstr "回收期"
+msgid "Reconciling a purchase order against what was received and invoiced — implicit in AGA OneForge, via the line quantities and GR/IR balance."
+msgstr "Reconciling a purchase order against what was received and invoiced — implicit in AGA OneForge, via the line quantities and GR/IR balance."
 
 msgid "Record"
 msgstr "录音"
@@ -10438,8 +10435,8 @@ msgstr "服务"
 msgid "Set a target"
 msgstr "设置目标"
 
-msgid "Set Carbon up around how your company runs: sites, parts, BOMs, Bill of Process, and the flows you use."
-msgstr "根据您公司的运营方式设置 Carbon：站点、零件、BOM、工艺流程和您使用的流程。"
+msgid "Set AGA OneForge up around how your company runs: sites, parts, BOMs, Bill of Process, and the flows you use."
+msgstr "根据您公司的运营方式设置 AGA OneForge：站点、零件、BOM、工艺流程和您使用的流程。"
 
 msgid "Set Clock Out"
 msgstr "设置打卡下班时间"
@@ -10862,8 +10859,8 @@ msgstr "建立托管（云端或自托管）"
 msgid "Standard"
 msgstr "标准"
 
-msgid "Standard cloud Carbon fits how your company runs"
-msgstr "标准云 Carbon 适合您公司的运营方式"
+msgid "Standard cloud AGA OneForge fits how your company runs"
+msgstr "标准云 AGA OneForge 适合您公司的运营方式"
 
 msgid "Standard factor"
 msgstr "标准系数"
@@ -11460,11 +11457,20 @@ msgstr "The {0} phases to go live, each ending at a checkpoint. Tick off each ta
 msgid "The accounting dimension that categorizes items for reporting and analysis."
 msgstr "将项目分类以进行报告和分析的会计维度。"
 
-msgid "The accounts Carbon posts to automatically"
-msgstr "Carbon 自动记账的账户"
+msgid "The accounts AGA OneForge posts to automatically"
+msgstr "AGA OneForge 自动记账的账户"
 
 msgid "The action that copies a saved method (its materials, operations, and work instructions) onto a job or quote line."
 msgstr "将保存的方法（其物料、工序和工作说明）复制到工作或报价行的操作。"
+
+msgid "The AGA OneForge user responsible for this customer relationship; emails and reminders about this customer route to them."
+msgstr "负责此客户关系的AGA OneForge用户；关于此客户的电子邮件和提醒会路由给他们。"
+
+msgid "The AGA OneForge user responsible for this supplier relationship; emails and reminders about this supplier route to them."
+msgstr "负责此供应商关系的AGA OneForge用户；关于此供应商的电子邮件和提醒会路由给他们。"
+
+msgid "The AGA OneForge user who owns this RFQ; supplier responses and reminders route to them."
+msgstr "拥有此RFQ的AGA OneForge用户；供应商响应和提醒会路由给他们。"
 
 msgid "The allowed values for a list-type attribute; users pick from these rather than free-typing."
 msgstr "列表类型属性的允许值；用户从这些中选择而不是自由输入。"
@@ -11487,20 +11493,11 @@ msgstr "所有已记账的日记账行书，按账户汇总 - 仅在公司启用
 msgid "The buckets you track costs against"
 msgstr "您用来追踪成本的分类"
 
-msgid "The Carbon user responsible for this customer relationship; emails and reminders about this customer route to them."
-msgstr "负责此客户关系的Carbon用户；关于此客户的电子邮件和提醒会路由给他们。"
-
-msgid "The Carbon user responsible for this supplier relationship; emails and reminders about this supplier route to them."
-msgstr "负责此供应商关系的Carbon用户；关于此供应商的电子邮件和提醒会路由给他们。"
-
-msgid "The Carbon user who owns this RFQ; supplier responses and reminders route to them."
-msgstr "拥有此RFQ的Carbon用户；供应商响应和提醒会路由给他们。"
-
 msgid "The carrier that delivers goods from this supplier, when different from the supplier itself (e.g. supplier sells, FedEx ships)."
 msgstr "从此供应商交付商品的承运人，当不同于供应商本身时（例如，供应商销售，FedEx配送）。"
 
-msgid "The carrier's tracking-page URL with {trackingNumber} as a placeholder — Carbon substitutes the actual number when generating links on shipments."
-msgstr "运输公司的追踪页面URL，以{trackingNumber}作为占位符 — Carbon在生成出货链接时替换实际号码。"
+msgid "The carrier's tracking-page URL with {trackingNumber} as a placeholder — AGA OneForge substitutes the actual number when generating links on shipments."
+msgstr "运输公司的追踪页面URL，以{trackingNumber}作为占位符 — AGA OneForge在生成出货链接时替换实际号码。"
 
 msgid "The carriers and methods you ship orders with"
 msgstr "您用来发货订单的承运商和方法"
@@ -11694,11 +11691,11 @@ msgstr "此工作中心运行机械的每小时成本；与记录的机器小时
 msgid "The hourly indirect-cost burden applied to this work center; the difference between labor + machine and the full quoting rate is what overhead absorbs."
 msgstr "应用于此工作中心的每小时间接成本负担；劳动+机器与完整报价率之间的差异就是间接费用吸收的内容。"
 
-msgid "The identifier the customer uses for this part on their POs; Carbon resolves it to our internal Part ID on order import."
-msgstr "客户在其采购单上用于此零件的标识符；Carbon在订单导入时将其解析为我们的内部零件ID。"
+msgid "The identifier the customer uses for this part on their POs; AGA OneForge resolves it to our internal Part ID on order import."
+msgstr "客户在其采购单上用于此零件的标识符；AGA OneForge在订单导入时将其解析为我们的内部零件ID。"
 
-msgid "The identifier the supplier uses for this part on their quotes and invoices; Carbon resolves it to our internal Part ID."
-msgstr "供应商在其报价和发票上用于此零件的标识符；Carbon将其解析为我们的内部零件ID。"
+msgid "The identifier the supplier uses for this part on their quotes and invoices; AGA OneForge resolves it to our internal Part ID."
+msgstr "供应商在其报价和发票上用于此零件的标识符；AGA OneForge将其解析为我们的内部零件ID。"
 
 msgid "The immediate nonconformance task that quarantines affected stock or work before the root cause is known."
 msgstr "根本原因已知之前，隔离受影响库存或作业的立即不符合任务。"
@@ -11787,8 +11784,8 @@ msgstr "此供应商无论数量如何为此流程收费的最低金额；低于
 msgid "The machines, cells, and stations your work runs through"
 msgstr "您的工作运行所经过的机器、单元和工作站"
 
-msgid "The master data to set up when first configuring Carbon, grouped by module. Mark each one configured as you go."
-msgstr "首次配置 Carbon 时要设置的主数据，按模块分组。配置每个模块时进行标记。"
+msgid "The master data to set up when first configuring AGA OneForge, grouped by module. Mark each one configured as you go."
+msgstr "首次配置 AGA OneForge 时要设置的主数据，按模块分组。配置每个模块时进行标记。"
 
 msgid "The material is purchased from a supplier for that specific order, rather than made or pulled from stock."
 msgstr "该材料从供应商购买用于该特定订单，而不是制造或从库存中提取。"
@@ -11859,11 +11856,11 @@ msgstr "当需要该零件的父级被构造时，该零件被制造为其自己
 msgid "The part is taken from existing stock when its parent is built — no new job or purchase order."
 msgstr "构建其父级时，从现有库存中获取该零件 - 无新工作或采购订单。"
 
-msgid "The people on the Carbon side who will run your implementation, and how to reach them."
-msgstr "Carbon 方面将运行您的实施的人员，以及如何联系他们。"
+msgid "The people on the AGA OneForge side who will run your implementation, and how to reach them."
+msgstr "AGA OneForge 方面将运行您的实施的人员，以及如何联系他们。"
 
-msgid "The people on your team and their access to Carbon"
-msgstr "您团队中的人员及其对 Carbon 的访问权限"
+msgid "The people on your team and their access to AGA OneForge"
+msgstr "您团队中的人员及其对 AGA OneForge 的访问权限"
 
 msgid "The percentage of the cash discount. Use 0 for no discount."
 msgstr "现金折扣的百分比。使用 0 表示无折扣。"
@@ -11919,8 +11916,8 @@ msgstr "跟踪实体的记录系统 - 消费了哪些输入来生成哪些输出
 msgid "The reference data everything else hangs off. Loads first."
 msgstr "参考数据是其他一切的基础。首先加载。"
 
-msgid "The residual WIP a job has left at close, swept to a Production Variance account — the only variance Carbon books for a job."
-msgstr "工作在关闭时留下的残余在制品，扫至生产差异帐户 - Carbon为工作记录的唯一差异。"
+msgid "The residual WIP a job has left at close, swept to a Production Variance account — the only variance AGA OneForge books for a job."
+msgstr "工作在关闭时留下的残余在制品，扫至生产差异帐户 - AGA OneForge为工作记录的唯一差异。"
 
 msgid "The revision number of the part"
 msgstr "零件的修订号"
@@ -12036,8 +12033,8 @@ msgstr "为此流程向此供应商发送工作与收回之间的典型天数；
 msgid "The unique identifier on this physical unit; one row per serial, quantity is always 1."
 msgstr "此物理单元的唯一标识符；每个序列号一行，数量始终为1。"
 
-msgid "The unit a routing time is expressed in, such as Hours/Piece or Total Hours, telling Carbon whether the time scales with quantity or is fixed per run."
-msgstr "路由时间表示的单位，例如小时/件或总小时数，告诉 Carbon 时间是否随数量变化或每次运行固定。"
+msgid "The unit a routing time is expressed in, such as Hours/Piece or Total Hours, telling AGA OneForge whether the time scales with quantity or is fixed per run."
+msgstr "路由时间表示的单位，例如小时/件或总小时数，告诉 AGA OneForge 时间是否随数量变化或每次运行固定。"
 
 msgid "The unit price of the item at the time of the purchase"
 msgstr "购买时该商品的单价"
@@ -13270,8 +13267,8 @@ msgstr "加权平均"
 msgid "Weighted average cost over last year calculated when the invoice is posted"
 msgstr "去年加权平均成本，在发票过账时计算"
 
-msgid "Welcome to Carbon"
-msgstr "欢迎来到 Carbon"
+msgid "Welcome to AGA OneForge"
+msgstr "欢迎来到 AGA OneForge"
 
 msgid "Welcome, {companyName}"
 msgstr "欢迎，{companyName}"
@@ -13282,8 +13279,8 @@ msgstr "这是哪种故障类别 — 机械、电气、软件、操作员、材�
 msgid "What changes day to day"
 msgstr "每天变化的内容"
 
-msgid "What changes when you move to Carbon, and roughly what it's worth. Estimates, not a forecast."
-msgstr "当您迁移到 Carbon 时会发生什么变化，以及大致的价值。这些是估计值，而非预测。"
+msgid "What changes when you move to AGA OneForge, and roughly what it's worth. Estimates, not a forecast."
+msgstr "当您迁移到 AGA OneForge 时会发生什么变化，以及大致的价值。这些是估计值，而非预测。"
 
 msgid "What data"
 msgstr "什么数据"
@@ -13342,8 +13339,8 @@ msgstr "当成品的保质期设置为\"计算\"时，选择哪些消耗的投�
 msgid "When a serial or batch expires, and what happens if used after — a company policy can Warn, Block, or BlockWithOverride."
 msgstr "当序列号或批次过期时,以及之后使用时会发生什么 — 公司政策可以警告、阻止或使用覆盖阻止。"
 
-msgid "When Carbon committed to having the goods arrive; combined with the shipping method's transit days, this drives Ship Date back-calc."
-msgstr "Carbon何时承诺货物到达;与运输方法的运送天数相结合,这决定了发货日期的向后计算。"
+msgid "When AGA OneForge committed to having the goods arrive; combined with the shipping method's transit days, this drives Ship Date back-calc."
+msgstr "AGA OneForge何时承诺货物到达;与运输方法的运送天数相结合,这决定了发货日期的向后计算。"
 
 msgid "When expired stock is used"
 msgstr "当使用过期库存时"
@@ -13372,8 +13369,8 @@ msgstr "启用后,此价格覆盖适用于匹配的订单;禁用时,覆盖被保
 msgid "When on, this rule fires for every target of its type. Assignment rows are ignored but preserved."
 msgstr "启用时，此规则对其类型的每个目标都会触发。分配行被忽略但保留。"
 
-msgid "When supplier responses are expected back; suppliers see this date on the RFQ portal and Carbon stops accepting late responses after it (configurable)."
-msgstr "何时预期供应商回复;供应商在RFQ门户上看到该日期,Carbon在之后停止接受迟到的回复(可配置)。"
+msgid "When supplier responses are expected back; suppliers see this date on the RFQ portal and AGA OneForge stops accepting late responses after it (configurable)."
+msgstr "何时预期供应商回复;供应商在RFQ门户上看到该日期,AGA OneForge在之后停止接受迟到的回复(可配置)。"
 
 msgid "When the buyer asked for the goods; the supplier may promise something else on Promised Date and post something else again on Delivery Date."
 msgstr "买方何时要求货物;供应商可以在承诺日期承诺其他内容,在交货日期再次过账其他内容。"
@@ -13465,11 +13462,11 @@ msgstr "你今天的位置"
 msgid "Where you want to grow"
 msgstr "你想要成长的地方"
 
+msgid "Whether AGA OneForge follows each unit (Serial), each lot (Batch), the quantity (Inventory), or no tracking (Non-Inventory)."
+msgstr "AGA OneForge 是跟踪每个单位 (Serial)、每个批次 (Batch)、数量 (Inventory)，还是不跟踪 (Non-Inventory)。"
+
 msgid "Whether Amount is interpreted as a percentage of the line price or as a fixed currency amount."
 msgstr "金额是按行价格的百分比解释，还是按固定货币金额解释。"
-
-msgid "Whether Carbon follows each unit (Serial), each lot (Batch), the quantity (Inventory), or no tracking (Non-Inventory)."
-msgstr "Carbon 是跟踪每个单位 (Serial)、每个批次 (Batch)、数量 (Inventory)，还是不跟踪 (Non-Inventory)。"
 
 msgid "Whether the clock starts when the chosen process begins or when it completes."
 msgstr "计时是在所选工序开始时启动，还是在其完成时启动。"
@@ -13722,8 +13719,8 @@ msgstr "你收到了这批货"
 msgid "You're live on AGA OneForge"
 msgstr "您已在 AGA OneForge 上线"
 
-msgid "You're setting Carbon up yourself, at your own pace"
-msgstr "您正在按照自己的节奏自行设置 Carbon"
+msgid "You're setting AGA OneForge up yourself, at your own pace"
+msgstr "您正在按照自己的节奏自行设置 AGA OneForge"
 
 msgid "You've been clocked in for {hoursElapsed} hours. Did you forget to clock out?"
 msgstr "您已打卡 {hoursElapsed} 小时。您忘记打卡下班了吗？"
@@ -13791,11 +13788,11 @@ msgstr "您的真实数据已加载，您已检查样本并批准了它。"
 msgid "Your source data is accessible and reasonably clean"
 msgstr "您的源数据可访问且相对干净"
 
-msgid "Your team can free up time to learn Carbon and load your data"
-msgstr "您的团队可以腾出时间学习 Carbon 并加载您的数据"
+msgid "Your team can free up time to learn AGA OneForge and load your data"
+msgstr "您的团队可以腾出时间学习 AGA OneForge 并加载您的数据"
 
-msgid "Your team leads learn Carbon first using the in-app guides and Academy, then bring everyone else up to speed."
-msgstr "您的团队负责人首先使用应用内指南和 Academy 学习 Carbon，然后帮助其他人快速上手。"
+msgid "Your team leads learn AGA OneForge first using the in-app guides and Academy, then bring everyone else up to speed."
+msgstr "您的团队负责人首先使用应用内指南和 Academy 学习 AGA OneForge，然后帮助其他人快速上手。"
 
 msgid "Your team, structure, and access."
 msgstr "您的团队、结构和访问权限。"

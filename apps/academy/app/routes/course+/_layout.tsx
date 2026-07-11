@@ -22,7 +22,7 @@ export default function CourseLayout() {
             Learn the basics of AGA OneForge and start your journey to becoming
             an expert in AGA OneForge. All for free.
           </p>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <Button
               size="lg"
               variant="secondary"

@@ -515,7 +515,7 @@ export default function BackupsRoute() {
                       <span className="text-sm font-medium">Backup failed</span>
                       <span className="break-words text-xs text-muted-foreground">
                         The system created an invalid backup — please contact
-                        Carbon support.
+                        AGA OneForge support.
                         {exportRun?.error ? ` (${exportRun.error})` : null}
                       </span>
                     </VStack>

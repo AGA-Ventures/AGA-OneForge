@@ -29,7 +29,7 @@ export const TRAINING_TRACKS: TrainingTrack[] = [
     courses: [
       {
         key: "found-1",
-        course: msg`Getting around Carbon`,
+        course: msg`Getting around AGA OneForge`,
         audience: msg`All users`,
         format: "Self-paced",
         length: msg`2h`,
@@ -37,7 +37,7 @@ export const TRAINING_TRACKS: TrainingTrack[] = [
       },
       {
         key: "found-2",
-        course: msg`How your company's process maps to Carbon`,
+        course: msg`How your company's process maps to AGA OneForge`,
         audience: msg`Champions`,
         format: "Hands-on",
         length: msg`2h`,

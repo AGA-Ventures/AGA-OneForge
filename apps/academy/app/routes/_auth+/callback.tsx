@@ -145,12 +145,12 @@ export default function AuthCallback() {
       <div className="flex justify-center mb-8">
         <img
           src="/carbon-mark-light.svg"
-          alt="Carbon Logo"
+          alt="AGA OneForge Logo"
           className="w-24 dark:hidden"
         />
         <img
           src="/carbon-mark-dark.svg"
-          alt="Carbon Logo"
+          alt="AGA OneForge Logo"
           className="w-24 hidden dark:block"
         />
       </div>

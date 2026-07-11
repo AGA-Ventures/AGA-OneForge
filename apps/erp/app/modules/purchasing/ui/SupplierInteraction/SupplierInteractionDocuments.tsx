@@ -293,7 +293,7 @@ export const useSupplierInteractionDocuments = ({
   const upload = useCallback(
     async (files: File[]) => {
       if (!carbon) {
-        toast.error(t`Carbon client not available`);
+        toast.error(t`AGA OneForge client not available`);
         return;
       }
 

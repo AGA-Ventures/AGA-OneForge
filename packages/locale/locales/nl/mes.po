@@ -354,7 +354,7 @@ msgstr ""
 msgid "Forgot to Clock Out?"
 msgstr ""
 
-msgid "Have a technical issue? Contact <0>Carbon Support.</0>"
+msgid "Have a technical issue? Contact <0>AGA OneForge Support.</0>"
 msgstr ""
 
 msgid "I understand and want to complete without issuing"
