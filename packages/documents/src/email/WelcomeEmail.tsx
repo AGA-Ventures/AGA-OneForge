@@ -3,11 +3,11 @@ import { Body, Html, Preview, Text } from "@react-email/components";
 export const WelcomeEmail = () => {
   return (
     <Html>
-      <Preview>Hey- I saw you just signed up for Carbon.</Preview>
+      <Preview>Hey- I saw you just signed up for AGA OneForge.</Preview>
       <Body>
         <Text>
-          Hey- I saw you just signed up for Carbon. Appreciate it! Let me know
-          if you want to meet or talk about anything.
+          Hey- I saw you just signed up for AGA OneForge. Appreciate it! Let me
+          know if you want to meet or talk about anything.
         </Text>
         <Text>
           This is an automated email, but I'll respond to anything you send me.

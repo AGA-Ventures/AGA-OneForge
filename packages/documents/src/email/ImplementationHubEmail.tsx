@@ -233,7 +233,8 @@ export const ImplementationHubEmail = ({
                     className={`text-[15px] leading-[24px] m-0 ${themeClasses.text}`}
                   >
                     Your company has been enrolled in the Implementation Hub.
-                    Open it to track onboarding tasks and get set up in Carbon.
+                    Open it to track onboarding tasks and get set up in AGA
+                    OneForge.
                   </Text>
                 </td>
               </tr>
