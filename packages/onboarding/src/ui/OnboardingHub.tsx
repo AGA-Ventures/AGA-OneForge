@@ -80,7 +80,7 @@ export function OnboardingHub({
 
   const stateText =
     done === total ? (
-      <Trans>Live on Carbon</Trans>
+      <Trans>Live on AGA OneForge</Trans>
     ) : done === 0 ? (
       <Trans>{total} phases to go live</Trans>
     ) : (
@@ -93,12 +93,12 @@ export function OnboardingHub({
         <div className="size-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-1">
           <img
             src="/carbon-mark-light.svg"
-            alt="Carbon"
+            alt="AGA OneForge"
             className="size-7 dark:hidden"
           />
           <img
             src="/carbon-mark-dark.svg"
-            alt="Carbon"
+            alt="AGA OneForge"
             className="size-7 hidden dark:block"
           />
         </div>
@@ -111,8 +111,8 @@ export function OnboardingHub({
         </h1>
         <p className="text-base text-muted-foreground max-w-xl text-pretty">
           <Trans>
-            {total} phases to get your company live on Carbon. Each one ends at
-            a checkpoint.
+            {total} phases to get your company live on AGA OneForge. Each one
+            ends at a checkpoint.
           </Trans>
         </p>
       </header>
@@ -133,7 +133,7 @@ export function OnboardingHub({
           </div>
           <div className="flex-1 min-w-0">
             <div className="text-lg font-medium tracking-tight">
-              <Trans>You're live on Carbon</Trans>
+              <Trans>You're live on AGA OneForge</Trans>
             </div>
             <p className="text-sm text-muted-foreground mt-0.5">
               <Trans>
@@ -262,7 +262,7 @@ function NextStepCard({
               leftIcon={<LuArrowRight />}
               onClick={() => onOpenProduct(product.key)}
             >
-              {product.cta ? i18n._(product.cta) : t`Open in Carbon`}
+              {product.cta ? i18n._(product.cta) : t`Open in AGA OneForge`}
             </Button>
           ) : (
             <Button

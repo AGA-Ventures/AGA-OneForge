@@ -114,8 +114,8 @@ msgstr "{remaining, plural, one {# aşama kaldı} other {# aşama kaldı}}"
 msgid "{scopeCount} permissions"
 msgstr "{scopeCount} izinleri"
 
-msgid "{total} phases to get your company live on Carbon. Each one ends at a checkpoint."
-msgstr "{total} aşama şirketinizi Carbon'da canlı hale getirmek için. Her biri bir kontrol noktasında sona erer."
+msgid "{total} phases to get your company live on AGA OneForge. Each one ends at a checkpoint."
+msgstr "{total} aşama şirketinizi AGA OneForge'da canlı hale getirmek için. Her biri bir kontrol noktasında sona erer."
 
 msgid "{total} phases to go live"
 msgstr "{total} aşama canlı yayına alınacak"
@@ -2380,8 +2380,8 @@ msgstr "Onaylanan giden stok — satış siparişleri ve iş malzemeleri (sıfı
 msgid "Confirming locks the counted quantities. Review the warnings below, then post the count to apply the adjustments."
 msgstr "Sayıyı onaylamak, sayılan miktarları kilitler. Aşağıdaki uyarıları gözden geçirin, ardından ayarlamaları uygulamak için sayıyı gönderin."
 
-msgid "Connect Carbon to your accounting, project management, and CAD tools and much more."
-msgstr "Carbon'ı muhasebe, proje yönetimi ve CAD araçlarınızla ve çok daha fazlasıyla bağlayın."
+msgid "Connect AGA OneForge to your accounting, project management, and CAD tools and much more."
+msgstr "AGA OneForge'ı muhasebe, proje yönetimi ve CAD araçlarınızla ve çok daha fazlasıyla bağlayın."
 
 msgid "Connect Jira issue"
 msgstr "Jira sorununu bağla"
@@ -6598,6 +6598,9 @@ msgstr "Liste Seçenekleri"
 msgid "List Parameters"
 msgstr "Liste Parametreleri"
 
+msgid "Live on AGA OneForge"
+msgstr "AGA OneForge'da Canlı"
+
 msgid "Live on Carbon"
 msgstr "Carbon'da Canlı"
 
@@ -8048,8 +8051,8 @@ msgstr "Açılış Tarihi"
 msgid "Open Dispatches"
 msgstr "Açık Görevler"
 
-msgid "Open in Carbon"
-msgstr "Carbon'da Aç"
+msgid "Open in AGA OneForge"
+msgstr "AGA OneForge'da Aç"
 
 msgid "Open in MES"
 msgstr "MES'te Aç"
@@ -8969,8 +8972,8 @@ msgstr "Herkese açık"
 msgid "Publish"
 msgstr "Yayınla"
 
-msgid "Published by Carbon"
-msgstr "Carbon tarafından yayınlandı"
+msgid "Published by AGA OneForge"
+msgstr "AGA OneForge tarafından yayınlandı"
 
 msgid "Pull From"
 msgstr "Çekme Kaynağından"
@@ -10345,8 +10348,8 @@ msgstr "Seçilen: {selectedSum} / bölünme sonrası kalan: {0}"
 msgid "Self Managed"
 msgstr "Kendi Yönettiği"
 
-msgid "Self-Onboarding with Carbon Academy"
-msgstr "Carbon Akademisi ile Kendi Kendine Kayıt"
+msgid "Self-Onboarding with AGA OneForge Academy"
+msgstr "AGA OneForge Akademisi ile Kendi Kendine Kayıt"
 
 msgid "Self-paced"
 msgstr "Kendi hızında"
@@ -13716,8 +13719,8 @@ msgstr "Bu ürünü siz aldınız"
 msgid "You received this lot"
 msgstr "Bu partiyi aldınız"
 
-msgid "You're live on Carbon"
-msgstr "Carbon'da canlısınız"
+msgid "You're live on AGA OneForge"
+msgstr "AGA OneForge'da canlısınız"
 
 msgid "You're setting Carbon up yourself, at your own pace"
 msgstr "Carbon'ı kendiniz kendi hızınızda ayarlıyorsunuz"

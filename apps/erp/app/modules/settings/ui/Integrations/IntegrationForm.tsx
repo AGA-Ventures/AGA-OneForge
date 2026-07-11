@@ -614,7 +614,7 @@ export function IntegrationForm({
                     <Badge variant="secondary">{integration.category}</Badge>
                     <span aria-hidden>•</span>
                     <span>
-                      <Trans>Published by Carbon</Trans>
+                      <Trans>Published by AGA OneForge</Trans>
                     </span>
                   </div>
                 </div>
@@ -691,8 +691,8 @@ export function IntegrationForm({
             </ScrollArea>
             <div className="mt-2">
               <p className="text-[0.6875rem] leading-relaxed text-muted-foreground">
-                Carbon Manufacturing Systems does not endorse any third-party
-                software.{" "}
+                AGA OneForge Manufacturing Systems does not endorse any
+                third-party software.{" "}
                 <a
                   href={`mailto:${SUPPORT_EMAIL}`}
                   className="underline decoration-dotted underline-offset-2 hover:text-foreground"

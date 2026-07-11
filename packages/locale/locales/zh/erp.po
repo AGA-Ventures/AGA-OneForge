@@ -114,8 +114,8 @@ msgstr "{remaining, plural, one {# 个阶段剩余} other {# 个阶段剩余}}"
 msgid "{scopeCount} permissions"
 msgstr "{scopeCount} 个权限"
 
-msgid "{total} phases to get your company live on Carbon. Each one ends at a checkpoint."
-msgstr "{total}个阶段让您的公司在Carbon上线。每个阶段都以检查点结束。"
+msgid "{total} phases to get your company live on AGA OneForge. Each one ends at a checkpoint."
+msgstr "{total}个阶段让您的公司在AGA OneForge上线。每个阶段都以检查点结束。"
 
 msgid "{total} phases to go live"
 msgstr "{total} 个阶段即可上线"
@@ -2380,8 +2380,8 @@ msgstr "确认的出库存货 — 销售订单和工作物料（零以下的条�
 msgid "Confirming locks the counted quantities. Review the warnings below, then post the count to apply the adjustments."
 msgstr "确认将锁定计数数量。查看下面的警告，然后发布计数以应用调整。"
 
-msgid "Connect Carbon to your accounting, project management, and CAD tools and much more."
-msgstr "将 Carbon 连接到您的会计、项目管理和 CAD 工具等更多应用。"
+msgid "Connect AGA OneForge to your accounting, project management, and CAD tools and much more."
+msgstr "将 AGA OneForge 连接到您的会计、项目管理和 CAD 工具等更多应用。"
 
 msgid "Connect Jira issue"
 msgstr "连接 Jira 问题"
@@ -6598,6 +6598,9 @@ msgstr "列表选项"
 msgid "List Parameters"
 msgstr "列表参数"
 
+msgid "Live on AGA OneForge"
+msgstr "在 AGA OneForge 上线"
+
 msgid "Live on Carbon"
 msgstr "在 Carbon 上线"
 
@@ -8048,8 +8051,8 @@ msgstr "开放日期"
 msgid "Open Dispatches"
 msgstr "未结派工单"
 
-msgid "Open in Carbon"
-msgstr "在 Carbon 中打开"
+msgid "Open in AGA OneForge"
+msgstr "在 AGA OneForge 中打开"
 
 msgid "Open in MES"
 msgstr "在MES中打开"
@@ -8969,8 +8972,8 @@ msgstr "公开"
 msgid "Publish"
 msgstr "发布"
 
-msgid "Published by Carbon"
-msgstr "由 Carbon 发布"
+msgid "Published by AGA OneForge"
+msgstr "由 AGA OneForge 发布"
 
 msgid "Pull From"
 msgstr "从以下位置提取"
@@ -10345,8 +10348,8 @@ msgstr "已选择: {selectedSum} / 分割后剩余: {0}"
 msgid "Self Managed"
 msgstr "自我管理"
 
-msgid "Self-Onboarding with Carbon Academy"
-msgstr "使用 Carbon Academy 自助入门"
+msgid "Self-Onboarding with AGA OneForge Academy"
+msgstr "使用 AGA OneForge Academy 自助入门"
 
 msgid "Self-paced"
 msgstr "自主学习"
@@ -13716,8 +13719,8 @@ msgstr "您收到了此项目"
 msgid "You received this lot"
 msgstr "你收到了这批货"
 
-msgid "You're live on Carbon"
-msgstr "您已在 Carbon 上线"
+msgid "You're live on AGA OneForge"
+msgstr "您已在 AGA OneForge 上线"
 
 msgid "You're setting Carbon up yourself, at your own pace"
 msgstr "您正在按照自己的节奏自行设置 Carbon"

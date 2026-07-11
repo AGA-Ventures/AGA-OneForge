@@ -297,8 +297,8 @@ export function JobProgressModal({
               {isExport ? (
                 <>
                   <p className="text-center text-sm text-muted-foreground">
-                    The system created an invalid backup — please contact Carbon
-                    support.
+                    The system created an invalid backup — please contact AGA
+                    OneForge support.
                   </p>
                   {error ? (
                     <p className="max-w-full break-words text-center text-xs text-muted-foreground">
