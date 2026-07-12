@@ -151,14 +151,18 @@ export const productionEventValidator = z.object({
     })
   }),
   workCenterId: zfd.text(z.string().optional()),
-  trackedEntityId: zfd.text(z.string().optional())
+  trackedEntityId: zfd.text(z.string().optional()),
+  // "true" when the operator confirmed working out-of-sequence on an
+  // operation whose upstream dependencies are not Done (warn-only gate)
+  acknowledgedDependencies: zfd.text(z.string().optional())
 });
 
 export const finishValidator = z.object({
   jobOperationId: z.string(),
   setupProductionEventId: zfd.text(z.string().optional()),
   laborProductionEventId: zfd.text(z.string().optional()),
-  machineProductionEventId: zfd.text(z.string().optional())
+  machineProductionEventId: zfd.text(z.string().optional()),
+  acknowledgedDependencies: zfd.text(z.string().optional())
 });
 
 export const issueTrackedEntityValidator = z.object({

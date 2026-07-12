@@ -6,7 +6,10 @@ import { validationError, validator } from "@carbon/form";
 import type { ActionFunctionArgs } from "react-router";
 import { data, redirect } from "react-router";
 import { finishValidator } from "~/services/models";
-import { finishJobOperation } from "~/services/operations.service";
+import {
+  checkOperationDependenciesComplete,
+  finishJobOperation
+} from "~/services/operations.service";
 import { path } from "~/utils/path";
 
 export async function action({ request }: ActionFunctionArgs) {
@@ -19,6 +22,18 @@ export async function action({ request }: ActionFunctionArgs) {
 
   if (validation.error) {
     return validationError(validation.error);
+  }
+
+  // Warn-only dependency gate: block the first attempt when upstream
+  // operations are not Done; the UI re-submits with the acknowledgement.
+  if (validation.data.acknowledgedDependencies !== "true") {
+    const dependenciesComplete = await checkOperationDependenciesComplete(
+      serviceRole,
+      validation.data.jobOperationId
+    );
+    if (dependenciesComplete.data === false) {
+      return data({ requiresDependencyAcknowledgement: true });
+    }
   }
 
   const finishOperation = await finishJobOperation(serviceRole, {

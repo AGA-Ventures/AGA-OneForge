@@ -1,6 +1,14 @@
 import { Hidden, ValidatedForm } from "@carbon/form";
 import {
+  Button,
   cn,
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalDescription,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
   ToggleGroup,
   ToggleGroupItem,
   Tooltip,
@@ -12,7 +20,7 @@ import { getLocalTimeZone } from "@internationalized/date";
 import { Trans, useLingui } from "@lingui/react/macro";
 import { AnimatePresence, motion } from "framer-motion";
 import type { ComponentProps, ReactNode } from "react";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { FaPause, FaPlay } from "react-icons/fa6";
 import {
   LuEllipsisVertical,
@@ -236,6 +244,49 @@ export function StartStopButton({
   trackedEntityId: string | undefined;
 }) {
   const fetcher = useFetcher<ProductionEvent>();
+  const [showDependencyConfirm, setShowDependencyConfirm] = useState(false);
+
+  // Warn-only dependency gate: the server rejects the first Start attempt
+  // when upstream operations are not Done; confirm and re-submit with the
+  // acknowledgement flag.
+  useEffect(() => {
+    if (
+      (
+        fetcher.data as
+          | { requiresDependencyAcknowledgement?: boolean }
+          | undefined
+      )?.requiresDependencyAcknowledgement
+    ) {
+      setShowDependencyConfirm(true);
+    }
+  }, [fetcher.data]);
+
+  const startAcknowledged = useCallback(() => {
+    const formData = new FormData();
+    formData.set("jobOperationId", operation.id);
+    formData.set("timezone", getLocalTimeZone());
+    formData.set("action", "Start");
+    formData.set("type", eventType);
+    if (operation.workCenterId) {
+      formData.set("workCenterId", operation.workCenterId);
+    }
+    if (isTrackedActivity && trackedEntityId) {
+      formData.set("trackedEntityId", trackedEntityId);
+    }
+    formData.set("acknowledgedDependencies", "true");
+    fetcher.submit(formData, {
+      method: "post",
+      action: path.to.productionEvent
+    });
+    setShowDependencyConfirm(false);
+  }, [
+    fetcher,
+    eventType,
+    operation.id,
+    operation.workCenterId,
+    isTrackedActivity,
+    trackedEntityId
+  ]);
 
   const isActive = useMemo(() => {
     if (fetcher.formData?.get("action") === "End") {
@@ -313,6 +364,42 @@ export function StartStopButton({
         <PauseButton disabled={fetcher.state !== "idle"} type="submit" />
       ) : (
         <PlayButton disabled={fetcher.state !== "idle"} type="submit" />
+      )}
+      {showDependencyConfirm && (
+        <Modal
+          open
+          onOpenChange={(open) => {
+            if (!open) {
+              setShowDependencyConfirm(false);
+            }
+          }}
+        >
+          <ModalContent>
+            <ModalHeader>
+              <ModalTitle>
+                <Trans>Upstream operation not finished</Trans>
+              </ModalTitle>
+              <ModalDescription>
+                <Trans>
+                  This operation is waiting on a prior operation that has not
+                  been completed. Starting now records work out of sequence.
+                </Trans>
+              </ModalDescription>
+            </ModalHeader>
+            <ModalBody />
+            <ModalFooter>
+              <Button
+                variant="secondary"
+                onClick={() => setShowDependencyConfirm(false)}
+              >
+                <Trans>Cancel</Trans>
+              </Button>
+              <Button variant="destructive" onClick={startAcknowledged}>
+                <Trans>Start Anyway</Trans>
+              </Button>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
       )}
     </ValidatedForm>
   );

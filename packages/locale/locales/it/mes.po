@@ -405,6 +405,9 @@ msgstr "Quanti sono stati effettivamente prelevati?"
 msgid "I understand and want to complete without issuing"
 msgstr "Comprendo e desidero completare senza prelevare"
 
+msgid "I understand and want to proceed anyway"
+msgstr ""
+
 msgid "I'm Still Working"
 msgstr "Sto Ancora Lavorando"
 
@@ -987,6 +990,9 @@ msgstr "Ricambi Utilizzati"
 msgid "Start"
 msgstr "Avvia"
 
+msgid "Start Anyway"
+msgstr ""
+
 msgid "Station User"
 msgstr "Utente Stazione"
 
@@ -1035,6 +1041,12 @@ msgstr "Ci sono materiali tracciati per numero di serie o lotto nella distinta b
 
 msgid "This lot is expired and can't be picked."
 msgstr "Questo lotto è scaduto e non può essere prelevato."
+
+msgid "This operation is waiting on a prior operation that has not been completed. Proceeding records work out of sequence."
+msgstr ""
+
+msgid "This operation is waiting on a prior operation that has not been completed. Starting now records work out of sequence."
+msgstr ""
 
 msgid "Thumbnail"
 msgstr "Miniatura"
@@ -1098,6 +1110,9 @@ msgstr "Caricato: {0}"
 #. placeholder {0}: fileUpload.name
 msgid "Uploading {0}"
 msgstr "Caricamento di {0}"
+
+msgid "Upstream operation not finished"
+msgstr ""
 
 msgid "View maintenance dispatch"
 msgstr "Visualizza intervento di manutenzione"

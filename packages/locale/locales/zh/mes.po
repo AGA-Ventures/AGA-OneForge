@@ -405,6 +405,9 @@ msgstr "实际上捡了多少个？"
 msgid "I understand and want to complete without issuing"
 msgstr "我理解并希望在不发放物料的情况下完成"
 
+msgid "I understand and want to proceed anyway"
+msgstr ""
+
 msgid "I'm Still Working"
 msgstr "我还在工作"
 
@@ -987,6 +990,9 @@ msgstr "已使用备件"
 msgid "Start"
 msgstr "开始"
 
+msgid "Start Anyway"
+msgstr ""
+
 msgid "Station User"
 msgstr "工位用户"
 
@@ -1035,6 +1041,12 @@ msgstr "物料清单中有序列号或批次追踪的物料尚未完全发放。
 
 msgid "This lot is expired and can't be picked."
 msgstr "此批次已过期，无法领取。"
+
+msgid "This operation is waiting on a prior operation that has not been completed. Proceeding records work out of sequence."
+msgstr ""
+
+msgid "This operation is waiting on a prior operation that has not been completed. Starting now records work out of sequence."
+msgstr ""
 
 msgid "Thumbnail"
 msgstr "缩略图"
@@ -1098,6 +1110,9 @@ msgstr "已上传：{0}"
 #. placeholder {0}: fileUpload.name
 msgid "Uploading {0}"
 msgstr "正在上传 {0}"
+
+msgid "Upstream operation not finished"
+msgstr ""
 
 msgid "View maintenance dispatch"
 msgstr "查看维护工单"

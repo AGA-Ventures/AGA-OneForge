@@ -9,6 +9,7 @@ import {
 import type { LoaderFunctionArgs } from "react-router";
 import { redirect } from "react-router";
 import {
+  checkOperationDependenciesComplete,
   finishJobOperation,
   getTrackedEntitiesByMakeMethodId,
   insertProductionQuantity
@@ -64,6 +65,28 @@ export async function loader({ request, params }: LoaderFunctionArgs) {
       })
     );
   }
+  // Warn-only dependency gate. This is a scan-driven loader with no modal to
+  // acknowledge against, so redirect back with a warning and point the
+  // operator at the Complete button (which carries the acknowledgement flow).
+  if (url.searchParams.get("acknowledged") !== "true") {
+    const dependenciesComplete = await checkOperationDependenciesComplete(
+      serviceRole,
+      operationId
+    );
+    if (dependenciesComplete.data === false) {
+      return redirect(
+        path.to.operation(operationId),
+        await flash(request, {
+          ...error(
+            "An upstream operation is not finished",
+            "Use the Complete button to confirm working out of sequence"
+          ),
+          flash: "error"
+        })
+      );
+    }
+  }
+
   const completeAll = jobOperation.data?.completeAllOnScan ?? false;
 
   const [jobMakeMethod] = await Promise.all([
