@@ -405,6 +405,9 @@ msgstr "実際にはいくつ選ばれましたか？"
 msgid "I understand and want to complete without issuing"
 msgstr "理解した上で払出なしで完了します"
 
+msgid "I understand and want to proceed anyway"
+msgstr ""
+
 msgid "I'm Still Working"
 msgstr "まだ作業中です"
 
@@ -987,6 +990,9 @@ msgstr "使用済みスペアパーツ"
 msgid "Start"
 msgstr "開始"
 
+msgid "Start Anyway"
+msgstr ""
+
 msgid "Station User"
 msgstr "ステーションユーザー"
 
@@ -1035,6 +1041,12 @@ msgstr "部品表にシリアルまたはバッチ追跡対象の材料が完全
 
 msgid "This lot is expired and can't be picked."
 msgstr "このロットは期限切れであり、ピックできません。"
+
+msgid "This operation is waiting on a prior operation that has not been completed. Proceeding records work out of sequence."
+msgstr ""
+
+msgid "This operation is waiting on a prior operation that has not been completed. Starting now records work out of sequence."
+msgstr ""
 
 msgid "Thumbnail"
 msgstr "サムネイル"
@@ -1098,6 +1110,9 @@ msgstr "アップロード完了: {0}"
 #. placeholder {0}: fileUpload.name
 msgid "Uploading {0}"
 msgstr "{0} をアップロード中"
+
+msgid "Upstream operation not finished"
+msgstr ""
 
 msgid "View maintenance dispatch"
 msgstr "メンテナンスディスパッチを表示"

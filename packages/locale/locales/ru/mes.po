@@ -405,6 +405,9 @@ msgstr "Сколько было фактически собрано?"
 msgid "I understand and want to complete without issuing"
 msgstr "Я понимаю и хочу завершить без выдачи"
 
+msgid "I understand and want to proceed anyway"
+msgstr ""
+
 msgid "I'm Still Working"
 msgstr "Я ещё работаю"
 
@@ -987,6 +990,9 @@ msgstr "Использованные запасные части"
 msgid "Start"
 msgstr "Старт"
 
+msgid "Start Anyway"
+msgstr ""
+
 msgid "Station User"
 msgstr "Пользователь станции"
 
@@ -1035,6 +1041,12 @@ msgstr "В спецификации есть материалы с серийн�
 
 msgid "This lot is expired and can't be picked."
 msgstr "Эта партия истекла и не может быть выбрана."
+
+msgid "This operation is waiting on a prior operation that has not been completed. Proceeding records work out of sequence."
+msgstr ""
+
+msgid "This operation is waiting on a prior operation that has not been completed. Starting now records work out of sequence."
+msgstr ""
 
 msgid "Thumbnail"
 msgstr "Миниатюра"
@@ -1098,6 +1110,9 @@ msgstr "Загружено: {0}"
 #. placeholder {0}: fileUpload.name
 msgid "Uploading {0}"
 msgstr "Загрузка {0}"
+
+msgid "Upstream operation not finished"
+msgstr ""
 
 msgid "View maintenance dispatch"
 msgstr "Просмотреть наряд на обслуживание"

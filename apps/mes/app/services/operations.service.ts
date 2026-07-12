@@ -148,6 +148,21 @@ export async function deleteAttributeRecord(
     .eq("createdBy", args.userId);
 }
 
+/**
+ * True when every operation this one depends on is Done (or it has no
+ * dependencies). Reads the live jobOperationDependency graph via the
+ * check_operation_dependencies RPC rather than the cached status enum,
+ * which can be stale after a reschedule.
+ */
+export async function checkOperationDependenciesComplete(
+  client: SupabaseClient<Database>,
+  jobOperationId: string
+) {
+  return client.rpc("check_operation_dependencies", {
+    operation_id: jobOperationId
+  });
+}
+
 export async function finishJobOperation(
   client: SupabaseClient<Database>,
   args: {
@@ -1001,6 +1016,7 @@ export async function insertReworkQuantity(
   const {
     trackedEntityId: _trackedEntityId,
     trackingType: _trackingType,
+    acknowledgedDependencies: _acknowledgedDependencies,
     ...insert
   } = data;
 

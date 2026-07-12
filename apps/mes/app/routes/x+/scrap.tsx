@@ -20,7 +20,8 @@ export async function action({ request }: ActionFunctionArgs) {
   }
 
   // biome-ignore lint/correctness/noUnusedVariables: suppressed due to migration
-  const { trackedEntityId, trackingType, ...d } = validation.data;
+  const { trackedEntityId, trackingType, acknowledgedDependencies, ...d } =
+    validation.data;
 
   const insertScrap = await insertScrapQuantity(client, {
     ...d,

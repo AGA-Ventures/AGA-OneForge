@@ -8,6 +8,7 @@ import type { ActionFunctionArgs } from "react-router";
 import { data } from "react-router";
 import { productionEventValidator } from "~/services/models";
 import {
+  checkOperationDependenciesComplete,
   endProductionEvent,
   startProductionEvent
 } from "~/services/operations.service";
@@ -30,10 +31,23 @@ export async function action({ request }: ActionFunctionArgs) {
     action: productionAction,
     timezone,
     trackedEntityId,
+    acknowledgedDependencies,
     ...d
   } = validation.data;
 
   if (productionAction === "Start") {
+    // Warn-only dependency gate: block the first attempt when upstream
+    // operations are not Done; the UI re-submits with the acknowledgement.
+    if (acknowledgedDependencies !== "true") {
+      const dependenciesComplete = await checkOperationDependenciesComplete(
+        client,
+        d.jobOperationId
+      );
+      if (dependenciesComplete.data === false) {
+        return data({ requiresDependencyAcknowledgement: true });
+      }
+    }
+
     const startEvent = await startProductionEvent(
       client,
       {

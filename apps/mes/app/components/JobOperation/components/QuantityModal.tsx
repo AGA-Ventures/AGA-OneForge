@@ -66,14 +66,33 @@ export function QuantityModal({
   const fetcher = useFetcher<ProductionQuantity>();
   const [quantity, setQuantity] = useState(parentIsSerial ? 1 : 0);
   const [confirmedUnissued, setConfirmedUnissued] = useState(false);
+  const [confirmedDependencies, setConfirmedDependencies] = useState(false);
   const submitted = useRef(false);
   const isSubmitting = fetcher.state !== "idle";
 
+  const requiresDependencyAcknowledgement =
+    (
+      fetcher.data as
+        | { requiresDependencyAcknowledgement?: boolean }
+        | undefined
+    )?.requiresDependencyAcknowledgement === true;
+
   useEffect(() => {
     if (submitted.current && fetcher.state === "idle") {
+      if (
+        (
+          fetcher.data as
+            | { requiresDependencyAcknowledgement?: boolean }
+            | undefined
+        )?.requiresDependencyAcknowledgement
+      ) {
+        // Keep the modal open so the operator can acknowledge and re-submit
+        submitted.current = false;
+        return;
+      }
       onClose();
     }
-  }, [fetcher.state, onClose]);
+  }, [fetcher.state, fetcher.data, onClose]);
 
   const titleMap = {
     scrap: t`Log scrap for ${operation.itemReadableId}`,
@@ -179,7 +198,38 @@ export function QuantityModal({
             <Hidden name="setupProductionEventId" />
             <Hidden name="laborProductionEventId" />
             <Hidden name="machineProductionEventId" />
+            <Hidden
+              name="acknowledgedDependencies"
+              value={confirmedDependencies ? "true" : ""}
+            />
             <VStack spacing={2}>
+              {requiresDependencyAcknowledgement && (
+                <Alert variant="destructive">
+                  <LuTriangleAlert className="h-4 w-4" />
+                  <AlertTitle>
+                    <Trans>Upstream operation not finished</Trans>
+                  </AlertTitle>
+                  <AlertDescription>
+                    <Trans>
+                      This operation is waiting on a prior operation that has
+                      not been completed. Proceeding records work out of
+                      sequence.
+                    </Trans>
+                  </AlertDescription>
+                  <label className="flex items-center gap-2 mt-2 cursor-pointer">
+                    <Checkbox
+                      isChecked={confirmedDependencies}
+                      onCheckedChange={(checked) =>
+                        setConfirmedDependencies(checked === true)
+                      }
+                      className="bg-primary"
+                    />
+                    <span className="text-sm">
+                      <Trans>I understand and want to proceed anyway</Trans>
+                    </span>
+                  </label>
+                </Alert>
+              )}
               {hasUnissuedTrackedMaterials && type === "complete" && (
                 <Alert variant="destructive">
                   <LuTriangleAlert className="h-4 w-4" />
@@ -314,7 +364,8 @@ export function QuantityModal({
                 isSubmitting ||
                 (type === "complete" &&
                   hasUnissuedTrackedMaterials &&
-                  !confirmedUnissued)
+                  !confirmedUnissued) ||
+                (requiresDependencyAcknowledgement && !confirmedDependencies)
               }
             >
               {actionButtonMap[type]}

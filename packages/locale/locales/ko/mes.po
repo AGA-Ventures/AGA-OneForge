@@ -405,6 +405,9 @@ msgstr "실제로 몇 개를 피킹했습니까?"
 msgid "I understand and want to complete without issuing"
 msgstr "이해했으며 출고 없이 완료하겠습니다"
 
+msgid "I understand and want to proceed anyway"
+msgstr ""
+
 msgid "I'm Still Working"
 msgstr "아직 작업 중입니다"
 
@@ -987,6 +990,9 @@ msgstr "사용된 예비 부품"
 msgid "Start"
 msgstr "시작"
 
+msgid "Start Anyway"
+msgstr ""
+
 msgid "Station User"
 msgstr "스테이션 사용자"
 
@@ -1035,6 +1041,12 @@ msgstr "자재명세서(BOM)에 아직 완전히 출고되지 않은 일련번�
 
 msgid "This lot is expired and can't be picked."
 msgstr "이 로트는 만료되어 피킹할 수 없습니다."
+
+msgid "This operation is waiting on a prior operation that has not been completed. Proceeding records work out of sequence."
+msgstr ""
+
+msgid "This operation is waiting on a prior operation that has not been completed. Starting now records work out of sequence."
+msgstr ""
 
 msgid "Thumbnail"
 msgstr "썸네일"
@@ -1098,6 +1110,9 @@ msgstr "업로드됨: {0}"
 #. placeholder {0}: fileUpload.name
 msgid "Uploading {0}"
 msgstr "{0} 업로드 중"
+
+msgid "Upstream operation not finished"
+msgstr ""
 
 msgid "View maintenance dispatch"
 msgstr "유지보수 작업지시 보기"

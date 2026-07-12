@@ -405,6 +405,9 @@ msgstr "Gerçekte kaç tane alındı?"
 msgid "I understand and want to complete without issuing"
 msgstr "Anladığımı ve çıkarmadan tamamlamak istediğimi anlıyorum"
 
+msgid "I understand and want to proceed anyway"
+msgstr ""
+
 msgid "I'm Still Working"
 msgstr "Hala Çalışıyorum"
 
@@ -987,6 +990,9 @@ msgstr "Kullanılan Yedek Parçalar"
 msgid "Start"
 msgstr "Başlat"
 
+msgid "Start Anyway"
+msgstr ""
+
 msgid "Station User"
 msgstr "İstasyon Kullanıcısı"
 
@@ -1035,6 +1041,12 @@ msgstr "Malzeme listesindeki seri veya parti takipli malzemeler tam olarak veril
 
 msgid "This lot is expired and can't be picked."
 msgstr "Bu parti süresi dolmuş ve alınamaz."
+
+msgid "This operation is waiting on a prior operation that has not been completed. Proceeding records work out of sequence."
+msgstr ""
+
+msgid "This operation is waiting on a prior operation that has not been completed. Starting now records work out of sequence."
+msgstr ""
 
 msgid "Thumbnail"
 msgstr "Küçük Resim"
@@ -1098,6 +1110,9 @@ msgstr "Yüklendi: {0}"
 #. placeholder {0}: fileUpload.name
 msgid "Uploading {0}"
 msgstr "Yükleniyor {0}"
+
+msgid "Upstream operation not finished"
+msgstr ""
 
 msgid "View maintenance dispatch"
 msgstr "Bakım sevkıyatını görüntüle"

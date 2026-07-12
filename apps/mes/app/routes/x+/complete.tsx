@@ -10,6 +10,7 @@ import type { ActionFunctionArgs } from "react-router";
 import { data, redirect } from "react-router";
 import { nonScrapQuantityValidator } from "~/services/models";
 import {
+  checkOperationDependenciesComplete,
   finishJobOperation,
   insertProductionQuantity
 } from "~/services/operations.service";
@@ -93,6 +94,18 @@ export async function action({ request }: ActionFunctionArgs) {
   }
 
   const serviceRole = await getCarbonServiceRole();
+
+  // Warn-only dependency gate: block the first attempt when upstream
+  // operations are not Done; the UI re-submits with the acknowledgement.
+  if (validation.data.acknowledgedDependencies !== "true") {
+    const dependenciesComplete = await checkOperationDependenciesComplete(
+      serviceRole,
+      validation.data.jobOperationId
+    );
+    if (dependenciesComplete.data === false) {
+      return data({ requiresDependencyAcknowledgement: true });
+    }
+  }
 
   // Get current job operation and production quantities to check if operation will be finished
   const jobOperation = await serviceRole
@@ -255,7 +268,8 @@ export async function action({ request }: ActionFunctionArgs) {
     return redirect(`${path.to.operation(validation.data.jobOperationId)}`);
   } else {
     // biome-ignore lint/correctness/noUnusedVariables: suppressed due to migration
-    const { trackedEntityId, trackingType, ...d } = validation.data;
+    const { trackedEntityId, trackingType, acknowledgedDependencies, ...d } =
+      validation.data;
     const insertProduction = await insertProductionQuantity(client, {
       ...d,
       companyId,

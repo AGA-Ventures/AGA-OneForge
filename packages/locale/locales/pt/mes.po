@@ -405,6 +405,9 @@ msgstr "Quantos foram realmente apanhados?"
 msgid "I understand and want to complete without issuing"
 msgstr "Eu entendo e desejo concluir sem emitir"
 
+msgid "I understand and want to proceed anyway"
+msgstr ""
+
 msgid "I'm Still Working"
 msgstr "Ainda Estou Trabalhando"
 
@@ -987,6 +990,9 @@ msgstr "Peças Sobressalentes Utilizadas"
 msgid "Start"
 msgstr "Iniciar"
 
+msgid "Start Anyway"
+msgstr ""
+
 msgid "Station User"
 msgstr "Usuário da Estação"
 
@@ -1035,6 +1041,12 @@ msgstr "Existem materiais rastreados por série ou lote na lista de materiais qu
 
 msgid "This lot is expired and can't be picked."
 msgstr "Este lote expirou e não pode ser selecionado."
+
+msgid "This operation is waiting on a prior operation that has not been completed. Proceeding records work out of sequence."
+msgstr ""
+
+msgid "This operation is waiting on a prior operation that has not been completed. Starting now records work out of sequence."
+msgstr ""
 
 msgid "Thumbnail"
 msgstr "Miniatura"
@@ -1098,6 +1110,9 @@ msgstr "Enviado: {0}"
 #. placeholder {0}: fileUpload.name
 msgid "Uploading {0}"
 msgstr "Enviando {0}"
+
+msgid "Upstream operation not finished"
+msgstr ""
 
 msgid "View maintenance dispatch"
 msgstr "Ver despacho de manutenção"

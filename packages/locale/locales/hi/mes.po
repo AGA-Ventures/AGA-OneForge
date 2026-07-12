@@ -405,6 +405,9 @@ msgstr "वास्तव में कितने चुने गए?"
 msgid "I understand and want to complete without issuing"
 msgstr "मैं समझता हूँ और बिना जारी किए पूरा करना चाहता हूँ"
 
+msgid "I understand and want to proceed anyway"
+msgstr ""
+
 msgid "I'm Still Working"
 msgstr "मैं अभी भी काम कर रहा हूँ"
 
@@ -987,6 +990,9 @@ msgstr "उपयोग किए गए स्पेयर पार्ट्�
 msgid "Start"
 msgstr "शुरू करें"
 
+msgid "Start Anyway"
+msgstr ""
+
 msgid "Station User"
 msgstr "स्टेशन उपयोगकर्ता"
 
@@ -1035,6 +1041,12 @@ msgstr "बिल ऑफ मेटेरियल पर सीरियल य�
 
 msgid "This lot is expired and can't be picked."
 msgstr "यह लॉट समाप्त हो गया है और इसे चुना नहीं जा सकता।"
+
+msgid "This operation is waiting on a prior operation that has not been completed. Proceeding records work out of sequence."
+msgstr ""
+
+msgid "This operation is waiting on a prior operation that has not been completed. Starting now records work out of sequence."
+msgstr ""
 
 msgid "Thumbnail"
 msgstr "थंबनेल"
@@ -1098,6 +1110,9 @@ msgstr "अपलोड किया गया: {0}"
 #. placeholder {0}: fileUpload.name
 msgid "Uploading {0}"
 msgstr "अपलोड किया जा रहा है {0}"
+
+msgid "Upstream operation not finished"
+msgstr ""
 
 msgid "View maintenance dispatch"
 msgstr "रखरखाव डिस्पैच देखें"
