@@ -11,6 +11,7 @@ import type { LoaderFunctionArgs } from "react-router";
 import { redirect } from "react-router";
 import { getWorkCenterWithBlockingStatus } from "~/services/maintenance.service";
 import {
+  checkOperationDependenciesComplete,
   getTrackedEntitiesByMakeMethodId,
   startProductionEvent
 } from "~/services/operations.service";
@@ -101,6 +102,28 @@ export async function loader({ request, params }: LoaderFunctionArgs) {
       // Use the last tracked entity if available
       trackedEntityId =
         trackedEntities.data[trackedEntities.data.length - 1].id;
+    }
+  }
+
+  // Warn-only dependency gate. This is a loader flow with no modal to
+  // acknowledge against, so redirect back with a warning; the ▶ button's
+  // POST path (event.tsx) carries the acknowledgement flow.
+  if (url.searchParams.get("acknowledged") !== "true") {
+    const dependenciesComplete = await checkOperationDependenciesComplete(
+      serviceRole,
+      operationId
+    );
+    if (dependenciesComplete.data === false) {
+      throw redirect(
+        path.to.operation(operationId),
+        await flash(
+          request,
+          error(
+            "An upstream operation is not finished",
+            "Use the start button to confirm working out of sequence"
+          )
+        )
+      );
     }
   }
 

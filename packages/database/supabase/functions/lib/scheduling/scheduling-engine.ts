@@ -1,5 +1,6 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { Kysely } from "kysely";
+import { sql } from "kysely";
 import type { DB } from "../database.ts";
 import type { Database } from "../types.ts";
 import {
@@ -277,44 +278,58 @@ export class SchedulingEngine {
       .filter((op) => op.reworkId)
       .map((op) => op.id!);
 
-    let deleteQuery = this.db
-      .deleteFrom("jobOperationDependency")
-      .where("jobId", "=", this.jobId);
-
-    if (reworkOpIds.length > 0) {
-      deleteQuery = deleteQuery
-        .where("operationId", "not in", reworkOpIds)
-        .where("dependsOnId", "not in", reworkOpIds);
-    }
-
-    await deleteQuery.execute();
-
-    // Insert new dependencies
     const records = dependenciesToRecords(
       allDependencies,
       this.jobId,
       this.companyId
     );
 
-    if (records.length > 0) {
-      for (const record of records) {
-        await this.db
+    const zeroDependencyOpIds = [...allDependencies.entries()]
+      .filter(([, deps]) => deps.size === 0)
+      .map(([opId]) => opId);
+
+    // The delete → insert → promote sequence must be atomic per job:
+    // concurrent scheduling runs for the same job otherwise interleave,
+    // causing duplicate-key failures on reinsert and stamping a correct
+    // 'Waiting' status back to 'Ready' from a stale dependency snapshot.
+    // The advisory lock serializes runs across edge-runtime instances.
+    await this.db.transaction().execute(async (trx) => {
+      await sql`select pg_advisory_xact_lock(hashtext(${this.jobId}))`.execute(
+        trx
+      );
+
+      let deleteQuery = trx
+        .deleteFrom("jobOperationDependency")
+        .where("jobId", "=", this.jobId);
+
+      if (reworkOpIds.length > 0) {
+        deleteQuery = deleteQuery
+          .where("operationId", "not in", reworkOpIds)
+          .where("dependsOnId", "not in", reworkOpIds);
+      }
+
+      await deleteQuery.execute();
+
+      if (records.length > 0) {
+        await trx
           .insertInto("jobOperationDependency")
-          .values(record)
+          .values(records)
           .execute();
       }
-    }
 
-    // Update operations with no dependencies to Ready status
-    for (const [opId, deps] of allDependencies) {
-      if (deps.size === 0) {
-        await this.db
+      // Promote operations with no dependencies to Ready — but only from
+      // Todo/Waiting, so a reschedule never resurrects an operation that is
+      // already Done, In Progress, Paused, or Canceled (mirrors the
+      // set_initial_dependency_status trigger's guard).
+      if (zeroDependencyOpIds.length > 0) {
+        await trx
           .updateTable("jobOperation")
           .set({ status: "Ready" })
-          .where("id", "=", opId)
+          .where("id", "in", zeroDependencyOpIds)
+          .where("status", "in", ["Todo", "Waiting"])
           .execute();
       }
-    }
+    });
 
     // Store dependencies for date calculation (non-rework edges rebuilt above)
     this.dependencies = records.map((r) => ({
