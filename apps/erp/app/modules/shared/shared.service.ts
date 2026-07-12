@@ -1077,10 +1077,9 @@ export async function getCustomerPortal(
     }
   >
 > {
-  // @ts-expect-error Supabase composite key issue
   return client
     .from("externalLink")
-    .select("*, customer:customerId(id, name)")
+    .select("*, customer:externalLinks_customerId_fkey(id, name)")
     .eq("id", id)
     .eq("documentType", "Customer")
     .single();
