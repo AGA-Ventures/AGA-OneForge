@@ -216,9 +216,8 @@ Create an `.env` file and copy the contents of `.env.example` file into it
 $ cp ./.env.example ./.env
 ```
 
-1. **Social Sign In**: Signing in requires you to setup one of two methods:
+1. **Social Sign In**: AGA OneForge defaults to Supabase Social Login through Google and Microsoft Azure. Set `AUTH_PROVIDERS="google,azure"` (or just one provider) and configure at least one provider before starting the apps. Email magic-link and passkey sign-in are disabled by default; they can be restored only as an explicit rollback by adding `email` and/or `passkey` to `AUTH_PROVIDERS`.
 
-- Email requires a Resend API key (you'll set this up later on)
 - Sign-in with Google requires a Google auth client with these variables. [See the Supabase docs for instructions on how to set this up](https://supabase.com/docs/guides/auth/social-login/auth-google):
   - Set `Authorized JavaScript origins` to `https://api.carbon.dev`
   - Set `Authorized redirect URIs` to `https://api.carbon.dev/auth/v1/callback`
@@ -226,6 +225,7 @@ $ cp ./.env.example ./.env
 - You should set environment variables like the following.
   - `SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID="******.apps.googleusercontent.com"`
   - `SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_SECRET="GOCSPX-****************"`
+- Sign-in with Microsoft Azure requires the corresponding Azure application credentials and the same Supabase callback URL pattern. Register the exact public app callback URLs (`https://<erp-host>/callback`, and the equivalent MES, Academy, and Starter URLs) in Supabase Auth's redirect allow list.
 
 2. **Supabase**: Backend services run inside the per-worktree docker stack — `crbn up` boots them and writes everything you need into `.env.local` automatically:
 

@@ -4,7 +4,10 @@ import {
   carbonClient,
   error
 } from "@carbon/auth";
-import { refreshAccessToken } from "@carbon/auth/auth.server";
+import {
+  refreshAccessToken,
+  validateOAuthCallback
+} from "@carbon/auth/auth.server";
 import { getCarbonServiceRole } from "@carbon/auth/client.server";
 import { setCompanyId } from "@carbon/auth/company.server";
 import {
@@ -51,24 +54,8 @@ export async function action({ request }: ActionFunctionArgs) {
     });
   }
 
-  const { refreshToken, userId } = validation.data;
-  const serviceRole = getCarbonServiceRole();
-  const companies = await serviceRole
-    .from("userToCompany")
-    .select("companyId, ...company(companyGroupId)")
-    .eq("userId", userId);
-
-  const firstCompany = companies.data?.[0] as
-    | { companyId: string; companyGroupId: string | null }
-    | undefined;
-  const companyId = firstCompany?.companyId;
-  const companyGroupId = firstCompany?.companyGroupId ?? "";
-
-  const authSession = await refreshAccessToken(
-    refreshToken,
-    companyId,
-    companyGroupId
-  );
+  const { refreshToken } = validation.data;
+  const authSession = await refreshAccessToken(refreshToken, "", "");
 
   if (!authSession) {
     return redirect(
@@ -77,9 +64,24 @@ export async function action({ request }: ActionFunctionArgs) {
     );
   }
 
+  const callbackAccess = await validateOAuthCallback(authSession);
+  if (!callbackAccess.allowed) throw await destroyAuthSession(request);
+
+  const serviceRole = getCarbonServiceRole();
+  const companies = await serviceRole
+    .from("userToCompany")
+    .select("companyId, ...company(companyGroupId)")
+    .eq("userId", authSession.userId);
+
+  const firstCompany = companies.data?.[0] as
+    | { companyId: string; companyGroupId: string | null }
+    | undefined;
+  authSession.companyId = firstCompany?.companyId ?? "";
+  authSession.companyGroupId = firstCompany?.companyGroupId ?? "";
+
   const user = await getUserByEmail(authSession.email);
 
-  if (user?.data) {
+  if (user.data?.active) {
     const sessionCookie = await setAuthSession(request, {
       authSession
     });

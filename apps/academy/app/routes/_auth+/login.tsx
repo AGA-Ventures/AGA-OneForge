@@ -2,6 +2,7 @@ import {
   assertIsPost,
   carbonClient,
   error,
+  isAuthProviderEnabled,
   magicLinkValidator,
   RATE_LIMIT,
   SUPABASE_AUTH_EXTERNAL_AZURE_CLIENT_ID,
@@ -49,13 +50,23 @@ export async function loader({ request }: LoaderFunctionArgs) {
   }
 
   return {
-    hasOutlookAuth: !!SUPABASE_AUTH_EXTERNAL_AZURE_CLIENT_ID,
-    hasGoogleAuth: !!SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID
+    hasOutlookAuth:
+      isAuthProviderEnabled("azure") &&
+      !!SUPABASE_AUTH_EXTERNAL_AZURE_CLIENT_ID,
+    hasGoogleAuth:
+      isAuthProviderEnabled("google") &&
+      !!SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID,
+    hasEmailAuth: isAuthProviderEnabled("email")
   };
 }
 
 export async function action({ request }: ActionFunctionArgs) {
   assertIsPost(request);
+
+  if (!isAuthProviderEnabled("email")) {
+    return data(error(null, "Email sign-in is disabled"), { status: 403 });
+  }
+
   const ip = request.headers.get("x-forwarded-for") ?? "127.0.0.1";
   const ratelimit = new Ratelimit({
     redis,
@@ -102,7 +113,8 @@ export async function action({ request }: ActionFunctionArgs) {
 }
 
 export default function LoginRoute() {
-  const { hasOutlookAuth, hasGoogleAuth } = useLoaderData<typeof loader>();
+  const { hasOutlookAuth, hasGoogleAuth, hasEmailAuth } =
+    useLoaderData<typeof loader>();
   const [searchParams] = useSearchParams();
   const redirectTo = searchParams.get("redirectTo") ?? undefined;
 
@@ -156,7 +168,7 @@ export default function LoginRoute() {
         />
       </div>
       <div className="rounded-lg md:bg-card md:border md:border-border md:shadow-lg p-8 w-[380px]">
-        {fetcher.data?.success === true ? (
+        {hasEmailAuth && fetcher.data?.success === true ? (
           <>
             <VStack spacing={4} className="items-center justify-center">
               <Heading size="h3">Check your email</Heading>
@@ -209,24 +221,28 @@ export default function LoginRoute() {
                 </Button>
               )}
 
-              {(hasGoogleAuth || hasOutlookAuth) && (
+              {hasEmailAuth && (hasGoogleAuth || hasOutlookAuth) && (
                 <div className="py-3 w-full">
                   <Separator />
                 </div>
               )}
 
-              <Input name="email" label="" placeholder="Email Address" />
+              {hasEmailAuth && (
+                <>
+                  <Input name="email" label="" placeholder="Email Address" />
 
-              <Submit
-                isDisabled={fetcher.state !== "idle"}
-                isLoading={fetcher.state === "submitting"}
-                size="lg"
-                className="w-full"
-                withBlocker={false}
-                variant="secondary"
-              >
-                Sign in with Email
-              </Submit>
+                  <Submit
+                    isDisabled={fetcher.state !== "idle"}
+                    isLoading={fetcher.state === "submitting"}
+                    size="lg"
+                    className="w-full"
+                    withBlocker={false}
+                    variant="secondary"
+                  >
+                    Sign in with Email
+                  </Submit>
+                </>
+              )}
             </VStack>
           </ValidatedForm>
         )}

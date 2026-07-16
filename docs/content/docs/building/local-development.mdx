@@ -26,7 +26,7 @@ AGA OneForge is a **pnpm + Turborepo** monorepo, the ERP and MES apps plus their
   crbn up
   ```
 
-  This generates a `.env.local` with per-worktree ports, local Supabase keys, `REDIS_URL`, Inngest dev settings, and `DEV_BYPASS_EMAIL` so you can sign in without a magic link.
+  This generates a `.env.local` with per-worktree ports, local Supabase keys, `REDIS_URL`, Inngest dev settings, and `DEV_BYPASS_EMAIL` so you can sign in locally without a provider redirect.
   </Step>
   <Step>
   ### Reach the apps
@@ -36,7 +36,7 @@ AGA OneForge is a **pnpm + Turborepo** monorepo, the ERP and MES apps plus their
 </Steps>
 
 <Callout type="warn">
-`DEV_BYPASS_EMAIL` is local-only. It signs you in as that email with no magic link. Never set it in a deployed environment.
+`DEV_BYPASS_EMAIL` is local-only. It signs you in as that email without a provider redirect. Never set it in a deployed environment. Production defaults to Google/Azure Supabase Social Login; configure provider credentials and register Supabase's `/auth/v1/callback` with the provider plus each exact app `/callback` URL in Supabase Auth before testing a real OAuth round trip.
 </Callout>
 
 ### Stack commands

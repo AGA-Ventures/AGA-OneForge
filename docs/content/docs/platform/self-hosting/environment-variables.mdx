@@ -15,7 +15,7 @@ Platform-wide behavior and edition.
 <EnvVars>
 <EnvVar name="CARBON_EDITION" type="enum">One of `community`, `cloud`, `enterprise`, or `test`. Gates edition-specific features.</EnvVar>
 <EnvVar name="CONTROLLED_ENVIRONMENT" type="boolean">Enables ITAR / controlled-environment restrictions.</EnvVar>
-<EnvVar name="AUTH_PROVIDERS" type="enum[]">Allowed sign-in methods: `email`, `google`, `azure`, `passkey`.</EnvVar>
+<EnvVar name="AUTH_PROVIDERS" type="enum[]">Allowed sign-in methods. Defaults to OAuth-only `google,azure`; `email` and `passkey` are opt-in rollback methods.</EnvVar>
 <EnvVar name="DOMAIN" type="string">Base domain the apps are served from.</EnvVar>
 <EnvVar name="ERP_URL" type="url">Public URL of the ERP app.</EnvVar>
 <EnvVar name="MES_URL" type="url">Public URL of the MES app.</EnvVar>
@@ -48,6 +48,8 @@ AGA OneForge's single Postgres database. All five are required.
 
 Sign-in bot protection uses Cloudflare Turnstile: `CLOUDFLARE_TURNSTILE_SITE_KEY` and
 `CLOUDFLARE_TURNSTILE_SECRET_KEY`.
+
+For Google and Azure, register the Supabase provider callback URL with the identity provider, then add each exact public application callback URL (for example, `https://erp.example.com/callback`) to Supabase Auth's redirect allow list. The OAuth-only default accepts only OAuth-authenticated Supabase sessions at the application callback. To temporarily restore email magic links or passkeys, add `email` and/or `passkey` to `AUTH_PROVIDERS`; no database migration is required.
 
 ## Jobs & cache
 

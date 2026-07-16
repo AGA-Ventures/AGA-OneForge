@@ -5,7 +5,10 @@ import {
   error,
   safeRedirect
 } from "@carbon/auth";
-import { refreshAccessToken } from "@carbon/auth/auth.server";
+import {
+  refreshAccessToken,
+  validateOAuthCallback
+} from "@carbon/auth/auth.server";
 import { getCarbonServiceRole } from "@carbon/auth/client.server";
 import { getCompanyId, setCompanyId } from "@carbon/auth/company.server";
 import {
@@ -58,29 +61,8 @@ export async function action({ request }: ActionFunctionArgs) {
     });
   }
 
-  const { refreshToken, userId, redirectTo } = validation.data;
-  const serviceRole = getCarbonServiceRole();
-
-  // Pre-session: no user-authed client yet, so query memberships with the
-  // service role. Prefer an employee company as the active one; fall back to
-  // any membership so auth/RLS can deny a pure portal user later.
-  const employeeCompanies =
-    (await getEmployeeCompanies(serviceRole, userId)).data ?? [];
-  const pickable = employeeCompanies.length
-    ? employeeCompanies
-    : ((await getCompanies(serviceRole, userId)).data ?? []);
-
-  const cookieCompanyId = getCompanyId(request);
-  const match =
-    pickable.find((c) => c.companyId === cookieCompanyId) ?? pickable[0];
-  const companyId = match?.companyId ?? undefined;
-  const companyGroupId = match?.companyGroupId ?? "";
-
-  const authSession = await refreshAccessToken(
-    refreshToken,
-    companyId,
-    companyGroupId
-  );
+  const { refreshToken, redirectTo } = validation.data;
+  const authSession = await refreshAccessToken(refreshToken, "", "");
 
   if (!authSession) {
     return redirect(
@@ -89,9 +71,28 @@ export async function action({ request }: ActionFunctionArgs) {
     );
   }
 
+  const callbackAccess = await validateOAuthCallback(authSession);
+  if (!callbackAccess.allowed) throw await destroyAuthSession(request);
+
+  const serviceRole = getCarbonServiceRole();
+  // Pre-session: no user-authed client yet, so query memberships with the
+  // service role. Prefer an employee company as the active one; fall back to
+  // any membership so auth/RLS can deny a pure portal user later.
+  const employeeCompanies =
+    (await getEmployeeCompanies(serviceRole, authSession.userId)).data ?? [];
+  const pickable = employeeCompanies.length
+    ? employeeCompanies
+    : ((await getCompanies(serviceRole, authSession.userId)).data ?? []);
+
+  const cookieCompanyId = getCompanyId(request);
+  const match =
+    pickable.find((c) => c.companyId === cookieCompanyId) ?? pickable[0];
+  authSession.companyId = match?.companyId ?? "";
+  authSession.companyGroupId = match?.companyGroupId ?? "";
+
   const user = await getUserByEmail(authSession.email);
 
-  if (user?.data) {
+  if (user.data?.active) {
     const sessionCookie = await setAuthSession(request, {
       authSession
     });

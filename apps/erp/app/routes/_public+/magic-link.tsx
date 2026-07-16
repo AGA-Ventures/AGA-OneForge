@@ -1,7 +1,20 @@
-import { CONTROLLED_ENVIRONMENT, SUPABASE_URL } from "@carbon/auth";
+import {
+  CONTROLLED_ENVIRONMENT,
+  isAuthProviderEnabled,
+  SUPABASE_URL
+} from "@carbon/auth";
 import { Button, Heading, VStack } from "@carbon/react";
 import { Trans, useLingui } from "@lingui/react/macro";
-import { useNavigate, useSearchParams } from "react-router";
+import { redirect, useNavigate, useSearchParams } from "react-router";
+import { path } from "~/utils/path";
+
+export async function loader() {
+  if (!isAuthProviderEnabled("email")) {
+    throw redirect(path.to.login);
+  }
+
+  return null;
+}
 
 export default function ConfirmMagicLink() {
   const { t } = useLingui();

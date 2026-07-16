@@ -1,5 +1,10 @@
 import crypto from "node:crypto";
-import { assertIsPost, error, RATE_LIMIT } from "@carbon/auth";
+import {
+  assertIsPost,
+  error,
+  isAuthProviderEnabled,
+  RATE_LIMIT
+} from "@carbon/auth";
 import {
   createEmailAuthAccount,
   signInWithEmail
@@ -50,6 +55,10 @@ const verifyValidator = z.object({
 });
 
 export async function loader({ request }: LoaderFunctionArgs) {
+  if (!isAuthProviderEnabled("email")) {
+    throw redirect(path.to.login);
+  }
+
   const authSession = await getAuthSession(request);
   if (authSession) {
     throw redirect(path.to.authenticatedRoot);
@@ -59,6 +68,10 @@ export async function loader({ request }: LoaderFunctionArgs) {
 }
 
 export async function action({ request }: ActionFunctionArgs) {
+  if (!isAuthProviderEnabled("email")) {
+    throw redirect(path.to.login);
+  }
+
   assertIsPost(request);
   const ip = request.headers.get("x-forwarded-for") ?? "127.0.0.1";
 

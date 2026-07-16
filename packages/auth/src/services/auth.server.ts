@@ -9,6 +9,7 @@ import { createHash } from "crypto";
 import { redirect } from "react-router";
 import {
   CarbonEdition,
+  isAuthProviderEnabled,
   REFRESH_ACCESS_TOKEN_THRESHOLD,
   STRIPE_BYPASS_COMPANY_IDS,
   VERCEL_URL
@@ -490,6 +491,93 @@ export async function verifyAuthSession(authSession: AuthSession) {
   );
 
   return Boolean(authAccount);
+}
+
+export type OAuthCallbackAccess =
+  | { allowed: true }
+  | {
+      allowed: false;
+      reason:
+        | "invalid_claims"
+        | "non_oauth"
+        | "user_missing"
+        | "user_inactive"
+        | "enterprise_unprovisioned"
+        | "authorization_check_failed";
+    };
+
+/**
+ * Validates the authenticated identity before an app callback creates a Carbon
+ * session. Supabase verifies the JWT; the app then enforces its own active-user
+ * and Enterprise membership/invite policy.
+ */
+export async function validateOAuthCallback(
+  authSession: AuthSession
+): Promise<OAuthCallbackAccess> {
+  const { data: claimsData, error: claimsError } =
+    await getCarbon().auth.getClaims(authSession.accessToken);
+  const claims = claimsData?.claims;
+
+  if (claimsError || !claims || claims.sub !== authSession.userId) {
+    return { allowed: false, reason: "invalid_claims" };
+  }
+
+  const isOAuth = claims.amr?.some((entry) => entry.method === "oauth");
+  if (!isAuthProviderEnabled("email") && !isOAuth) {
+    return { allowed: false, reason: "non_oauth" };
+  }
+
+  const serviceRole = getCarbonServiceRole();
+  const [user, membership] = await Promise.all([
+    serviceRole
+      .from("user")
+      .select("id, email, active")
+      .eq("id", authSession.userId)
+      .maybeSingle(),
+    serviceRole
+      .from("userToCompany")
+      .select("companyId")
+      .eq("userId", authSession.userId)
+      .limit(1)
+  ]);
+
+  if (user.error || membership.error) {
+    return { allowed: false, reason: "authorization_check_failed" };
+  }
+
+  if (
+    !user.data ||
+    user.data.email.toLowerCase() !== authSession.email.toLowerCase()
+  ) {
+    return { allowed: false, reason: "user_missing" };
+  }
+
+  if (!user.data.active) {
+    return { allowed: false, reason: "user_inactive" };
+  }
+
+  if (
+    CarbonEdition !== Edition.Enterprise ||
+    (membership.data ?? []).length > 0
+  ) {
+    return { allowed: true };
+  }
+
+  const invite = await serviceRole
+    .from("invite")
+    .select("id")
+    .eq("email", user.data.email)
+    .is("acceptedAt", null)
+    .is("revokedAt", null)
+    .limit(1);
+
+  if (invite.error) {
+    return { allowed: false, reason: "authorization_check_failed" };
+  }
+
+  return (invite.data ?? []).length > 0
+    ? { allowed: true }
+    : { allowed: false, reason: "enterprise_unprovisioned" };
 }
 
 export async function signInWithPasskey(

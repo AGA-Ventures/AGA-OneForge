@@ -1,9 +1,4 @@
-import {
-  CarbonEdition,
-  error,
-  getAppUrl,
-  getPermissionCacheKey
-} from "@carbon/auth";
+import { CarbonEdition, error, getPermissionCacheKey } from "@carbon/auth";
 import { getCarbonServiceRole } from "@carbon/auth/client.server";
 import { setCompanyId } from "@carbon/auth/company.server";
 import {
@@ -45,6 +40,13 @@ export async function loader({ request, params }: LoaderFunctionArgs) {
     return { success: false, company: null };
   }
 
+  const authSession = await getAuthSession(request);
+  if (!authSession) {
+    throw redirect(
+      `${path.to.login}?redirectTo=${encodeURIComponent(`/invite/${code}`)}`
+    );
+  }
+
   return { success: true, company: invite.data.company };
 }
 
@@ -53,9 +55,15 @@ export async function action({ request, params }: ActionFunctionArgs) {
   if (!code) throw new Error("No code provided");
   const authSession = await getAuthSession(request);
 
+  if (!authSession) {
+    throw redirect(
+      `${path.to.login}?redirectTo=${encodeURIComponent(`/invite/${code}`)}`
+    );
+  }
+
   const serviceRole = getCarbonServiceRole();
 
-  const accept = await acceptInvite(serviceRole, code, authSession?.email);
+  const accept = await acceptInvite(serviceRole, code, authSession.email);
   if (accept.error) {
     throw redirect(
       path.to.root,
@@ -70,37 +78,26 @@ export async function action({ request, params }: ActionFunctionArgs) {
     await updateSubscriptionQuantityForCompany(accept.data.companyId);
   }
 
-  if (authSession) {
-    await redis.del(getPermissionCacheKey(authSession.userId));
+  await redis.del(getPermissionCacheKey(authSession.userId));
 
-    const { data: companyRecord } = await serviceRole
-      .from("company")
-      .select("companyGroupId")
-      .eq("id", accept.data.companyId)
-      .single();
+  const { data: companyRecord } = await serviceRole
+    .from("company")
+    .select("companyGroupId")
+    .eq("id", accept.data.companyId)
+    .single();
 
-    const sessionCookie = await updateCompanySession(
-      request,
-      accept.data.companyId,
-      companyRecord?.companyGroupId ?? ""
-    );
-    const companyIdCookie = setCompanyId(accept.data.companyId);
-    throw redirect(path.to.authenticatedRoot, {
-      headers: [
-        ["Set-Cookie", sessionCookie],
-        ["Set-Cookie", companyIdCookie]
-      ]
-    });
-  } else {
-    const magicLink = await serviceRole.auth.admin.generateLink({
-      type: "magiclink",
-      email: accept.data.email,
-      options: {
-        redirectTo: `${getAppUrl()}/callback`
-      }
-    });
-    throw redirect(magicLink.data?.properties?.action_link ?? path.to.root);
-  }
+  const sessionCookie = await updateCompanySession(
+    request,
+    accept.data.companyId,
+    companyRecord?.companyGroupId ?? ""
+  );
+  const companyIdCookie = setCompanyId(accept.data.companyId);
+  throw redirect(path.to.authenticatedRoot, {
+    headers: [
+      ["Set-Cookie", sessionCookie],
+      ["Set-Cookie", companyIdCookie]
+    ]
+  });
 }
 
 const fade = {

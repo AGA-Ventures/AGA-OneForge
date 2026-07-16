@@ -6,7 +6,9 @@ import {
   error,
   isAuthProviderEnabled,
   magicLinkValidator,
-  RATE_LIMIT
+  RATE_LIMIT,
+  SUPABASE_AUTH_EXTERNAL_AZURE_CLIENT_ID,
+  SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID
 } from "@carbon/auth";
 import { sendMagicLink, verifyAuthSession } from "@carbon/auth/auth.server";
 import {
@@ -57,9 +59,13 @@ export const meta: MetaFunction = () => {
 };
 
 export async function loader({ request }: LoaderFunctionArgs) {
-  const hasOutlookAuth = isAuthProviderEnabled("azure");
-  const hasGoogleAuth = isAuthProviderEnabled("google");
+  const hasOutlookAuth =
+    isAuthProviderEnabled("azure") && !!SUPABASE_AUTH_EXTERNAL_AZURE_CLIENT_ID;
+  const hasGoogleAuth =
+    isAuthProviderEnabled("google") &&
+    !!SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID;
   const hasPasskeyAuth = isAuthProviderEnabled("passkey");
+  const hasEmailAuth = isAuthProviderEnabled("email");
 
   const authSession = await getAuthSession(request);
   if (authSession) {
@@ -68,16 +74,21 @@ export async function loader({ request }: LoaderFunctionArgs) {
     }
     const cookieHeaders = await clearAuthCookies(request);
     return data(
-      { hasOutlookAuth, hasGoogleAuth, hasPasskeyAuth },
+      { hasOutlookAuth, hasGoogleAuth, hasPasskeyAuth, hasEmailAuth },
       { headers: cookieHeaders }
     );
   }
 
-  return { hasOutlookAuth, hasGoogleAuth, hasPasskeyAuth };
+  return { hasOutlookAuth, hasGoogleAuth, hasPasskeyAuth, hasEmailAuth };
 }
 
 export async function action({ request }: ActionFunctionArgs) {
   assertIsPost(request);
+
+  if (!isAuthProviderEnabled("email")) {
+    return data(error(null, "Email sign-in is disabled"), { status: 403 });
+  }
+
   const ip = request.headers.get("x-forwarded-for") ?? "127.0.0.1";
   const ratelimit = new Ratelimit({
     redis,
@@ -125,7 +136,7 @@ export async function action({ request }: ActionFunctionArgs) {
 
 export default function LoginRoute() {
   const { t } = useLingui();
-  const { hasOutlookAuth, hasGoogleAuth, hasPasskeyAuth } =
+  const { hasOutlookAuth, hasGoogleAuth, hasPasskeyAuth, hasEmailAuth } =
     useLoaderData<typeof loader>();
 
   const [searchParams] = useSearchParams();
@@ -284,7 +295,7 @@ export default function LoginRoute() {
         />
       </div>
       <div className="w-full max-w-[380px] rounded-lg p-8 md:border md:border-border md:bg-card md:shadow-lg">
-        {fetcher.data?.success === true ? (
+        {hasEmailAuth && fetcher.data?.success === true ? (
           <>
             <VStack spacing={4} className="items-center justify-center">
               <Heading size="h3">
@@ -358,29 +369,34 @@ export default function LoginRoute() {
                 </Button>
               )}
 
-              {(hasGoogleAuth || hasOutlookAuth || hasPasskeyAuth) && (
-                <div className="py-3 w-full">
-                  <Separator />
-                </div>
+              {hasEmailAuth &&
+                (hasGoogleAuth || hasOutlookAuth || hasPasskeyAuth) && (
+                  <div className="py-3 w-full">
+                    <Separator />
+                  </div>
+                )}
+
+              {hasEmailAuth && (
+                <>
+                  <Input
+                    name="email"
+                    label=""
+                    placeholder={t`Email Address`}
+                    autoComplete={hasPasskeyAuth ? "email webauthn" : "email"}
+                  />
+
+                  <Submit
+                    isDisabled={fetcher.state !== "idle"}
+                    isLoading={fetcher.state === "submitting"}
+                    size="lg"
+                    className="w-full"
+                    withBlocker={false}
+                    variant="secondary"
+                  >
+                    <Trans>Sign in with Email</Trans>
+                  </Submit>
+                </>
               )}
-
-              <Input
-                name="email"
-                label=""
-                placeholder={t`Email Address`}
-                autoComplete={hasPasskeyAuth ? "email webauthn" : "email"}
-              />
-
-              <Submit
-                isDisabled={fetcher.state !== "idle"}
-                isLoading={fetcher.state === "submitting"}
-                size="lg"
-                className="w-full"
-                withBlocker={false}
-                variant="secondary"
-              >
-                <Trans>Sign in with Email</Trans>
-              </Submit>
             </VStack>
           </ValidatedForm>
         )}
