@@ -42,6 +42,32 @@ export async function loader({ request }: LoaderFunctionArgs) {
 
   if (authSession) await destroyAuthSession(request);
 
+  const url = new URL(request.url);
+  const tokenHash = url.searchParams.get("token_hash");
+
+  if (tokenHash && url.searchParams.get("type") === "magiclink") {
+    const { data: verification, error: verificationError } =
+      await getCarbonServiceRole().auth.verifyOtp({
+        token_hash: tokenHash,
+        type: "magiclink"
+      });
+
+    if (verificationError || !verification.session) {
+      return redirect(
+        path.to.root,
+        await flash(request, error(verificationError, "Invalid magic link"))
+      );
+    }
+
+    const formData = new FormData();
+    formData.append("refreshToken", verification.session.refresh_token);
+    formData.append("userId", verification.session.user.id);
+
+    return action({
+      request: new Request(request, { method: "POST", body: formData })
+    } as ActionFunctionArgs);
+  }
+
   return {};
 }
 
