@@ -29,11 +29,38 @@ import { LuTriangleAlert } from "react-icons/lu";
 import type { ActionFunctionArgs, LoaderFunctionArgs } from "react-router";
 import { data, Link, redirect, useFetcher, useLocation } from "react-router";
 import { path } from "~/utils/path";
+import { getCallbackCredentials } from "./callback-session";
 
 export async function loader({ request }: LoaderFunctionArgs) {
   const authSession = await getAuthSession(request);
 
   if (authSession) await destroyAuthSession(request);
+
+  const url = new URL(request.url);
+  const tokenHash = url.searchParams.get("token_hash");
+
+  if (tokenHash && url.searchParams.get("type") === "magiclink") {
+    const { data: verification, error: verificationError } =
+      await getCarbonServiceRole().auth.verifyOtp({
+        token_hash: tokenHash,
+        type: "magiclink"
+      });
+
+    if (verificationError || !verification.session) {
+      return redirect(
+        path.to.root,
+        await flash(request, error(verificationError, "Invalid magic link"))
+      );
+    }
+
+    const formData = new FormData();
+    formData.append("refreshToken", verification.session.refresh_token);
+    formData.append("userId", verification.session.user.id);
+
+    return action({
+      request: new Request(request, { method: "POST", body: formData })
+    } as ActionFunctionArgs);
+  }
 
   return {};
 }
@@ -114,6 +141,23 @@ export default function AuthCallback() {
   }, [hash]);
 
   useEffect(() => {
+    const submitSession = (
+      session: Parameters<typeof getCallbackCredentials>[0]
+    ) => {
+      if (isAuthenticating.current) return;
+
+      const credentials = getCallbackCredentials(session);
+      if (!credentials) return;
+
+      isAuthenticating.current = true;
+
+      const formData = new FormData();
+      formData.append("refreshToken", credentials.refreshToken);
+      formData.append("userId", credentials.userId);
+
+      fetcher.submit(formData, { method: "post" });
+    };
+
     const {
       data: { subscription }
     } = carbonClient.auth.onAuthStateChange((event, session) => {
@@ -121,20 +165,20 @@ export default function AuthCallback() {
         ["SIGNED_IN", "INITIAL_SESSION"].includes(event) &&
         !isAuthenticating.current
       ) {
-        isAuthenticating.current = true;
-
-        const refreshToken = session?.refresh_token;
-        const userId = session?.user.id;
-
-        if (!refreshToken || !userId) return;
-
-        const formData = new FormData();
-        formData.append("refreshToken", refreshToken);
-        formData.append("userId", userId);
-
-        fetcher.submit(formData, { method: "post" });
+        submitSession(session);
       }
     });
+
+    void carbonClient.auth
+      .getSession()
+      .then(({ data, error: sessionError }) => {
+        if (sessionError) {
+          setError(sessionError.message);
+          return;
+        }
+
+        submitSession(data.session);
+      });
 
     return () => {
       subscription.unsubscribe();
