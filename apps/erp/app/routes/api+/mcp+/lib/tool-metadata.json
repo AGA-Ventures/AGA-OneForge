@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-12T06:24:37.542Z",
-  "totalTools": 1303,
+  "generated": "2026-07-20T10:47:51.560Z",
+  "totalTools": 1304,
   "modules": 15,
   "tools": [
     {
@@ -9690,6 +9690,32 @@
       "module": "items",
       "classification": "DESTRUCTIVE",
       "description": "delete item customer part",
+      "paramCount": 1,
+      "serviceParams": [
+        "client",
+        "id",
+        "companyId"
+      ],
+      "injectAuth": [
+        "companyId"
+      ],
+      "schema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "items_deleteSupplierPart",
+      "module": "items",
+      "classification": "DESTRUCTIVE",
+      "description": "delete supplier part",
       "paramCount": 1,
       "serviceParams": [
         "client",
