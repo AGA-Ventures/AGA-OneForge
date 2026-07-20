@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-20T10:47:51.560Z",
+  "generated": "2026-07-20T13:17:08.103Z",
   "totalTools": 1304,
   "modules": 15,
   "tools": [
@@ -35438,7 +35438,7 @@
       "module": "sales",
       "classification": "WRITE",
       "description": "Create a new sales order with all business logic - generates sequence, creates opportunity, resolves payment/shipping defaults from customer. LLM can create a sales order with just customerId.",
-      "paramCount": 14,
+      "paramCount": 17,
       "serviceParams": [
         "client",
         "input"
@@ -35488,6 +35488,15 @@
             "type": "string"
           },
           "notes": {
+            "type": "string"
+          },
+          "customerReference": {
+            "type": "string"
+          },
+          "customerEngineeringContactId": {
+            "type": "string"
+          },
+          "salesPersonId": {
             "type": "string"
           },
           "customFields": {}

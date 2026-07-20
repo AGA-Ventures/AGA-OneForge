@@ -392,20 +392,17 @@ function GenericNotification({
 function DigestNotification({
   id,
   description,
-  createdAt,
   markMessageAsRead,
   onClose,
   fetchChildren
 }: {
   id: string;
   description: string;
-  createdAt: string;
   markMessageAsRead?: () => void;
   onClose: () => void;
   fetchChildren: (digestId: string) => Promise<NotificationRecord[]>;
 }) {
   const { t } = useLingui();
-  const { formatTimeAgo } = useDateFormatter();
   const [expanded, setExpanded] = useState(false);
   const [children, setChildren] = useState<NotificationRecord[] | null>(null);
   const [loadingChildren, setLoadingChildren] = useState(false);
@@ -439,9 +436,6 @@ function DigestNotification({
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-sm">{description}</p>
-            <span className="text-xs text-muted-foreground">
-              {formatTimeAgo(createdAt)}
-            </span>
           </div>
           <div className="text-muted-foreground">
             {expanded ? <LuChevronUp /> : <LuChevronDown />}
@@ -620,7 +614,6 @@ const Notifications = () => {
                         <DigestNotification
                           key={notification._id}
                           id={notification._id}
-                          createdAt={notification.createdAt}
                           description={
                             notification.payload.description as string
                           }
@@ -711,7 +704,6 @@ const Notifications = () => {
                         <DigestNotification
                           key={notification._id}
                           id={notification._id}
-                          createdAt={notification.createdAt}
                           description={
                             notification.payload.description as string
                           }

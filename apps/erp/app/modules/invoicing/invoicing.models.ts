@@ -243,13 +243,17 @@ export const salesInvoiceLineValidator = z
         })
       }
     ),
-    methodType: z
-      .enum(methodType, {
-        errorMap: (issue, ctx) => ({
-          message: "Method is required"
+    // An empty hidden methodType value should be treated as absent. The refine
+    // below still requires a method for every line type except Fixed Asset.
+    methodType: zfd.text(
+      z
+        .enum(methodType, {
+          errorMap: (issue, ctx) => ({
+            message: "Method is required"
+          })
         })
-      })
-      .optional(),
+        .optional()
+    ),
     purchaseOrderId: zfd.text(z.string().optional()),
     purchaseOrderLineId: zfd.text(z.string().optional()),
     itemId: zfd.text(z.string().optional()),
